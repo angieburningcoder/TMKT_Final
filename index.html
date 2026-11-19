@@ -364,6 +364,50 @@ table.mx tr.nn td{background:var(--rec-l);color:var(--rec);font-weight:700}
 .rc i{font-style:normal;color:var(--mute)}
 .ra{display:grid;place-items:center;color:var(--am);font-size:14px}
 @media(max-width:860px){.ra{display:none}}
+
+.h3a{font-size:16px;margin:4px 0 10px;display:flex;align-items:center;gap:8px}
+.tagno{font-family:var(--px);font-size:11px;color:#fff;background:var(--c);border-radius:4px;padding:1px 7px}
+table.seg{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1.5px solid var(--line);border-radius:10px;overflow:hidden;font-size:13px;min-width:720px}
+table.seg th{background:#f7efe7;font-size:12px;font-weight:700;padding:8px 10px;text-align:left}
+table.seg th:nth-child(2){background:var(--A);color:#fff}
+table.seg td{padding:7px 10px;border-top:1px solid var(--line);vertical-align:top}
+table.seg td:nth-child(2){background:var(--A-l)}
+table.seg tr.fit td{font-weight:700;font-size:12.5px}
+.journey{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.js{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:10px;font-size:12.5px;display:flex;flex-direction:column;gap:2px;position:relative}
+.js .jn{font-family:var(--px);width:22px;height:22px;border-radius:5px;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:11px}
+.js b{font-size:13.5px}.js span{color:var(--mute)}
+.js em{font-style:normal;color:var(--rec);font-weight:700;font-size:12px}
+.js.gap{border:2px solid var(--rec);background:var(--rec-l)}.js.gap .jn{background:var(--rec)}
+@media(max-width:860px){.journey{grid-template-columns:1fr 1fr}}
+.swot{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.sw{border-radius:10px;padding:10px 12px;font-size:13px;border:1.5px solid var(--line);background:#fff}
+.sw b{font-family:var(--px);font-size:12px}.sw ul{margin:4px 0 0;padding-left:16px}
+.sw.s b{color:var(--C)}.sw.w b{color:var(--rec)}.sw.o b{color:var(--am-d)}.sw.t b{color:var(--mute)}
+.sw.s{background:var(--C-l)}.sw.w{background:var(--rec-l)}.sw.o{background:var(--am-l)}.sw.t{background:#f4efea}
+table.mx2{width:100%;border-collapse:collapse;font-size:13px;background:#fff;border:1.5px solid var(--line);border-radius:10px}
+table.mx2 th{font-size:12px;padding:7px 8px;text-align:left;background:#f7efe7}
+table.mx2 th:nth-child(2){background:var(--A);color:#fff}
+table.mx2 td{padding:6px 8px;border-top:1px solid var(--line)}
+table.mx2 td.tbd{color:var(--rec);font-size:12px}
+.forces{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.fc{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:10px;font-size:12.5px;display:flex;flex-direction:column;gap:3px}
+.fc b{font-size:13.5px}.fc span{color:var(--mute)}
+.fc.up{border-top:4px solid var(--rec)}.fc.mid{border-top:4px solid #cdbfb3}
+@media(max-width:860px){.forces{grid-template-columns:1fr 1fr}}
+.pe b{font-size:14px}.pe p{margin:4px 0 6px;font-size:13px}
+.pe.key{border-color:var(--B);box-shadow:3px 3px 0 var(--B-l)}
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:6px 12px;font-size:12.5px;margin:6px 0 10px}
+.calc label{display:flex;flex-direction:column;gap:2px;color:var(--mute)}
+.calc input{font-family:var(--px);font-size:13px;border:1.5px solid var(--line);border-radius:6px;padding:4px 8px;color:var(--ink);width:100%}
+.be{white-space:normal}
+
+.tvote{margin-top:18px;border-top:2px dashed var(--line);padding-top:12px;display:grid;gap:6px}
+.tl2{font-family:var(--px);font-size:11px;color:var(--rec)}
+.tt3{display:grid;grid-template-columns:24px auto 1fr;gap:10px;align-items:baseline}
+.tt3 span{font-family:var(--px);color:var(--rec)}
+.tt3 b{font-size:15px}.tt3 small{color:var(--mute);font-size:12px}
+@media(max-width:700px){.tt3{grid-template-columns:24px 1fr}.tt3 small{grid-column:2}}
 footer{padding:46px 0 70px;color:var(--mute);font-size:12.5px;text-align:center}
 footer .px{font-family:var(--px);color:var(--am-d)}
 </style>
@@ -372,7 +416,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
 
 <nav class="top"><div class="wrap">
   <div class="row"><span class="lbl">GO TO</span>
-    <a class="tag" href="#team">01 分工＋時程</a><a class="tag" href="#story">02 故事線</a><a class="tag" href="#feedback">03 老師回饋</a><a class="tag" href="#product">04 產品圖鑑</a><a class="tag" href="#intel">05 Furbo 現況</a><a class="tag" href="#problem">06 問題樹</a><a class="tag" href="#smart">07 SMART</a><a class="tag" href="#tactics">08 策略戰術</a><a class="tag" href="#plan">09 執行評估</a><a class="tag" href="#field">10 問卷＋飼主</a><a class="tag" href="#req">11 交件 checklist</a><a class="tag" href="#todo">12 待確認</a>
+    <a class="tag" href="#team">01 分工＋時程</a><a class="tag" href="#story">02 故事線</a><a class="tag" href="#feedback">03 老師回饋</a><a class="tag" href="#product">04 產品圖鑑</a><a class="tag" href="#intel">05 Furbo 現況</a><a class="tag" href="#analysis">06 §2 情境分析</a><a class="tag" href="#problem">07 問題樹</a><a class="tag" href="#smart">08 SMART</a><a class="tag" href="#tactics">09 策略戰術</a><a class="tag" href="#plan">10 執行評估</a><a class="tag" href="#field">11 飼主訪談</a><a class="tag" href="#req">12 交件 checklist</a><a class="tag" href="#todo">13 資料來源</a>
   </div>
   <div class="row"><span class="lbl">FIND ME</span>
     <a class="p pA" href="#pA"><b>A</b>小魚・公司→顧客→競品</a><a class="p pB" href="#pB"><b>B</b>趨勢→SWOT→問題→目標</a><a class="p pC" href="#pC"><b>C</b>戰術→執行→預算</a><a class="p pD" href="#pD"><b>D</b>書面報告</a>
@@ -390,7 +434,13 @@ footer .px{font-family:var(--px);color:var(--am-d)}
     <h1>全世界賣最好的寵物相機是台灣做的，<br>為什麼台灣的飼主不認識它？</h1>
     <div class="q">主問題（依老師回饋修正）：Brand awareness 不足 → 才導致沒人買、沒人訂閱</div>
     <div class="metaline">
-      <span class="hot">📮 12/7 簡報繳件・🎤 12/10 上台・📝 12/17 書面</span><span>簡報 15 min ＋ Q&amp;A 5 min</span><span>報告 ≤ 12 頁（含封面、參考文獻）</span><span>市場：台灣（建議・待全組確認）</span><span>策略：只選 1 個 P → Promotion</span><span>A B C 上台・D 專責書面</span>
+      <span class="hot">📮 12/7 簡報繳件・🎤 12/10 上台・📝 12/17 書面</span><span>簡報 15 min ＋ Q&amp;A 5 min</span><span>報告 ≤ 12 頁（含封面、參考文獻）</span><span class="hot">市場：台灣（定案）</span><span>策略：只選 1 個 P → Promotion</span><span>A B C 上台・D 專責書面</span>
+    </div>
+    <div class="tvote">
+      <div class="tl2">題目候選・投票</div>
+      <div class="tt3"><span>1</span><b>Born in Taiwan, Unknown at Home</b><small>台灣做的全球第一，台灣人卻不認識</small></div>
+      <div class="tt3"><span>2</span><b>While You're Away: Making Furbo Seen</b><small>呼應「留守日記」tactic</small></div>
+      <div class="tt3"><span>3</span><b>From "Dog Camera" to Every Pet Parent's Peace of Mind</b><small>呼應貓超車狗＋價值主張</small></div>
     </div>
   </div>
 </div></div>
@@ -455,15 +505,14 @@ footer .px{font-family:var(--px);color:var(--am-d)}
         <div class="blk"><div class="h">SLIDES</div><ul>
           <li>Hook：「全球第一的寵物相機是台灣做的，你聽過嗎？」（現場舉手）</li>
           <li>§1 產品線圖鑑＋價值階梯＋App 三畫面（<a href="#product">04</a> 直接轉投影片）</li>
-          <li>§2.1 顧客：區隔 → 目標客群；<b>「我自己就是養貓的 Furbo 用戶」</b>的旅程＋問卷結果（幾 % 聽過 Furbo）</li>
+          <li>§2.1 顧客：四種區隔變數 → 選 S1 → 顧客旅程斷點；<b>「我自己就是養貓的 Furbo 用戶」</b>的旅程＋飼主訪談重點引言</li>
           <li>§2.3 競品：Furbo vs TP-Link Tapo vs 小米 功能矩陣（AI 偵測、零食、訂閱、價格）</li>
         </ul></div>
         <div class="blk"><div class="h">BACKSTAGE</div><ul>
-          <li>問卷設計＋統計（題目產品描述只有你寫得準）；全員幫忙轉發</li>
+          <li>整理全組的飼主訪談（5–6 位）＋自己的使用日記</li>
           <li>給 B：SWOT 的 S／W 條列、PESTEL 的 T／L 技術說明</li>
           <li>給 C：KOL 拍攝最好拍的 AI 功能；給 D：英文技術名詞對照表</li>
         </ul></div>
-        <div class="hand">交棒句：「產品有差異、飼主也有需求，但問卷裡只有 X% 聽過它。把鏡頭拉遠，B 告訴大家外面發生什麼事。」</div>
       </div>
     </div>
     <div class="person" id="pB" style="--c:var(--B);--cl:var(--B-l)">
@@ -472,25 +521,23 @@ footer .px{font-family:var(--px);color:var(--am-d)}
         <div class="blk"><div class="h">SLIDES</div><ul>
           <li>§2.4 PESTEL 挑 3 個：S 貓超車狗／毛孩比小孩多、T AI 偵測變免費標配、L 資安事件</li>
           <li>§2.2 SWOT 1 張：把 A 講的 3C＋外部趨勢收斂</li>
-          <li>§3 問題樹（核心：品牌認知不足）＋SMART O1–O3，起點數字用 A 的問卷</li>
+          <li>§3 問題樹（核心：品牌認知不足）＋SMART O1–O3，起點用 IG 追蹤數現值</li>
           <li>§4 Persona 1 張＋為什麼 7P 只選 Promotion</li>
         </ul></div>
-        <div class="blk"><div class="h">FOR D</div><ul><li>§2.2、2.4、3、4 素材＋所有來源 URL</li><li>IG／FB 追蹤數現值（截圖＋日期）＝ O2 起點</li></ul></div>
-        <div class="hand">交棒句：「目標有了，接下來 C 告訴大家：用哪一招、花多少錢、怎麼知道有沒有成功。」</div>
+        <div class="blk"><div class="h">FOR D</div><ul><li>§2.2、2.4、3、4 素材＋所有來源 URL</li><li>IG／FB 追蹤數現值（截圖＋日期）＝ O1 起點</li></ul></div>
       </div>
     </div>
     <div class="person" id="pC" style="--c:var(--C);--cl:var(--C-l)">
       <div class="ph"><span class="L">C</span><div><h3>戰術 → 執行 → 預算 → 收尾</h3><div class="w">不需技術背景 · 約 6 張投影片 · 書面 §5–7 素材</div></div><span class="claim">認領：＿＿</span></div>
       <div class="pb">
         <div class="blk"><div class="h">SLIDES</div><ul>
-          <li>Tactic 評估表 → 為什麼選 T1＋T2（只深講這兩個）</li>
+          <li>3 個 tactic 評估（四種可行性）→ 為什麼選 T1</li>
           <li>KOL 人選範例：上媒合平台查真實報價、選有養貓狗的人</li>
-          <li>3 個月 Gantt＋預算表</li>
-          <li>Break-even＋W4/W8/W12 檢查點</li>
+          <li>3 個月 Gantt＋預算表＋誰來做／外包＋通路適合度</li>
+          <li>回本試算（第幾個月回本）＋W4/W8/W12 檢查點＋要收的資料</li>
           <li>收尾：回到 ONE LINE，「請投資我們 NT$30 萬」</li>
         </ul></div>
         <div class="blk"><div class="h">FOR D</div><ul><li>§5–7 素材＋預算計算表（Google Sheet，公式看得到）</li><li>KOL 拍攝要用的 AI 功能 → 直接問小魚</li></ul></div>
-        <div class="hand">收尾句：「3 個月後，讓更多台灣飼主出門前會想：要不要裝一台 Furbo？」</div>
       </div>
     </div>
     <div class="person" id="pD" style="--c:var(--D);--cl:var(--D-l)">
@@ -504,7 +551,6 @@ footer .px{font-family:var(--px);color:var(--am-d)}
           <li>AI learning report＋會議紀錄（建議放 appendix）</li>
         </ul></div>
         <div class="blk"><div class="h">ALSO</div><ul><li>每次開會的紀錄員（規格書要求保留紀錄以防爭議）</li><li>簡報前一天看一次 slides，確保簡報和報告數字一致</li></ul></div>
-        <div class="hand">D 的原則：簡報可以省略，報告不能缺；每個數字都要有出處或標 assumption。</div>
       </div>
     </div>
   </div>
@@ -525,13 +571,13 @@ footer .px{font-family:var(--px);color:var(--am-d)}
     <div class="r" style="--c:var(--C)"><span>§7 Evaluation</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pC mini"><b>C</b>C</span></div>
     <div class="r" style="--c:#cdbfb3"><span>§8 References</span><div class="track"><div class="fill" style="width:4.2%"></div></div><span class="v">0.5</span><span class="p pD mini"><b>D</b>D</span></div>
   </div>
-  <p class="m" style="font-size:13px;margin-top:10px">合計 12 頁（A 2.75／B 3.25／C 3.5／D 2.5）。§2 給 3 頁，因為老師 rubric 第一項就是 research depth；小魚頁數較少，但多了圖鑑、實拍素材和全組技術支援。Appendix（AI 報告、問卷、訪談摘要）不計分，是否計入頁數請 <a href="#todo">確認</a>。</p>
+  <p class="m" style="font-size:13px;margin-top:10px">合計 12 頁（A 2.75／B 3.25／C 3.5／D 2.5）。§2 給 3 頁，因為老師 rubric 第一項就是 research depth；小魚頁數較少，但多了圖鑑、實拍素材和全組技術支援。Appendix（AI 報告、訪談摘要）不計分，是否計入 12 頁 D 問老師。</p>
   <h3 style="font-size:16px;margin:26px 0 10px">組內時程：從今天到繳交</h3>
   <p class="m" style="font-size:13px;margin:0 0 10px">紅色＝老師死線（簡報遲交每天 −1、報告遲交每天 −5）。</p>
   <div class="card tl">
     <div class="ti now"><span class="d">11/19</span><span class="mk"></span><span class="x">分工頁上線：A＝小魚，其他人認領 <b>B／C／D</b></span></div>
-    <div class="ti"><span class="d">11/23</span><span class="mk"></span><span class="x">小魚發出問卷（全員轉發）＋開始寫使用日記</span></div>
-    <div class="ti"><span class="d">11/25</span><span class="mk"></span><span class="x">飼主快聊完成（每人 1–2 位）、問卷收 ≥ 60 份</span></div>
+    <div class="ti"><span class="d">11/23</span><span class="mk"></span><span class="x">每人約 1–2 位飼主私下訪談開始；小魚寫使用日記</span></div>
+    <div class="ti"><span class="d">11/25</span><span class="mk"></span><span class="x">訪談完成（共 5–6 位）、重點整理給小魚</span></div>
     <div class="ti"><span class="d">11/26</span><span class="mk"></span><span class="x">開會：鎖定市場、主問題、留下哪幾個原因、SMART 數字</span></div>
     <div class="ti"><span class="d">11/30</span><span class="mk"></span><span class="x">A／B／C 投影片初稿＋把素材與來源丟給 D</span></div>
     <div class="ti"><span class="d">12/03</span><span class="mk"></span><span class="x">彩排 #1（計時 15:00）、D 交報告初稿 §1–4</span></div>
@@ -549,11 +595,11 @@ footer .px{font-family:var(--px);color:var(--am-d)}
   <p class="sub">每一步都要接到下一步：分析指向問題 → 問題能量化 → 策略戰術回扣目標 → 用 KPI 驗收。顏色＝誰上台講。</p>
   <div class="flow">
     <div class="fs fA"><span class="sec pill src">§1</span><div class="st">STEP 1 · A</div><h4>Company selection</h4><p>台灣出生、全球百萬用戶；4 台相機＋Nanny AI 訂閱（用圖鑑講）。</p></div>
-    <div class="fs fB"><span class="sec pill src">§2</span><div class="st">STEP 2 · A 3C → B 趨勢＋SWOT</div><h4>Situation analysis</h4><p>A：飼主視角＋問卷、功能矩陣比 Tapo／小米；B 接：貓超車狗、AI 變標配 → SWOT 收斂。</p></div>
+    <div class="fs fB"><span class="sec pill src">§2</span><div class="st">STEP 2 · A 3C → B 趨勢＋SWOT</div><h4>Situation analysis</h4><p>A：飼主視角＋訪談、功能矩陣比 Tapo／小米；B 接：貓超車狗、AI 變標配 → SWOT 收斂。</p></div>
     <div class="fs fB"><span class="sec pill src">§3</span><div class="st">STEP 3 · B</div><h4>One main problem</h4><p>不是產品不好，是<b>台灣飼主根本不知道它</b> → 沒進入購買清單。</p></div>
     <div class="fs fB rowend"><span class="sec pill src">§3</span><div class="st">STEP 4 · B</div><h4>SMART objective</h4><p>3 個月內：目標客群提示認知度 X% → Y%；IG 追蹤 N → 1.3N。</p></div>
     <div class="fs fB"><span class="sec pill src">§4</span><div class="st">STEP 5 · B</div><h4>Marketing strategy</h4><p>7P 只選 Promotion；鎖定一個 persona：白天毛孩獨自在家的雙北上班族。</p></div>
-    <div class="fs fC"><span class="sec pill src">§5</span><div class="st">STEP 6 · C</div><h4>Tactics</h4><p>評估 4 個 → 推薦「寵物 KOL × 毛孩留守日記」＋ UGC 擴散。</p></div>
+    <div class="fs fC"><span class="sec pill src">§5</span><div class="st">STEP 6 · C</div><h4>Tactics</h4><p>評估 3 個 → 推薦「寵物微網紅 × 毛孩留守日記」（附 UGC 擴散）。</p></div>
     <div class="fs fC last"><span class="sec pill src">§6–7</span><div class="st">STEP 7 · C</div><h4>Implementation &amp; evaluation</h4><p>3 個月 Gantt、預算、W4/W8/W12 檢查點、損益兩平。</p></div>
     <div class="fs" style="--c:var(--D);--cl:var(--D-l)"><span class="sec pill src">ALL</span><div class="st">BEHIND · D</div><h4>12-page report</h4><p>D 把上面 7 步寫成英文書面，不上台。</p></div>
   </div>
@@ -576,21 +622,21 @@ footer .px{font-family:var(--px);color:var(--am-d)}
     <div class="col" style="border-color:var(--am)">
       <h4 style="color:var(--am-d)">AFTER · FINAL</h4>
       <div class="rqrow"><span class="k">RQ1</span><span><s>主問題</s> → <b>2.3 競品分析</b>（情境分析的一部分）</span></div>
-      <div class="rqrow"><span class="k">RQ2</span><span><s>主問題</s> → <b>2.1 顧客分析</b>，用問卷＋飼主快聊去挖</span></div>
+      <div class="rqrow"><span class="k">RQ2</span><span><s>主問題</s> → <b>2.1 顧客分析</b>，用飼主訪談去挖</span></div>
       <div class="rqrow"><span class="k">RQ3</span><span><s>主問題</s> → <b>結果／症狀</b>：awareness 低的下游</span></div>
       <div class="rqrow"><span class="k core">CORE</span><span><b>品牌認知不足：怎麼提升 brand awareness？</b></span></div>
-      <div class="rqrow"><span class="k">市場</span><span><b>台灣</b>：可以直接訪問身邊飼主（老師暗示的路線）</span></div>
+      <div class="rqrow"><span class="k">市場</span><span><b>台灣（定案）</b>：台灣目前賣得不好、認知弱，最需要行銷計畫；也能直接訪問身邊飼主</span></div>
     </div>
   </div>
   <h3 style="font-size:16px;margin:22px 0 10px">老師的 7 個提醒 → 這頁每一段都對應到</h3>
   <ul class="tips">
-    <li><span class="n">1</span><span><b>RQ1、RQ2 是情境分析、不是問題</b>：透過問卷＋飼主快聊了解「為什麼大家不知道這個品牌？是不需要、還是覺得別牌更好？為什麼更好？」 → <a href="#field">10 問卷＋飼主</a></span></li>
-    <li><span class="n">2</span><span><b>RQ3（買／訂閱少）是衍生問題</b>：知道的人少 → 自然沒人買 → <a href="#problem">06 問題樹</a></span></li>
-    <li><span class="n">3</span><span><b>SMART 要量化</b>：「三個月內從多少 → 多少」，例如 FB／IG follower 數 → <a href="#smart">07 SMART</a></span></li>
-    <li><span class="n">4</span><span><b>7P 只選一個</b>，底下可有多個 tactics，執行細節要講清楚 → <a href="#tactics">08</a></span></li>
+    <li><span class="n">1</span><span><b>RQ1、RQ2 是情境分析、不是問題</b>：透過私下訪問幾位飼主了解「為什麼大家不知道這個品牌？是不需要、還是覺得別牌更好？為什麼更好？」 → <a href="#field">11 飼主訪談</a></span></li>
+    <li><span class="n">2</span><span><b>RQ3（買／訂閱少）是衍生問題</b>：知道的人少 → 自然沒人買 → <a href="#problem">07 問題樹</a></span></li>
+    <li><span class="n">3</span><span><b>SMART 要量化</b>：「三個月內從多少 → 多少」，例如 FB／IG follower 數 → <a href="#smart">08 SMART</a></span></li>
+    <li><span class="n">4</span><span><b>7P 只選一個</b>，底下可有多個 tactics，執行細節要講清楚 → <a href="#tactics">09</a></span></li>
     <li><span class="n">5</span><span><b>15 分鐘只講 1–2 個核心 tactic</b>，重點是「說服別人投資你」 → <a href="#team">01 時間條</a></span></li>
-    <li><span class="n">6</span><span><b>成本要算</b>：找誰、多少錢（媒合平台有網紅行情）、人選合理嗎（有養寵物的人，例：蔡依林有養狗） → <a href="#plan">09 預算</a></span></li>
-    <li><span class="n">7</span><span><b>只選一個市場</b>：美國靠次級資料；台灣可以直接訪問消費者 → <a href="#todo">12 待確認</a></span></li>
+    <li><span class="n">6</span><span><b>成本要算</b>：找誰、多少錢（媒合平台有網紅行情）、人選合理嗎（有養寵物的人，例：蔡依林有養狗） → <a href="#plan">10 預算</a></span></li>
+    <li><span class="n">7</span><span><b>只選一個市場</b>：美國靠次級資料；台灣可以直接訪問消費者 → <a href="#feedback">✓ 已定案台灣</a></span></li>
   </ul>
 </section>
 
@@ -598,6 +644,12 @@ footer .px{font-family:var(--px);color:var(--am-d)}
 <section id="product">
   <div class="sh"><span class="no">04</span><h2>產品線圖鑑：Furbo 到底賣什麼？</h2></div>
   <p class="sub">給不熟產品的夥伴：4 台相機（一次買斷）＋ 1 個 AI 訂閱 Furbo Nanny（每月收錢）。圖都是自繪示意線稿，不是官方照片。<span class="p pA mini"><b>A</b>小魚</span> 負責確認正確性＋補 app 實拍畫面（限已上市功能）</p>
+  <div class="grid g3" style="margin-bottom:16px">
+    <div class="card"><h4>🏢 公司背景（§1）</h4><p>Tomofun 友愉，2014 年由張友辰創立、趨勢科技張明正輔導；產業：寵物科技／消費性 IoT。曾於台北、西雅圖、溫哥華、東京設辦公室（2017 報導）。</p><a class="pill src" href="https://www.bnext.com.tw/article/47513/furbo-prime-day-ai">數位時代</a><a class="pill src" href="https://en.wikipedia.org/wiki/Tomofun">Wikipedia</a></div>
+    <div class="card"><h4>📏 規模（§1）</h4><p>全球百萬以上用戶、銷往 133 國；Amazon 大檔期平均每 4 秒賣一台；2016 年 Indiegogo 群募起家。</p><a class="pill src" href="https://www.bnext.com.tw/article/72985/tomofun-ai-dec-22-mag">數位時代</a></div>
+    <div class="card"><h4>🌐 數位商業模式（§1）</h4><p>D2C 電商（官網、Amazon）賣硬體當入口 → App 內訂閱 Nanny 收經常性收入；2019 年推出訂閱。</p><span class="pill amb">小魚補台灣通路</span></div>
+  </div>
+
 
   <div class="grid g4 cams">
     <div class="cam">
@@ -772,7 +824,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
 <!-- 05 INTEL -->
 <section id="intel">
   <div class="sh"><span class="no">05</span><h2>Furbo 最新狀況（2026/11 web search 整理）</h2></div>
-  <p class="sub">產品細節看上一段圖鑑；這裡是市場與新聞。每張卡都有來源；<span class="pill hyp">待驗證</span> 是推論、要靠問卷／飼主快聊證明。</p>
+  <p class="sub">產品細節看上一段圖鑑；這裡是市場與新聞。每張卡都有來源；<span class="pill hyp">待驗證</span> 是推論、要靠飼主訪談佐證。</p>
   <div class="grid g4">
     <div class="num"><div class="v">1M<small>+</small></div><div class="l">全球用戶、銷往 133 國；Amazon 檔期平均每 4 秒賣一台</div><div class="f"><span class="pill amb">A · §1</span><a class="pill src" href="https://www.bnext.com.tw/article/72985/tomofun-ai-dec-22-mag">數位時代</a></div></div>
     <div class="num"><div class="v">4 <small>款相機</small></div><div class="l">360° 狗狗機、360° 貓貓機（逗貓羽毛棒）、Mini 360°（2K，最新）、Mini（不能丟零食）</div><div class="f"><span class="pill amb">A · §1</span><a class="pill src" href="https://furbo.com/llms.txt">furbo.com</a></div></div>
@@ -807,7 +859,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
 
   <h3 style="font-size:16px;margin:22px 0 10px">近期動態 → 可以直接拿來用的證據</h3>
   <div class="news">
-    <div class="nw"><span class="d">2026</span><div><b>Dcard 2026 寵物攝影機推薦：比較的是 TP-Link、小米、Ebo</b>台灣網友的熱門推薦文主打這三個品牌 → 初步支持「Furbo 不在台灣飼主的比較清單裡」。<div class="so">→ A 用在 §2.3；B 用來撐主問題 <span class="pill hyp">待問卷驗證</span></div><a class="pill src" href="https://www.dcard.tw/@u_u_blue/post/261096951">Dcard</a></div></div>
+    <div class="nw"><span class="d">2026</span><div><b>Dcard 2026 寵物攝影機推薦：比較的是 TP-Link、小米、Ebo</b>台灣網友的熱門推薦文主打這三個品牌 → 初步支持「Furbo 不在台灣飼主的比較清單裡」。<div class="so">→ A 用在 §2.3；B 用來撐主問題 <span class="pill hyp">待訪談佐證</span></div><a class="pill src" href="https://www.dcard.tw/@u_u_blue/post/261096951">Dcard</a></div></div>
     <div class="nw"><span class="d">2026/07</span><div><b>日本：Furbo × 星野集團 OMO 飯店「不讓愛犬孤單」夏季住宿</b>OMO 三間館免費借 Furbo 給帶狗入住的旅客，搭配 IG 寵物網紅體驗與年度大促。<div class="so">→ C 的 tactic 先例：「場域體驗＋網紅」Furbo 自己在日本做過</div><a class="pill src" href="https://prtimes.jp/main/html/rd/p/000000079.000018477.html">PR TIMES</a></div></div>
     <div class="nw"><span class="d">2025/09</span><div><b>新品 Furbo Mini 360°：2K、業界最小級的旋轉 AI 相機，貓狗通用</b>產品線往「小、便宜、貓狗都能用」延伸。<div class="so">→ 推薦活動的主打機型（適合小坪數套房＋貓）</div><a class="pill src" href="https://www.cbinsights.com/company/furbo">CB Insights（日文新聞稿）</a></div></div>
     <div class="nw"><span class="d">2025/10</span><div><b>資安：Furbo 360 / Mini 共 18 個 CVE 被揭露（含 SSRF、寫死憑證）</b>2025/10 公開，NVD 在 2026/4 更新；揭露者稱廠商未回應。<div class="so">→ B 放 SWOT Threat／§2.4 Legal（小魚補技術說明）。⚠ 修正 Figma 便利貼：不是 2026/4 才爆出，是 2025/10 公開、2026/4 更新</div><a class="pill src" href="https://www.sentinelone.com/vulnerability-database/cve-2025-11636/">SentinelOne</a><a class="pill src" href="https://cve.yack.one/vendors/furbo">CVE list</a></div></div>
@@ -816,10 +868,81 @@ footer .px{font-family:var(--px);color:var(--am-d)}
   </div>
 </section>
 
-<!-- 06 PROBLEM -->
+<!-- 06 ANALYSIS -->
+<section id="analysis">
+  <div class="sh"><span class="no">06</span><h2>§2 情境分析草稿：四塊各自長什麼樣</h2></div>
+  <p class="sub">規格書 §2.1–2.4 每一條的「要交出什麼」都先畫好骨架，負責人往裡面填。<span class="p pA mini"><b>A</b>小魚</span> §2.1、§2.3　<span class="p pB mini"><b>B</b>B</span> §2.2、§2.4</p>
+
+  <h3 class="h3a"><span class="tagno" style="--c:var(--A)">§2.1</span>顧客分析：區隔 → 選目標 → 顧客經驗</h3>
+  <div class="scroll"><table class="seg">
+    <tr><th>區隔變數（規格書四種）</th><th>S1 都會上班族貓奴 ★</th><th>S2 分離焦慮犬飼主</th><th>S3 已用平價相機的比價族</th><th>S4 家裡常有人在</th></tr>
+    <tr><td><b>人口統計</b> demographic</td><td>25–39 歲、單身／雙薪</td><td>25–45 歲、上班族</td><td>20–35 歲、預算敏感</td><td>退休、家庭主婦／夫</td></tr>
+    <tr><td><b>心理</b> psychographic</td><td>毛孩＝家人、重生活品質、愛分享</td><td>擔心狗狗焦慮、願意花錢</td><td>「能看就好」、看 CP 值</td><td>不覺得需要監看</td></tr>
+    <tr><td><b>地理</b> geographic</td><td>雙北／都會套房</td><td>都會＋郊區</td><td>全台</td><td>全台</td></tr>
+    <tr><td><b>使用行為</b> usage</td><td>白天獨留 8–10 小時、多貓</td><td>獨留＋吠叫問題</td><td>已有小米／Tapo</td><td>很少獨留</td></tr>
+    <tr class="fit"><td>Visible × Profitable</td><td><b>高 × 高</b>：IG／Threads 重度、多貓→多台＋Nanny</td><td>中 × 高</td><td>高 × 低：只比價格</td><td>低 × 低</td></tr>
+  </table></div>
+  <p class="m" style="font-size:12.5px;margin:6px 0 14px">選 S1 的理由（規格書要「argue for it」）：台灣貓已超過狗、養多隻的以貓家庭為主；這群人社群上最活躍（visible），長時間不在家讓 Nanny 的價值最高、多貓還會加購相機（profitable）。區隔用飼主訪談佐證 <span class="pill hyp">待驗證</span></p>
+  <div class="journey">
+    <div class="js gap"><div class="jn">1</div><b>察覺需求</b><span>「上班時好想知道牠在幹嘛」</span><em>⚠ 想到的是「監視器」，不是 Furbo</em></div>
+    <div class="js gap"><div class="jn">2</div><b>搜尋比較</b><span>Dcard、IG、momo 比價</span><em>⚠ 推薦清單裡沒有 Furbo</em></div>
+    <div class="js"><div class="jn">3</div><b>購買</b><span>官網／電商，常有折扣</span></div>
+    <div class="js"><div class="jn">4</div><b>開箱設定</b><span>App 連 2.4GHz Wi-Fi</span></div>
+    <div class="js"><div class="jn">5</div><b>試用 Nanny</b><span>第一次收到嘔吐／陌生人警報＝啊哈時刻</span></div>
+    <div class="js"><div class="jn">6</div><b>續訂或流失</b><span>沒遇到事件的人覺得月費不值</span></div>
+  </div>
+  <p class="m" style="font-size:12.5px;margin:6px 0 0">顧客經驗（規格書要「analyse the target segment's experiences」）：<b>斷點在第 1–2 步</b>＝品牌認知問題，這就是我們的主問題。第 5–6 步小魚用自己的使用日記補。</p>
+
+  <div class="grid g2" style="margin-top:22px">
+    <div>
+      <h3 class="h3a"><span class="tagno" style="--c:var(--B)">§2.2</span>SWOT 草稿</h3>
+      <div class="swot">
+        <div class="sw s"><b>S 優勢</b><ul><li>寵物專用互動：丟零食、逗貓棒</li><li>AI 寵物警報（嘔吐、哭叫）</li><li>全球品牌、Amazon 暢銷</li></ul></div>
+        <div class="sw w"><b>W 劣勢</b><ul><li><b>台灣聲量弱</b></li><li>形象偏「狗」</li><li>AI 價值難一句話講清楚</li></ul></div>
+        <div class="sw o"><b>O 機會</b><ul><li>貓超過狗、犬貓 &gt; 幼年人口</li><li>上班族智慧養寵需求上升</li><li>亞太是成長最快的區域</li></ul></div>
+        <div class="sw t"><b>T 威脅</b><ul><li>平價相機把寵物偵測當免費標配</li><li>資安 CVE 影響信任</li><li>訂閱疲勞、物價壓力</li></ul></div>
+      </div>
+      <p class="m" style="font-size:12px;margin-top:6px">S／W 由小魚提供，O／T 從 §2.4 來。</p>
+    </div>
+    <div>
+      <h3 class="h3a"><span class="tagno" style="--c:var(--A)">§2.3</span>競品：只比 2 個（規格書 1–2 個）</h3>
+      <div class="scroll"><table class="mx2">
+        <tr><th></th><th>Furbo Mini 360°</th><th>TP-Link Tapo</th><th>小米</th></tr>
+        <tr><td>定位</td><td>寵物專用 AI 相機</td><td>平價居家監視器</td><td>平價智慧家庭</td></tr>
+        <tr><td>台灣售價</td><td class="tbd">小魚查</td><td class="tbd">小魚查</td><td class="tbd">小魚查</td></tr>
+        <tr><td>丟零食／逗貓</td><td>●</td><td>—</td><td>—</td></tr>
+        <tr><td>寵物專屬 AI 警報</td><td>●（Nanny）</td><td class="tbd">查</td><td class="tbd">查</td></tr>
+        <tr><td>訂閱</td><td>NT$219／月起</td><td class="tbd">查</td><td class="tbd">查</td></tr>
+        <tr><td>Dcard 推薦清單</td><td>✕</td><td>●</td><td>●</td></tr>
+      </table></div>
+      <p class="m" style="font-size:12px;margin-top:6px">競品選擇依 Dcard 2026 熱門推薦；Ebo（陪玩機器人）可當備註。</p>
+    </div>
+  </div>
+
+  <h4 style="margin:16px 0 8px;font-size:14.5px">§2.3 規格要求：網路對各競爭力量的影響（Porter 五力 × internet）</h4>
+  <div class="forces">
+    <div class="fc up"><b>買方議價力 ↑</b><span>一鍵比價、看評論，Dcard 一篇文就決定</span></div>
+    <div class="fc up"><b>替代品威脅 ↑</b><span>一般監視器靠 App 更新就加了寵物偵測</span></div>
+    <div class="fc up"><b>新進入者 ↑</b><span>電商讓白牌相機幾乎零門檻上架</span></div>
+    <div class="fc up"><b>同業競爭 ↑</b><span>資訊透明，功能差異很快被追上</span></div>
+    <div class="fc mid"><b>供應商議價力 →</b><span>鏡頭、晶片標準化，影響有限</span></div>
+  </div>
+
+  <h3 class="h3a" style="margin-top:22px"><span class="tagno" style="--c:var(--B)">§2.4</span>PESTEL：只挑相關的（規格書允許）</h3>
+  <div class="grid g3">
+    <div class="card pe"><b>P 政治</b><p>家貓登記 2026 年起正式執法，政府持續推動飼主責任</p><a class="pill src" href="https://news.pts.org.tw/article/804498">公視</a></div>
+    <div class="card pe"><b>E 經濟</b><p>台灣寵物市場推估超過 800 億元；但寵物險等服務付費仍偏低價</p><a class="pill src" href="https://www.ctee.com.tw/news/20260807700331-439901">工商時報</a></div>
+    <div class="card pe key"><b>S 社會 ★</b><p>犬貓 320 萬 &gt; 0–14 歲人口；家貓 174 萬首度超過家犬</p><a class="pill src" href="https://www.ctee.com.tw/news/20260611701338-430601">工商時報</a></div>
+    <div class="card pe key"><b>T 科技 ★</b><p>寵物偵測、異常聲響辨識變成平價相機的免費功能</p><span class="pill amb">小魚補說明</span></div>
+    <div class="card pe"><b>E 環境</b><p class="m">與本題關聯低 → 報告一句帶過或省略</p></div>
+    <div class="card pe key"><b>L 法律 ★</b><p>個資與 IoT 資安：Furbo 18 個 CVE 公開，影響信任</p><a class="pill src" href="https://cve.yack.one/vendors/furbo">CVE list</a></div>
+  </div>
+</section>
+
+<!-- 07 PROBLEM -->
 <section id="problem">
-  <div class="sh"><span class="no">06</span><h2>問題樹：一個核心問題，往上是症狀、往下是原因</h2></div>
-  <p class="sub">規格書要「main problem＋main reasons」。下面 4 個原因都是假設，問卷驗證後留 2–3 個最站得住的。</p>
+  <div class="sh"><span class="no">07</span><h2>問題樹：一個核心問題，往上是症狀、往下是原因</h2></div>
+  <p class="sub">規格書要「main problem＋main reasons」。下面 4 個原因都是假設，訪談後留 2–3 個最站得住的。</p>
   <div class="win tree"><div class="bar"><span class="dot"></span>PROBLEM_TREE.svg<span class="r">B · §3</span></div><div class="body">
   <svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans TC, sans-serif">
     <defs>
@@ -830,7 +953,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
     <g font-family="Silkscreen, monospace" font-size="11" fill="#b3a598" letter-spacing=".06em">
       <text x="20" y="22">EFFECTS · 結果（原 RQ3）</text>
       <text x="20" y="168">CORE PROBLEM · 核心問題</text>
-      <text x="20" y="492">ROOT CAUSES · 原因（待問卷驗證，留 2–3 個）</text>
+      <text x="20" y="492">ROOT CAUSES · 原因（待訪談佐證，留 2–3 個）</text>
     </g>
     <line x1="20" y1="140" x2="980" y2="140" stroke="#f1e6db" stroke-dasharray="2 6"/>
     <line x1="20" y1="290" x2="980" y2="290" stroke="#f1e6db" stroke-dasharray="2 6"/>
@@ -895,30 +1018,30 @@ footer .px{font-family:var(--px);color:var(--am-d)}
     </g>
   </svg>
   </div></div>
-  <div class="callout red"><div class="x">?</div><p>問卷和快聊要回答老師那串問題：<b>你知道 Furbo 嗎？</b> 不知道 → 是不需要，還是覺得別牌比較好？ → 為什麼比較好？ 答案會直接決定留 H1–H4 哪幾個。</p></div>
+  <div class="callout red"><div class="x">?</div><p>訪談要回答老師那串問題：<b>你知道 Furbo 嗎？</b> 不知道 → 是不需要，還是覺得別牌比較好？ → 為什麼比較好？ 答案會直接決定留 H1–H4 哪幾個。</p></div>
 </section>
 
-<!-- 07 SMART -->
+<!-- 08 SMART -->
 <section id="smart">
-  <div class="sh"><span class="no">07</span><h2>SMART objectives（草稿・數字等問卷）</h2></div>
-  <p class="sub">一個問題可以有多個目標。紅線空格 = 要用 baseline 填；規格書要求每個字母都附「為什麼這樣定」。</p>
+  <div class="sh"><span class="no">08</span><h2>SMART objectives（草稿）</h2></div>
+  <p class="sub">一個問題可以有多個目標。主目標用老師舉的社群追蹤數，現在就查得到起點；認知度調查是<b>行銷計畫裡公司要做的事</b>，不是我們現在要做的調研。紅線空格＝要填的數字。</p>
   <div class="grid" style="gap:10px">
-    <div class="obj"><div class="k">O1</div><div><h4>主目標・提示認知度：雙北 25–39 歲飼主「看過／聽過 Furbo」的比例，2027/1/1–3/31 三個月內從 <span class="blank">X%</span> 提升到 <span class="blank">X+15pp</span></h4><p>baseline 用我們自己的前測問卷；結束後同題後測。<span class="pill ok">直接對應核心問題</span></p></div></div>
-    <div class="obj"><div class="k">O2</div><div><h4>子目標・社群：IG @furbo_taiwan_official 追蹤數從 <span class="blank">N</span> 成長到 <span class="blank">1.3N</span>，Reels 平均互動率 ≥ <span class="blank">3%</span></h4><p>老師舉的例子；公開可查、每週可追。<span class="pill ok">好量測、好報告</span></p></div></div>
-    <div class="obj"><div class="k">O3</div><div><h4>子目標・漏斗下游（選配）：活動 UTM 帶來的官網造訪 ≥ <span class="blank">20,000</span>、新機購買 ≥ <span class="blank">U</span> 台</h4><p>U 由 <a href="#plan">09 損益兩平公式</a>反推。<span class="pill amb">用來算 ROI</span></p></div></div>
+    <div class="obj"><div class="k">O1</div><div><h4>主目標・社群認知：IG @furbo_taiwan_official 追蹤數 2027/1/1–3/31 三個月內從 <span class="blank">N</span> 成長到 <span class="blank">1.3N</span>，Reels 平均互動率 ≥ <span class="blank">3%</span></h4><p>老師舉的例子；N 現在就能查（截圖＋日期），每週可追。<span class="pill ok">直接對應「知道的人少」</span></p></div></div>
+    <div class="obj"><div class="k">O2</div><div><h4>子目標・品牌認知：雙北 25–39 歲飼主「聽過 Furbo」比例在活動結束時提升 <span class="blank">15pp</span></h4><p>計畫內由公司在第 1 週做前測、第 12 週後測（brand lift survey），寫進 §6–7。<span class="pill amb">計畫的一部分，非我們調研</span></p></div></div>
+    <div class="obj"><div class="k">O3</div><div><h4>子目標・漏斗下游（選配）：活動 UTM 帶來的官網造訪 ≥ <span class="blank">20,000</span>、新機購買 ≥ <span class="blank">U</span> 台</h4><p>U 由 <a href="#plan">10 損益兩平公式</a>反推。<span class="pill amb">用來算 ROI</span></p></div></div>
   </div>
   <div class="smart" style="margin-top:14px">
-    <div class="sm"><div class="L">S</div><h5>Specific</h5><p>指定市場（台灣）、客群（雙北 25–39 飼主）、指標（提示認知度）</p></div>
-    <div class="sm"><div class="L">M</div><h5>Measurable</h5><p>前後測問卷同題、IG 追蹤數可截圖；UTM 追蹤網站流量</p></div>
-    <div class="sm"><div class="L">A</div><h5>Achievable</h5><p>+15pp 的依據：KOL 觸及估算 × 記憶率（C 給數字，B 寫理由）</p></div>
+    <div class="sm"><div class="L">S</div><h5>Specific</h5><p>指定市場（台灣）、客群（雙北 25–39 飼主）、指標（IG 追蹤、認知度）</p></div>
+    <div class="sm"><div class="L">M</div><h5>Measurable</h5><p>IG 追蹤數可截圖；活動前後測同題；UTM 追蹤網站流量</p></div>
+    <div class="sm"><div class="L">A</div><h5>Achievable</h5><p>1.3N 的依據：KOL 粉絲總數 × 轉追蹤率估算（C 給數字，B 寫理由）</p></div>
     <div class="sm"><div class="L">R</div><h5>Relevant</h5><p>認知是購買漏斗第一關；不知道就不會進入比價清單</p></div>
     <div class="sm"><div class="L">T</div><h5>Time-bound</h5><p>規格書要求 3 個月；建議放 2027 Q1（含農曆年送禮檔期）</p></div>
   </div>
 </section>
 
-<!-- 08 TACTICS -->
+<!-- 09 TACTICS -->
 <section id="tactics">
-  <div class="sh"><span class="no">08</span><h2>策略 × Persona × 戰術評估</h2></div>
+  <div class="sh"><span class="no">09</span><h2>策略 × Persona × 戰術評估</h2></div>
   <p class="sub">老師：7P 選一個就好，底下多個 tactics，挑 1–2 個最核心的講。</p>
   <div class="p7"><span>Product</span><span>Price</span><span>Place</span><span class="on">★ Promotion</span><span>People</span><span>Process</span><span>Physical evidence</span></div>
   <p style="font-size:13.5px;margin:0 0 16px">為什麼是 Promotion：問題在「不知道」，不是產品不夠好（Product）、也不是太貴（官網已 2 折起＋30 天試用，Price 已經在打）。<span class="pill amb">B 講 · C 接</span></p>
@@ -934,7 +1057,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
           <li>現在用 1 台幾百塊的小米／Tapo，只能「看」</li>
           <li>痛點：吐了、打翻東西、亂叫，回家才發現</li>
           <li>資訊來源：IG Reels、Threads、Dcard 寵物板</li>
-          <li class="m">↳ 年齡／居住地／貓狗比例等問卷後再修 <span class="pill hyp">待驗證</span></li>
+          <li class="m">↳ 年齡／居住地／貓狗比例等訪談後再修 <span class="pill hyp">待驗證</span></li>
         </ul>
       </div>
     </div>
@@ -946,37 +1069,62 @@ footer .px{font-family:var(--px);color:var(--am-d)}
     </div>
   </div>
 
-  <h3 style="font-size:16px;margin:22px 0 10px">Tactic 評估表（§5：pros／cons／可行性 → 推薦）</h3>
+    <h3 style="font-size:16px;margin:22px 0 10px">§5 Tactic 評估（規格書：2–3 個、優缺點、四種可行性、推薦）</h3>
   <div class="scroll"><table class="tac">
-    <tr><th style="width:24%">Tactic</th><th>Pros</th><th>Cons</th><th>成本</th><th>可行性</th><th>結論</th></tr>
-    <tr class="pick"><td class="t"><b>T1 寵物微網紅 ×「毛孩留守日記」</b>8–10 位有養貓狗的 IG／Threads 網紅，用 Furbo 實拍「我不在家時牠在幹嘛」</td><td>內容真實、受眾精準；Furbo 警報影片＝現成素材</td><td>需篩選人選、管理多個合作</td><td><div class="dots"><i></i><i></i><i class="o"></i></div></td><td><div class="dots"><i></i><i></i><i></i></div></td><td><span class="pill ok">★ 核心</span></td></tr>
-    <tr class="pick"><td class="t"><b>T2 UGC 挑戰 #毛孩留守日記</b>用戶上傳 Furbo 拍到的瞬間，每月抽 Mini 360°</td><td>放大 T1 聲量、便宜、產生社群內容</td><td>新品牌冷啟動參與度低 → 要靠 T1 帶</td><td><div class="dots"><i></i><i class="o"></i><i class="o"></i></div></td><td><div class="dots"><i></i><i></i><i></i></div></td><td><span class="pill ok">★ 擴散</span></td></tr>
-    <tr><td class="t"><b>T3 明星代言</b>例：有養狗的藝人（老師舉蔡依林）</td><td>知名度最快</td><td>報價可能數十萬到百萬以上、3 個月 ROI 難回本</td><td><div class="dots"><i></i><i></i><i></i></div></td><td><div class="dots"><i></i><i class="o"></i><i class="o"></i></div></td><td><span class="pill hyp">不推薦</span></td></tr>
-    <tr><td class="t"><b>T4 寵物友善場域體驗</b>寵物旅館／動物醫院／寵物展借機體驗（參考日本 OMO 案例）</td><td>能「摸到」產品、有日本先例</td><td>談合作慢、單點觸及小</td><td><div class="dots"><i></i><i></i><i class="o"></i></div></td><td><div class="dots"><i></i><i></i><i class="o"></i></div></td><td><span class="pill amb">備案</span></td></tr>
+    <tr><th style="width:22%">Tactic</th><th>Pros</th><th>Cons</th><th>時間</th><th>人力</th><th>技術</th><th>財務</th><th>結論</th></tr>
+    <tr class="pick"><td class="t"><b>T1 寵物微網紅 ×「毛孩留守日記」</b>8–10 位有養貓狗的 IG／Threads 網紅，用 Furbo 實拍「我不在家時牠在幹嘛」；搭配 #毛孩留守日記 UGC 抽獎放大</td><td>內容真實、受眾精準；Nanny 警報影片＝現成素材</td><td>要篩人、管理多個合作</td><td>✓ 3 個月內可上線</td><td>✓ 1 人＋代理商</td><td>✓ 產品現成</td><td>✓ 約 NT$29 萬</td><td><span class="pill ok">★ 推薦</span></td></tr>
+    <tr><td class="t"><b>T2 明星代言</b>有養寵物的藝人（老師舉例：蔡依林有養狗）</td><td>認知度拉最快</td><td>報價可能數十萬到百萬以上；談約慢</td><td>△ 談約久</td><td>✓</td><td>✓</td><td>✕ 3 個月難回本</td><td><span class="pill hyp">不推薦</span></td></tr>
+    <tr><td class="t"><b>T3 寵物友善場域體驗</b>寵物旅館、動物醫院、寵物展借機體驗（Furbo 在日本與 OMO 飯店做過）</td><td>能摸到產品；有自家先例</td><td>單點觸及小；談合作慢</td><td>△</td><td>△ 要駐點</td><td>✓</td><td>△</td><td><span class="pill amb">第二階段</span></td></tr>
   </table></div>
-  <p class="m" style="font-size:13px;margin-top:8px">網紅行情參考：IG 追蹤 &lt;5 萬每篇約 NT$3,000–9,000；10 萬–百萬約 NT$1–10 萬；百萬以上可能數十萬。<a class="pill src" href="https://www.pro360.com.tw/price/instagram_advertorial">PRO360</a> C 再用媒合平台（如 KOL Radar、Influenxio）查實際人選＋報價，選「有養寵物」的人。</p>
+  <p class="m" style="font-size:13px;margin-top:8px">網紅行情：IG 追蹤 &lt;5 萬每篇約 NT$3,000–9,000；10 萬–百萬約 NT$1–10 萬；百萬以上可能數十萬。<a class="pill src" href="https://www.pro360.com.tw/price/instagram_advertorial">PRO360</a> C 再上媒合平台查實際人選＋報價，只選「有養寵物」的人。</p>
+
 </section>
 
-<!-- 09 PLAN -->
+<!-- 10 PLAN -->
 <section id="plan">
-  <div class="sh"><span class="no">09</span><h2>3 個月執行 × 預算 × 評估</h2></div>
+  <div class="sh"><span class="no">10</span><h2>3 個月執行 × 預算 × 評估</h2></div>
   <p class="sub">§6 要回答：做什麼／何時／誰／多少錢／要不要外包。§7 要回答：何時回本、里程碑、收什麼資料。</p>
   <div class="gantt">
     <div class="gr"><div></div><div class="mo" style="background:var(--C-l);color:var(--C)">M1 · 1 月 暖身</div><div class="mo" style="background:var(--am-l);color:var(--am-d)">M2 · 2 月 引爆</div><div class="mo" style="background:var(--A-l);color:var(--A)">M3 · 3 月 擴散＋驗收</div></div>
     <div class="gr hd"><div>活動</div><div>W1</div><div>W2</div><div>W3</div><div>W4</div><div>W5</div><div>W6</div><div>W7</div><div>W8</div><div>W9</div><div>W10</div><div>W11</div><div>W12</div></div>
-    <div class="gr"><div class="nm">前測問卷（baseline）</div><div class="bk" style="--c:var(--B);grid-column:2/4">前測</div></div>
+    <div class="gr"><div class="nm">品牌認知前測（公司做）</div><div class="bk" style="--c:var(--B);grid-column:2/4">前測</div></div>
     <div class="gr"><div class="nm">篩選＋簽約 KOL（媒合平台）</div><div class="bk" style="--c:var(--C);grid-column:2/5">選人・寄機</div></div>
     <div class="gr"><div class="nm">T1 KOL 留守日記內容上線</div><div class="bk" style="--c:var(--C);grid-column:5/12">每週 1–2 位 KOL 發文</div></div>
-    <div class="gr"><div class="nm">T2 UGC #毛孩留守日記</div><div class="bk" style="--c:var(--A);grid-column:6/13">每月抽獎</div></div>
+    <div class="gr"><div class="nm">T1 延伸：UGC #毛孩留守日記</div><div class="bk" style="--c:var(--A);grid-column:6/13">每月抽獎</div></div>
     <div class="gr"><div class="nm">Meta 廣告加熱表現最好的內容</div><div class="bk" style="--c:var(--am);grid-column:7/13">boost</div></div>
-    <div class="gr"><div class="nm">後測問卷＋成效報告</div><div class="bk" style="--c:var(--B);grid-column:12/14">後測</div></div>
+    <div class="gr"><div class="nm">品牌認知後測＋成效報告</div><div class="bk" style="--c:var(--B);grid-column:12/14">後測</div></div>
   </div>
 
   <div class="ms">
-    <div class="card"><div class="wk">CHECKPOINT · W4</div><h4>暖身完成</h4><p class="m">baseline 定案、KOL 簽滿 8 位、第一批內容排程</p></div>
+    <div class="card"><div class="wk">CHECKPOINT · W4</div><h4>暖身完成</h4><p class="m">IG 起點 N 與前測完成、KOL 簽滿 8 位、第一批內容排程</p></div>
     <div class="card"><div class="wk">CHECKPOINT · W8</div><h4>期中檢查</h4><p class="m">IG 追蹤達 1.15N？沒到 → 把預算轉給互動最高的 KOL 類型</p></div>
     <div class="card"><div class="wk">CHECKPOINT · W12</div><h4>驗收</h4><p class="m">後測認知度、追蹤數、UTM 流量、售出台數 vs. O1–O3</p></div>
   </div>
+  <div class="grid g2" style="margin-top:14px">
+    <div class="card">
+      <h4>§6 誰來做？要招人還是外包？</h4>
+      <table class="bud">
+        <tr><th>角色</th><th>做什麼</th><th>內部／外部</th></tr>
+        <tr><td>台灣社群行銷 1 人</td><td>總控、內容審核、UGC 抽獎</td><td>內部（現有人力兼任）</td></tr>
+        <tr><td>KOL 代理商／媒合平台</td><td>找人、議價、合約、成效報表</td><td>外包</td></tr>
+        <tr><td>影片剪輯</td><td>把 KOL 素材剪成廣告版</td><td>外包（按件）</td></tr>
+        <tr><td>數據分析</td><td>UTM、IG Insights、前後測</td><td>內部</td></tr>
+      </table>
+      <p class="m" style="font-size:12.5px;margin-top:6px">結論：<b>不需新招正職</b>，外包代理商＋剪輯即可（規格書要明講）。</p>
+    </div>
+    <div class="card">
+      <h4>§6 通路適合度（規格書：assess suitability）</h4>
+      <table class="bud">
+        <tr><th>通路</th><th>對 S1 貓奴</th><th>用途</th></tr>
+        <tr><td>IG Reels</td><td class="dots"><i></i><i></i><i></i></td><td>KOL 主戰場、O1 指標</td></tr>
+        <tr><td>Threads</td><td class="dots"><i></i><i></i><i class="o"></i></td><td>話題擴散、UGC</td></tr>
+        <tr><td>Dcard 寵物板</td><td class="dots"><i></i><i></i><i class="o"></i></td><td>比價決策點，口碑文</td></tr>
+        <tr><td>YouTube</td><td class="dots"><i></i><i class="o"></i><i class="o"></i></td><td>長開箱，成本高</td></tr>
+        <tr><td>FB 社團</td><td class="dots"><i></i><i class="o"></i><i class="o"></i></td><td>社團口碑、年齡層偏高</td></tr>
+      </table>
+    </div>
+  </div>
+
 
   <div class="grid g2" style="margin-top:14px">
     <div class="card">
@@ -987,81 +1135,83 @@ footer .px{font-family:var(--px);color:var(--am-d)}
         <tr><td>中型網紅（10–50 萬）</td><td>2 位 × 60,000</td><td class="n">120,000</td></tr>
         <tr><td>Meta 廣告加熱</td><td>6 週</td><td class="n">90,000</td></tr>
         <tr><td>寄測機台＋UGC 獎品</td><td>以公司成本計</td><td class="n blank" style="border:0">待查</td></tr>
-        <tr><td>問卷＋素材剪輯</td><td>內部／外包</td><td class="n">30,000</td></tr>
+        <tr><td>前後測調查＋素材剪輯</td><td>內部／外包</td><td class="n">30,000</td></tr>
         <tr class="tot"><td>合計（不含機台）</td><td></td><td class="n">≈ 288,000</td></tr>
       </table>
       <p class="m" style="font-size:12.5px;margin-top:6px">人力：品牌社群 1 人兼任＋外包剪輯；KOL 媒合可外包給代理商（要寫進 §6）。</p>
     </div>
     <div class="card">
-      <h4>Break-even（§7）</h4>
-      <div class="be">回本台數 = <em>活動總成本</em> ÷ ( <em>每台硬體毛利</em> + <em>Nanny 首年訂閱收入 × 訂閱率</em> )</div>
-      <p class="m" style="font-size:13px;margin-top:10px">要填的數字：台灣售價（官網／momo）、合理毛利假設、Nanny 台灣價格、訂閱率假設。全部標「assumption」＋出處。</p>
-      <h4 style="margin-top:12px">要收的資料</h4>
-      <p style="font-size:13px">前後測問卷（認知度）・IG Insights（追蹤、觸及、互動）・UTM／GA（流量）・抽獎參與數・售出台數＆試用開通數</p>
+      <h4>§7 什麼時候回本？（可調參數）</h4>
+      <div class="calc">
+        <label>活動總成本 NT$<input type="number" id="c_cost" value="288000"></label>
+        <label>每台硬體毛利 NT$<input type="number" id="c_mg" value="1500"></label>
+        <label>Nanny 首年年費 NT$<input type="number" id="c_nn" value="1840"></label>
+        <label>買機後訂閱率 %<input type="number" id="c_sr" value="30"></label>
+        <label>活動帶來每月新增台數<input type="number" id="c_u" value="60"></label>
+      </div>
+      <div class="be" id="c_out"></div>
+      <p class="m" style="font-size:12px;margin-top:6px">預設值是<b>示範假設</b>（只有 Nanny 年費來自官網），C 要換成有出處或合理推估的數字，報告標 assumption。</p>
+      <h4 style="margin-top:12px">§7 要收的資料 → 怎麼用</h4>
+      <table class="bud">
+        <tr><td>IG 追蹤數</td><td>O1 有沒有到 1.3N</td></tr>
+        <tr><td>前後測調查（活動內）</td><td>O2 認知度有沒有 +15pp</td></tr>
+        <tr><td>IG Insights</td><td>觸及、互動；W8 調整 KOL</td></tr>
+        <tr><td>UTM／網站分析</td><td>哪個 KOL 帶最多流量</td></tr>
+        <tr><td>售出台數、Nanny 開通</td><td>O3、算回本</td></tr>
+        <tr><td>留言／私訊回饋</td><td>質化：大家記住了什麼</td></tr>
+      </table>
     </div>
   </div>
 </section>
 
-<!-- 10 FIELD -->
+<!-- 11 FIELD -->
 <section id="field">
-  <div class="sh"><span class="no">10</span><h2>證據怎麼來：問卷為主、飼主快聊為輔</h2></div>
-  <p class="sub">時間不夠就不訪公司（本來也不需要）。老師要的是「消費者為什麼不知道」，所以重點是飼主。三種來源疊起來就夠撐 §2.1。</p>
-  <div class="grid g3">
-    <div class="card" style="border-top:4px solid var(--B)">
-      <div class="pill amb">主力 · 小魚設計・全員轉發</div>
-      <h4 style="margin-top:6px">① 線上問卷（拿 baseline）</h4>
-      <p>Google Form 5 分鐘，丟寵物 FB 社團、Dcard 寵物板、LINE 群、IG 限動。目標 ≥ 60 份飼主。</p>
-      <p class="m" style="margin-top:6px;font-size:12.5px">產出：提示認知度 X%（＝O1 起點）、大家想到哪些牌子、資訊從哪來</p>
-    </div>
+  <div class="sh"><span class="no">11</span><h2>調研：私下訪問幾位寵物飼主就好</h2></div>
+  <p class="sub">不做問卷、不訪公司。老師要的是「消費者為什麼不知道這個品牌」，5–6 位飼主的真實回答＋小魚的第一手使用經驗，就足夠撐 §2.1；數字面用公開資料（<a href="#intel">05</a>）。</p>
+  <div class="grid g2">
     <div class="card" style="border-top:4px solid var(--C)">
-      <div class="pill amb">輕量 · 全員</div>
-      <h4 style="margin-top:6px">② 飼主朋友 10 分鐘快聊</h4>
-      <p>每人找 1–2 位有養貓狗的朋友，用下面 5 題聊、LINE 語音也行。共 4–6 位就夠。</p>
-      <p class="m" style="margin-top:6px;font-size:12.5px">產出：2–3 句可以直接放投影片的原話</p>
+      <div class="pill amb">全員 · 每人 1–2 位</div>
+      <h4 style="margin-top:6px">飼主訪談（共 5–6 位）</h4>
+      <p>找身邊有養貓狗的朋友，10–15 分鐘、LINE 語音也行。盡量貓狗都有、最好有人正在用小米／Tapo。</p>
+      <p class="m" style="margin-top:6px;font-size:12.5px">產出：每人一句可以直接放投影片的原話 → 交給小魚整理</p>
     </div>
     <div class="card" style="border-top:4px solid var(--A)">
-      <div class="pill amb">第一手 · 小魚</div>
-      <h4 style="margin-top:6px">③ 飼主＋前實習生使用觀察</h4>
-      <p>自己養貓、手上有產品：寫一份「一週使用日記」——哪些警報有用、哪些很煩、跟朋友推薦時大家第一個問題是什麼。</p>
+      <div class="pill amb">小魚 · 第一手</div>
+      <h4 style="margin-top:6px">飼主＋前實習生使用觀察</h4>
+      <p>自己養貓、手上有產品：寫一份「一週使用日記」——哪些警報有用、哪些很煩、推薦給朋友時大家第一個問題是什麼。</p>
       <p class="m" style="margin-top:6px;font-size:12.5px">⚠ 只寫已上市功能與個人體驗，不寫內部資料</p>
     </div>
   </div>
-
   <div class="grid g2" style="margin-top:16px">
     <div>
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><b>飼主快聊 5 題（照老師的問題串）</b><button class="copy" data-copy="guide">COPY</button></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><b>訪談 5 題（照老師的問題串）</b><button class="copy" data-copy="guide">COPY</button></div>
       <div class="grid" style="gap:8px" id="guide">
         <div class="iv"><span class="n">1</span><div><h4>你養什麼？白天牠通常自己在家幾小時？</h4><p>→ 區隔變數（貓／狗、獨留時數）</p></div></div>
-        <div class="iv"><span class="n">2</span><div><h4>想到寵物攝影機，你會想到哪些牌子？現在用哪台？</h4><p>→ 未提示認知＋替代品</p></div></div>
-        <div class="iv"><span class="n">3</span><div><h4>（給看 Furbo）你聽過嗎？在哪看過？</h4><p>→ 提示認知＋接觸管道</p></div></div>
+        <div class="iv"><span class="n">2</span><div><h4>想到寵物攝影機，你會想到哪些牌子？現在用哪台？</h4><p>→ 品牌認知＋替代品</p></div></div>
+        <div class="iv"><span class="n">3</span><div><h4>（給看 Furbo）你聽過嗎？在哪看過？</h4><p>→ 有沒有聽過＋接觸管道</p></div></div>
         <div class="iv"><span class="n">4</span><div><h4>沒買的原因？不需要，還是覺得別牌更好？為什麼更好？</h4><p>→ 驗證 H1–H4（老師原話）</p></div></div>
         <div class="iv"><span class="n">5</span><div><h4>如果牠吐了、一直叫，手機會跳警報影片，你願意每月付多少？</h4><p>→ AI 服務價值認知（原 RQ2）</p></div></div>
       </div>
     </div>
-    <div>
-      <div class="card" style="border-color:var(--B)">
-        <h4>問卷題目骨架（小魚做表單）</h4>
-        <ul style="font-size:13.5px;padding-left:18px;margin:6px 0">
-          <li>篩選：有養貓／狗、居住縣市、年齡</li>
-          <li>未提示認知：「寵物攝影機你想到哪些牌子？」（開放題，<b>放在 logo 之前</b>）</li>
-          <li>提示認知：Furbo／小米／Tapo／Ebo／Petcube，勾「聽過」</li>
-          <li>現況：有沒有在用寵物攝影機？哪一牌？為什麼選它？</li>
-          <li>資訊管道：IG／Threads／YouTube／Dcard／朋友</li>
-          <li>願付價格：AI 警報服務每月願付 NT$0／100／200／300+</li>
-        </ul>
-        <p class="m" style="font-size:12.5px">報告要寫樣本數與限制（便利抽樣）。結果給 B 當 SMART 起點。</p>
-      </div>
-      <div class="card" style="margin-top:12px">
-        <h4>紀錄格式</h4>
-        <p style="font-size:13.5px">受訪者代號（P1…）・貓／狗・年齡層・5 題重點・<b>一句可直接引用的原話</b></p>
-      </div>
+    <div class="card">
+      <h4>紀錄格式（一人一列丟群組）</h4>
+      <table class="bud">
+        <tr><th>欄位</th><th>例</th></tr>
+        <tr><td>代號</td><td>P1</td></tr>
+        <tr><td>貓／狗、幾隻</td><td>貓 ×2</td></tr>
+        <tr><td>年齡層、居住地</td><td>20 代後半、台北套房</td></tr>
+        <tr><td>聽過 Furbo？</td><td>沒有／有（在哪）</td></tr>
+        <tr><td>現在用什麼</td><td>小米，因為便宜</td></tr>
+        <tr><td><b>一句原話</b></td><td>「我以為那種只是監視器」</td></tr>
+      </table>
+      <p class="m" style="font-size:12.5px;margin-top:6px">報告寫明：質化訪談、樣本少（n≈6）、便利抽樣，作為佐證不作推論。</p>
     </div>
   </div>
 </section>
 
-<!-- 11 REQ -->
+<!-- 12 REQ -->
 <section id="req">
-  <div class="sh"><span class="no">11</span><h2>交件前 checklist（對照老師規格書）</h2></div>
+  <div class="sh"><span class="no">12</span><h2>交件前 checklist（對照老師規格書）</h2></div>
   <p class="sub">這段不是分工（分工看 <a href="#team">01</a>），是繳交前逐條打勾用的。括號是報告章節。</p>
   <div class="grid g2">
     <div class="card"><h4>📝 書面內容（12/17）</h4><ul class="ck">
@@ -1099,28 +1249,10 @@ footer .px{font-family:var(--px);color:var(--am-d)}
   </div>
 </section>
 
-<!-- 12 TODO -->
+<!-- 13 TODO -->
 <section id="todo">
-  <div class="sh"><span class="no">12</span><h2>待確認清單＆題目候選</h2></div>
-  <div class="grid g2">
-    <div class="card"><ul class="ck">
-      <li><span class="bx"></span><span><b>市場：台灣 or 美國？</b>本頁建議台灣（能直接問台灣飼主、老師暗示、貓超車狗是好故事）。若維持美國，§2.1 改成次級資料、O1 改用 Google Trends／社群聲量</span></li>
-            <li><span class="bx"></span><span>A＝小魚；B／C／D 誰認領？（建議：D 給英文寫作最穩的人）</span></li>
-      <li><span class="bx"></span><span>IG／FB 現在的追蹤數（截圖＋日期）<span class="p pB mini"><b>B</b>B</span></span></li>
-      <li><span class="bx"></span><span>台灣相機售價、通路（官網／momo／PChome）；台灣版 Nanny 實際開放的警報種類 <span class="p pA mini"><b>A</b>小魚</span></span></li>
-      <li><span class="bx"></span><span>3 位候選 KOL＋實際報價（有養寵物）<span class="p pC mini"><b>C</b>C</span></span></li>
-      <li><span class="bx"></span><span>Appendix 算不算在 12 頁內？報告／簡報用英文？→ 問老師 <span class="p pD mini"><b>D</b>D</span></span></li>
-    </ul></div>
-    <div>
-      <div class="titles">
-        <div class="tt"><span class="n">1</span><div><b>Born in Taiwan, Unknown at Home</b><small>台灣做的全球第一，台灣人卻不認識</small></div></div>
-        <div class="tt"><span class="n">2</span><div><b>While You're Away: Making Furbo Seen</b><small>呼應「留守日記」tactic</small></div></div>
-        <div class="tt"><span class="n">3</span><div><b>From "Dog Camera" to Every Pet Parent's Peace of Mind</b><small>呼應貓超車狗＋價值主張</small></div></div>
-      </div>
-    </div>
-  </div>
-
-  <h3 style="font-size:15px;margin:24px 0 8px">本頁資料來源</h3>
+  <div class="sh"><span class="no">13</span><h2>本頁資料來源</h2></div>
+  <p class="sub">D 轉 APA 時從這裡開始；其他人新增資料記得附 URL＋日期。</p>
   <div class="refs">
     <a href="https://www.bnext.com.tw/article/72985/tomofun-ai-dec-22-mag">數位時代：Tomofun 訂閱制、133 國、百萬用戶</a>
     <a href="https://furbo.com/llms.txt">Furbo 官方：產品線與 Nanny 說明</a>
@@ -1140,7 +1272,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
 </section>
 
 </div>
-<footer><div class="px">● REC STOPPED · THANK YOU</div>TMKT Final Project · Tomofun / Furbo · 分工頁 v5（2026/11/19・分工置頂、規格改 checklist）</footer>
+<footer><div class="px">● REC STOPPED · THANK YOU</div>TMKT Final Project · Tomofun / Furbo · 分工頁 v7（2026/11/19）</footer>
 
 <script>
 document.querySelectorAll('.copy').forEach(function(b){
@@ -1150,6 +1282,19 @@ document.querySelectorAll('.copy').forEach(function(b){
     try{navigator.clipboard.writeText(t).then(function(){b.textContent='COPIED ✓';setTimeout(function(){b.textContent='COPY'},1500)},function(){b.textContent='請手動複製'})}catch(e){b.textContent='請手動複製'}
   });
 });
+
+(function(){
+  var ids=['c_cost','c_mg','c_nn','c_sr','c_u'];
+  function f(){
+    var v=ids.map(function(i){return parseFloat(document.getElementById(i).value)||0});
+    var per=v[1]+v[2]*v[3]/100, out=document.getElementById('c_out');
+    if(per<=0||v[4]<=0){out.innerHTML='請填入正數';return}
+    var units=Math.ceil(v[0]/per), m=units/v[4];
+    out.innerHTML='每台貢獻 = '+v[1].toLocaleString()+' + '+v[2].toLocaleString()+' × '+v[3]+'% = <em>NT$'+Math.round(per).toLocaleString()+'</em><br>回本台數 = '+v[0].toLocaleString()+' ÷ '+Math.round(per).toLocaleString()+' = <em>'+units+' 台</em><br>回本時間 ≈ <em>'+(m<=3?'第 '+Math.ceil(m)+' 個月（活動期內）':m.toFixed(1)+' 個月（超出 3 個月活動期）')+'</em>';
+  }
+  ids.forEach(function(i){var e=document.getElementById(i);if(e)e.addEventListener('input',f)});
+  if(document.getElementById('c_out'))f();
+})();
 </script>
 </body>
 </html>
