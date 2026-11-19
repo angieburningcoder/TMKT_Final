@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TMKT Final｜Furbo 期末分工</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#3a3330; --mute:#8c8079; --line:#efe3d7;
+  --bg:#fffaf4; --grid:#f6ebdf;
+  --am:#e6a23c; --am-d:#c27f17; --am-l:#fdf1dc;
+  --rec:#e5604f; --rec-l:#fde9e5;
+  --A:#e98973; --B:#e0a03a; --C:#4fa3a5; --D:#8f8ad8;
+  --A-l:#fcebe6; --B-l:#fcf1dc; --C-l:#e3f2f2; --D-l:#eeedfb;
+  --px:"Silkscreen",monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;font-family:"Noto Sans TC",system-ui,sans-serif;color:var(--ink);line-height:1.7;font-size:15px;
+  background-color:var(--bg);
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:28px 28px}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* nav */
+nav.top{position:sticky;top:0;z-index:20;background:rgba(255,250,244,.93);backdrop-filter:blur(10px);border-bottom:2px solid var(--am-l)}
+nav .row{display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding:7px 0}
+nav .row+.row{padding-top:0}
+nav .lbl{font-family:var(--px);font-size:11px;color:var(--am-d);width:64px;flex:none}
+.tag{text-decoration:none;font-size:13px;padding:2px 11px;border:1.5px solid var(--am-l);background:#fff;border-radius:6px;white-space:nowrap;transition:.15s}
+.tag:hover{border-color:var(--am);color:var(--am-d);transform:translateY(-1px)}
+.p{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:13px;font-weight:700;padding:3px 11px 3px 3px;border-radius:6px;color:#fff;background:var(--c);white-space:nowrap;transition:.15s}
+.p b{font-family:var(--px);display:inline-grid;place-items:center;width:20px;height:20px;border-radius:4px;background:rgba(255,255,255,.3);font-size:12px}
+.p:hover{transform:translateY(-1px)}
+.pA{--c:var(--A)}.pB{--c:var(--B)}.pC{--c:var(--C)}.pD{--c:var(--D)}
+.mini{font-size:11px;padding:1px 8px 1px 2px;gap:4px}.mini b{width:16px;height:16px;font-size:10px}
+
+/* camera window */
+.win{background:#fff;border:2px solid var(--ink);border-radius:12px;box-shadow:6px 6px 0 var(--am-l);overflow:hidden}
+.win .bar{display:flex;align-items:center;gap:8px;padding:7px 14px;background:var(--ink);color:#fff;font-family:var(--px);font-size:12px}
+.win .bar .dot{width:10px;height:10px;border-radius:50%;background:var(--rec);animation:blink 1.4s infinite}
+.win .bar .r{margin-left:auto;opacity:.75}
+@keyframes blink{50%{opacity:.25}}
+.win .body{padding:22px 24px;position:relative}
+
+/* hero */
+.hero{padding:34px 0 6px}
+.hero .body{padding:34px 34px 30px;background:
+  linear-gradient(var(--ink),var(--ink)) left 14px top 14px/22px 3px no-repeat,
+  linear-gradient(var(--ink),var(--ink)) left 14px top 14px/3px 22px no-repeat,
+  linear-gradient(var(--ink),var(--ink)) right 14px top 14px/22px 3px no-repeat,
+  linear-gradient(var(--ink),var(--ink)) right 14px top 14px/3px 22px no-repeat,
+  linear-gradient(var(--ink),var(--ink)) left 14px bottom 14px/22px 3px no-repeat,
+  linear-gradient(var(--ink),var(--ink)) left 14px bottom 14px/3px 22px no-repeat,
+  linear-gradient(var(--ink),var(--ink)) right 14px bottom 14px/22px 3px no-repeat,
+  linear-gradient(var(--ink),var(--ink)) right 14px bottom 14px/3px 22px no-repeat,#fff}
+.course{font-family:var(--px);font-size:12px;color:var(--am-d);letter-spacing:.05em}
+.big{font-family:var(--px);font-size:60px;line-height:1;color:var(--ink);margin:12px 0 2px;text-shadow:4px 4px 0 var(--am-l)}
+.big span{color:var(--am)}
+h1{font-size:27px;margin:16px 0 6px;line-height:1.4}
+.q{color:var(--rec);font-weight:700;font-size:15.5px}
+.metaline{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;font-size:13px}
+.metaline span{padding:3px 10px;border-radius:6px;background:var(--am-l);color:var(--am-d)}
+.metaline .hot{background:var(--rec-l);color:var(--rec);font-weight:700}
+@media(max-width:700px){.big{font-size:40px}h1{font-size:21px}}
+
+/* sections */
+section{padding:46px 0 6px}
+.sh{display:flex;align-items:baseline;gap:12px;margin-bottom:2px}
+.sh .no{font-family:var(--px);font-size:13px;color:#fff;background:var(--ink);padding:2px 8px;border-radius:4px}
+h2{font-size:23px;margin:0}
+.sub{color:var(--mute);margin:2px 0 18px;font-size:14px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:860px){.g4{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:1fr}}
+@media(max-width:560px){.g2,.g4{grid-template-columns:1fr}}
+.card{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:14px 16px}
+.card h4{margin:0 0 4px;font-size:15px}
+.card p{margin:0;font-size:13.5px}
+.m{color:var(--mute)}
+.pill{display:inline-block;font-size:11px;border-radius:5px;padding:0 7px;margin:0 4px 2px 0;font-weight:700;white-space:nowrap}
+.src{background:#f4efea;color:var(--mute);font-weight:500;text-decoration:none}
+a.src:hover{color:var(--am-d)}
+.hyp{background:var(--rec-l);color:var(--rec)}
+.ok{background:var(--C-l);color:var(--C)}
+.amb{background:var(--am-l);color:var(--am-d)}
+.callout{display:flex;gap:16px;align-items:center;margin-top:16px;background:var(--am-l);border:2px dashed var(--am);border-radius:10px;padding:12px 18px}
+.callout .x{font-family:var(--px);font-size:30px;color:var(--am-d);line-height:1;flex:none}
+.callout p{margin:0;font-size:14px}
+.callout.red{background:var(--rec-l);border-color:var(--rec)}
+.callout.red .x{color:var(--rec)}
+
+/* 01 before-after */
+.ba{display:grid;grid-template-columns:1fr 54px 1fr;gap:10px;align-items:stretch}
+.ba .arrow{display:grid;place-items:center;font-family:var(--px);font-size:26px;color:var(--am)}
+.ba .col{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:14px 16px}
+.ba .col h4{margin:0 0 8px;font-family:var(--px);font-size:12px;letter-spacing:.04em}
+.rqrow{display:grid;grid-template-columns:62px 1fr;gap:8px;padding:7px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.rqrow:last-child{border-bottom:0}
+.rqrow .k{font-family:var(--px);font-size:11px;color:#fff;background:var(--mute);border-radius:4px;text-align:center;height:20px;line-height:20px}
+.rqrow .k.core{background:var(--rec)}
+s{color:var(--mute)}
+@media(max-width:760px){.ba{grid-template-columns:1fr}.ba .arrow{transform:rotate(90deg);height:30px}}
+.tips{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.tips li{display:grid;grid-template-columns:28px 1fr;gap:10px;font-size:14px;background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:8px 12px}
+.tips li .n{font-family:var(--px);width:24px;height:24px;border-radius:5px;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:11px}
+
+/* 02 checklist */
+table.req{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1.5px solid var(--line);border-radius:10px;overflow:hidden;font-size:13.5px}
+table.req th{background:var(--ink);color:#fff;font-weight:500;font-size:12px;text-align:left;padding:8px 12px}
+table.req td{padding:8px 12px;border-top:1px solid var(--line);vertical-align:top}
+table.req td.no{font-family:var(--px);font-size:12px;color:var(--am-d);white-space:nowrap}
+table.req tr.grp td{background:#fbf6f0;font-weight:700;font-size:12.5px;color:var(--mute)}
+.who{white-space:nowrap}
+
+/* 03 storyline flow */
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:28px 22px;position:relative}
+.fs{position:relative;background:#fff;border:2px solid var(--c);border-radius:10px;padding:10px 12px 12px;box-shadow:4px 4px 0 var(--cl)}
+.fs .st{font-family:var(--px);font-size:11px;color:var(--c)}
+.fs h4{margin:0 0 2px;font-size:15px}
+.fs p{margin:0;font-size:12.8px;color:var(--mute);line-height:1.55}
+.fs .sec{position:absolute;top:8px;right:10px}
+.fs:after{content:"▶";position:absolute;right:-18px;top:42%;color:var(--am);font-size:13px}
+.fs.last:after,.fs.rowend:after{content:""}
+.fA{--c:var(--A);--cl:var(--A-l)}.fB{--c:var(--B);--cl:var(--B-l)}.fC{--c:var(--C);--cl:var(--C-l)}
+@media(max-width:860px){.flow{grid-template-columns:1fr 1fr}.fs:after{content:""}}
+.thread{margin-top:18px;background:#fff;border:2px solid var(--ink);border-radius:10px;padding:12px 16px;display:flex;gap:14px;align-items:center}
+.thread .t{font-family:var(--px);font-size:11px;background:var(--ink);color:#fff;border-radius:4px;padding:2px 8px;flex:none}
+.thread p{margin:0;font-weight:700}
+
+/* 04 dossier */
+.num{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column}
+.num .v{font-family:var(--px);font-size:28px;line-height:1.1;color:var(--ink)}
+.num .v small{font-size:14px}
+.num .l{font-size:13px;margin:4px 0 8px;flex:1}
+.num .f{display:flex;flex-wrap:wrap;gap:4px;align-items:center}
+.bars{display:grid;gap:8px;margin-top:4px}
+.br{display:grid;grid-template-columns:120px 1fr 70px;gap:10px;align-items:center;font-size:13px}
+.br .tr{height:18px;background:#f4efea;border-radius:4px;overflow:hidden}
+.br .fl{height:100%;border-radius:4px;background:var(--c)}
+.br .v{font-family:var(--px);font-size:12px;text-align:right;color:var(--mute)}
+.news{display:grid;gap:8px}
+.nw{display:grid;grid-template-columns:86px 1fr;gap:12px;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:10px 14px;font-size:13.5px}
+.nw .d{font-family:var(--px);font-size:12px;color:var(--am-d)}
+.nw b{display:block;font-size:14px}
+.so{font-size:13px;color:var(--rec);font-weight:700}
+
+/* 05 problem tree */
+.tree svg{width:100%;height:auto;display:block}
+
+/* 06 SMART */
+.smart{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.sm{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;font-size:13px}
+.sm .L{font-family:var(--px);font-size:24px;color:var(--B);line-height:1}
+.sm h5{margin:2px 0 4px;font-size:13.5px}
+.sm p{margin:0;color:var(--mute);line-height:1.55}
+@media(max-width:860px){.smart{grid-template-columns:1fr 1fr}}
+.obj{display:grid;grid-template-columns:54px 1fr;gap:14px;align-items:start;background:#fff;border:2px solid var(--B);border-radius:10px;padding:12px 16px;box-shadow:4px 4px 0 var(--B-l)}
+.obj .k{font-family:var(--px);font-size:14px;color:#fff;background:var(--B);border-radius:6px;text-align:center;padding:6px 0}
+.obj h4{margin:0;font-size:15.5px}
+.obj p{margin:3px 0 0;font-size:13.5px;color:var(--mute)}
+.blank{display:inline-block;min-width:38px;border-bottom:2px solid var(--rec);color:var(--rec);font-family:var(--px);font-size:12px;text-align:center;padding:0 3px}
+
+/* 07 7P + tactics */
+.p7{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.p7 span{font-family:var(--px);font-size:12px;border:2px solid var(--line);border-radius:6px;padding:6px 12px;background:#fff;color:var(--mute)}
+.p7 span.on{border-color:var(--C);background:var(--C);color:#fff;box-shadow:3px 3px 0 var(--C-l)}
+.persona{display:grid;grid-template-columns:110px 1fr;gap:16px;background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:14px 16px}
+.persona .av{width:110px;height:110px;border-radius:12px;background:var(--C-l);display:grid;place-items:center}
+.persona h4{margin:0;font-size:16px}
+.persona ul{margin:6px 0 0;padding-left:18px;font-size:13.5px}
+table.tac{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border:1.5px solid var(--line);border-radius:10px;overflow:hidden;font-size:13px}
+table.tac th{background:var(--C);color:#fff;font-weight:500;font-size:12px;padding:8px 10px;text-align:left}
+table.tac td{padding:9px 10px;border-top:1px solid var(--line);vertical-align:top}
+table.tac tr.pick td{background:#f3fafa}
+table.tac td.t b{display:block;font-size:14px}
+.dots i{display:inline-block;width:10px;height:10px;border-radius:2px;background:var(--C);margin-right:2px}
+.dots i.o{background:#e7e0d9}
+.scroll{overflow-x:auto}
+
+/* 08 gantt */
+.gantt{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:14px 16px;font-size:13px;overflow-x:auto}
+.gr{display:grid;grid-template-columns:190px repeat(12,1fr);align-items:center;min-width:720px}
+.gr.hd div{font-family:var(--px);font-size:10.5px;color:var(--mute);text-align:center;padding-bottom:4px}
+.gr.hd div:first-child{text-align:left}
+.gr .nm{padding:5px 8px 5px 0;font-size:13px}
+.gr .bk{height:20px;border-radius:4px;background:var(--c);margin:3px 1px;color:#fff;font-size:10.5px;display:flex;align-items:center;padding-left:6px;white-space:nowrap;overflow:hidden}
+.gr .mo{grid-column:span 4;text-align:center;font-weight:700;font-size:12.5px;padding:4px 0;border-radius:4px;margin:0 1px}
+.ms{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.ms .card{border-top:4px solid var(--C)}
+.ms .wk{font-family:var(--px);font-size:12px;color:var(--C)}
+.be{font-family:var(--px);font-size:14px;background:var(--ink);color:#fff;border-radius:8px;padding:12px 16px;line-height:1.8;overflow-x:auto;white-space:nowrap}
+.be em{font-style:normal;color:var(--am)}
+table.bud{width:100%;border-collapse:collapse;font-size:13px;background:#fff}
+table.bud td,table.bud th{padding:6px 10px;border-bottom:1px solid var(--line);text-align:left}
+table.bud th{font-size:12px;color:var(--mute);font-weight:500}
+table.bud td.n{text-align:right;font-family:var(--px);font-size:12px}
+table.bud tr.tot td{font-weight:700;border-top:2px solid var(--ink)}
+
+/* 09 team */
+.stack{display:flex;height:48px;border-radius:8px;overflow:hidden;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--am-l)}
+.stack a{background:var(--c);display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-size:12px;font-weight:700;border-right:2px solid #fff;min-width:0;overflow:hidden;white-space:nowrap}
+.stack a:last-child{border-right:0}
+.stack a.gap{background:repeating-linear-gradient(45deg,#fff,#fff 5px,var(--am-l) 5px,var(--am-l) 10px);color:var(--mute)}
+.ticks{display:flex;justify-content:space-between;font-family:var(--px);font-size:10px;color:var(--mute);margin:6px 2px 18px}
+.person{border:2px solid var(--line);border-top:0;border-radius:10px;overflow:hidden;background:#fff;scroll-margin-top:120px;transition:.2s;display:flex;flex-direction:column}
+.person .ph{background:var(--c);color:#fff;padding:10px 14px;display:flex;align-items:center;gap:10px}
+.person .ph .L{font-family:var(--px);font-size:24px;width:38px;height:38px;display:grid;place-items:center;background:rgba(255,255,255,.25);border-radius:6px}
+.person .ph h3{margin:0;font-size:16px}
+.person .ph .w{font-size:12px;opacity:.92}
+.person .ph .claim{margin-left:auto;font-size:12px;background:rgba(255,255,255,.92);color:var(--ink);border-radius:5px;padding:2px 10px;min-width:70px;text-align:center}
+.person .pb{padding:10px 14px 14px;flex:1}
+.blk{margin-top:8px}
+.blk .h{font-family:var(--px);font-size:11px;color:var(--c);letter-spacing:.04em}
+.blk ul{margin:1px 0 0;padding-left:18px;font-size:13.5px}
+.blk li{margin:2px 0}
+.hand{margin-top:10px;font-size:13px;background:var(--cl);border-left:3px solid var(--c);padding:6px 10px;border-radius:0 6px 6px 0}
+.person:target{box-shadow:0 0 0 3px var(--c)}
+.rows{display:grid;gap:7px}
+.r{display:grid;grid-template-columns:220px 1fr 54px 60px;gap:12px;align-items:center;font-size:13.5px}
+.r .track{height:14px;background:#f4efea;border-radius:4px;overflow:hidden}
+.r .fill{height:100%;background:var(--c);border-radius:4px}
+.r .v{font-family:var(--px);font-size:12px;color:var(--mute);text-align:right}
+@media(max-width:620px){.r{grid-template-columns:120px 1fr 40px 50px}}
+
+/* 10 interview */
+.iv{display:grid;grid-template-columns:34px 1fr;gap:12px;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:10px 14px}
+.iv .n{font-family:var(--px);width:30px;height:30px;border-radius:6px;background:var(--rec-l);color:var(--rec);display:grid;place-items:center}
+.iv h4{margin:0;font-size:14.5px}
+.iv p{margin:2px 0 0;font-size:13px;color:var(--mute)}
+.copy{font-family:var(--px);font-size:11px;border:2px solid var(--ink);background:#fff;border-radius:6px;padding:4px 10px;cursor:pointer}
+.copy:hover{background:var(--am-l)}
+
+/* 11 timeline */
+.tl{position:relative;padding-left:4px}
+.tl:before{content:"";position:absolute;left:92px;top:8px;bottom:8px;width:2px;background:var(--am-l)}
+.ti{display:grid;grid-template-columns:76px 22px 1fr;gap:10px;align-items:start;padding:5px 0}
+.ti .d{font-family:var(--px);font-size:13px;text-align:right;color:var(--am-d);padding-top:1px}
+.ti .mk{width:14px;height:14px;margin:5px 0 0 3px;border:2.5px solid var(--am);background:#fff;border-radius:3px;position:relative;z-index:1}
+.ti.dl .mk{background:var(--rec);border-color:var(--rec)}
+.ti.dl .d{color:var(--rec)}
+.ti .x{font-size:14px}
+.ti.dl .x b{color:var(--rec)}
+.ti.now .mk{background:var(--am)}
+
+/* 12 todo */
+.ck{list-style:none;padding:0;margin:0}
+.ck li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.ck li:last-child{border-bottom:0}
+.ck .bx{flex:none;width:16px;height:16px;border:2px solid var(--ink);border-radius:3px;margin-top:4px}
+.titles{display:grid;gap:10px}
+.tt{display:flex;gap:12px;align-items:center;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:10px 14px}
+.tt .n{font-family:var(--px);color:var(--rec);font-size:18px}
+.tt b{font-size:15px}
+.tt small{display:block;color:var(--mute);font-size:12px}
+.refs{font-size:12.5px;color:var(--mute);columns:2;column-gap:28px}
+.refs a{display:block;margin:0 0 4px;break-inside:avoid;text-decoration:none}
+.refs a:hover{color:var(--am-d)}
+@media(max-width:700px){.refs{columns:1}}
+
+/* product atlas */
+.cam{background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:12px 14px 10px;display:flex;flex-direction:column}
+.cam .art{width:100%;height:150px;background:var(--am-l);border-radius:10px;fill:none;stroke:var(--ink);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.cam .art .acc{stroke:var(--am-d)}
+.cam .art .fillacc{fill:var(--am);stroke:var(--ink)}
+.cam .art .fillacc2{fill:#fff;stroke:var(--am-d)}
+.cam .art .tg{fill:var(--am-d);stroke:none;font-family:Silkscreen,monospace;font-size:11px}
+.cam .art .tg2{fill:var(--am-d);stroke:none;font-family:Silkscreen,monospace;font-size:10px}
+.cam .cn{margin:10px 0 2px;display:flex;justify-content:space-between;align-items:baseline;gap:6px;flex-wrap:wrap}
+.cam .cn b{font-size:15px}.cam .cn span{font-size:11.5px;color:var(--mute)}
+.cam ul{margin:2px 0 0;padding-left:17px;font-size:13px}
+svg.ic,svg.ii{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+svg.ic{width:30px;height:30px;color:var(--ink)}
+svg.ii{width:16px;height:16px;vertical-align:-3px;margin-right:6px;color:var(--am-d)}
+.ladder{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;align-items:end}
+.ladder .step{background:#fff;border:2px solid var(--c);border-radius:10px;padding:12px 14px;box-shadow:4px 4px 0 var(--cl)}
+.ladder .s1{--c:#cdbfb3;--cl:#f4efea;min-height:150px}.ladder .s2{--c:var(--am);--cl:var(--am-l);min-height:180px}.ladder .s3{--c:var(--rec);--cl:var(--rec-l);min-height:210px}
+.ladder .lv{font-family:var(--px);font-size:11px;color:var(--c)}
+.ladder .s1 .lv{color:var(--mute)}
+.ladder h4{margin:4px 0 2px;font-size:17px}.ladder p{margin:0;font-size:13px}
+.ladder .ic{color:var(--c)}.ladder .s1 .ic{color:var(--mute)}
+@media(max-width:700px){.ladder{grid-template-columns:1fr}.ladder .step{min-height:0!important}}
+.pipe{display:flex;align-items:stretch;gap:6px;flex-wrap:wrap}
+.pp{flex:1;min-width:140px;background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:10px 12px;display:flex;flex-direction:column;gap:2px}
+.pp b{font-size:14px}.pp span{font-size:12px;color:var(--mute)}
+.pp.hot{border:2px solid var(--rec);background:var(--rec-l)}.pp.hot .ic{color:var(--rec)}
+.pa{display:grid;place-items:center;font-family:var(--px);color:var(--am);font-size:18px}
+@media(max-width:860px){.pa{display:none}}
+.alerts{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:12px}
+.al{background:#fff;border:1.5px solid var(--line);border-radius:10px;padding:10px 6px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:3px}
+.al .ic{color:var(--rec);width:26px;height:26px}
+.al b{font-size:12.5px}.al small{font-size:11px;color:var(--mute);line-height:1.3}
+@media(max-width:860px){.alerts{grid-template-columns:repeat(3,1fr)}}
+table.mx{width:100%;border-collapse:collapse;font-size:13px}
+table.mx th{font-size:11.5px;color:var(--mute);font-weight:500;padding:4px 6px;text-align:center}
+table.mx td{padding:6px;border-top:1px solid var(--line);text-align:center;color:var(--am-d)}
+table.mx td:first-child{text-align:left;color:var(--ink);white-space:nowrap}
+table.mx tr.nn td{background:var(--rec-l);color:var(--rec);font-weight:700}
+
+/* phones */
+.phones{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:860px){.phones{grid-template-columns:1fr}}
+.ph-wrap{display:flex;flex-direction:column;align-items:center;gap:10px}
+.phone{width:230px;height:450px;border:3px solid var(--ink);border-radius:34px;padding:10px;background:#fff;box-shadow:6px 6px 0 var(--am-l);position:relative}
+.phone .notch{position:absolute;top:14px;left:50%;transform:translateX(-50%);width:70px;height:16px;border-radius:10px;background:var(--ink);z-index:2}
+.phone .scr{height:100%;border-radius:25px;overflow:hidden;background:#faf6f1;display:flex;flex-direction:column;position:relative;font-size:12px}
+.appbar{display:flex;justify-content:space-between;align-items:center;padding:34px 12px 8px;font-size:12px}
+.appbar b{font-size:12.5px}.appbar .live{color:var(--rec);font-family:var(--px);font-size:9px}
+.video{margin:0 10px;height:150px;border-radius:12px;background:#3a3330;position:relative;overflow:hidden}
+.petsvg{width:100%;height:100%;fill:none;stroke:#fdf1dc;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.petsvg .f{fill:#fdf1dc}
+.petsvg.sm{stroke:var(--ink)}
+.petsvg .acc2{stroke:var(--rec)}
+.video .rot,.video .trk{position:absolute;font-size:10px;color:#fff;background:rgba(255,255,255,.18);border-radius:6px;padding:1px 6px}
+.video .rot{top:8px;left:8px}.video .trk{top:8px;right:8px;color:var(--am)}
+.ctrls{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:12px 10px}
+.cb{background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:8px 6px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.cb .ic{width:22px;height:22px}.cb span{font-size:11px}
+.cb.hot{background:var(--am);border-color:var(--am);color:#fff}.cb.hot .ic{color:#fff}
+.tabbar{margin-top:auto;display:flex;justify-content:space-around;border-top:1px solid var(--line);padding:8px 0 12px;font-size:10.5px;color:var(--mute);background:#fff}
+.tabbar .on{color:var(--am-d);font-weight:700}
+.phone.lock .scr{background:linear-gradient(160deg,#5b4f49,#2f2926);color:#fff;padding:0 9px}
+.clock{text-align:center;font-size:32px;font-weight:300;padding:30px 0 6px;line-height:1.1}
+.clock small{display:block;font-size:11px;opacity:.8}
+.nt{background:rgba(255,255,255,.93);color:var(--ink);border-radius:13px;padding:6px 10px;margin-bottom:5px}
+.nt .nh{font-size:9.5px;color:var(--mute);display:flex;align-items:center;gap:5px}
+.nt .ai{font-family:var(--px);font-size:8px;background:var(--rec);color:#fff;border-radius:3px;padding:0 4px}
+.nt b{font-size:12.5px;display:block}.nt p{margin:0;font-size:10.5px;color:var(--mute);line-height:1.4}
+.nt.red{border:2px solid var(--rec)}
+.nt.free{opacity:.72}.nt.free b{font-weight:500}
+.thumb{margin-top:5px;height:46px;border-radius:8px;background:var(--am-l);position:relative}
+.thumb span{position:absolute;right:6px;bottom:4px;font-size:9.5px;background:var(--ink);color:#fff;border-radius:4px;padding:0 5px}
+.reel{margin:0 10px;background:var(--ink);color:#fff;border-radius:12px;padding:12px;display:flex;gap:10px;align-items:center}
+.reel .rv{width:38px;height:38px;border-radius:50%;background:var(--am);display:grid;place-items:center;font-size:14px}
+.reel b{font-size:12.5px;display:block}.reel small{font-size:10.5px;opacity:.75}
+.act{margin:10px 10px 4px;background:#fff;border-radius:12px;padding:8px 10px;border:1.5px solid var(--line)}
+.al2{font-size:10.5px;color:var(--mute)}
+.bars2{display:flex;align-items:flex-end;gap:5px;height:50px;margin-top:4px}
+.bars2 i{flex:1;background:var(--C);border-radius:3px 3px 0 0}
+.axis{display:flex;justify-content:space-between;font-size:9px;color:var(--mute);margin-top:2px}
+.ev{display:flex;align-items:center;gap:8px;padding:5px 14px;font-size:11.5px}
+.ev .t{font-family:var(--px);font-size:9.5px;color:var(--mute);width:34px}
+.ev .d{width:8px;height:8px;border-radius:50%;background:var(--am)}
+.ev .d.g{background:var(--C)}.ev .d.r{background:var(--rec)}
+.cap{text-align:center;max-width:250px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.cap b{font-size:15px}.cap span:last-child{font-size:12.5px;color:var(--mute)}
+
+.dls{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.dlc{background:#fff;border:2px solid var(--ink);border-radius:12px;padding:12px 16px;box-shadow:4px 4px 0 var(--am-l);display:flex;flex-direction:column}
+.dlc .e{font-size:24px}.dlc .dd{font-family:var(--px);font-size:24px;line-height:1.2}
+.dlc .dd small{font-size:11px;color:var(--mute)}
+.dlc b{font-size:15px}.dlc span{font-size:12.5px;color:var(--mute)}
+.dlc.hot{border-color:var(--rec);box-shadow:4px 4px 0 var(--rec-l)}.dlc.hot .dd{color:var(--rec)}
+@media(max-width:620px){.dls{grid-template-columns:1fr}}
+footer{padding:46px 0 70px;color:var(--mute);font-size:12.5px;text-align:center}
+footer .px{font-family:var(--px);color:var(--am-d)}
+</style>
+</head>
+<body>
+
+<nav class="top"><div class="wrap">
+  <div class="row"><span class="lbl">GO TO</span>
+    <a class="tag" href="#feedback">01 老師回饋</a><a class="tag" href="#req">02 規格→誰</a><a class="tag" href="#story">03 故事線</a><a class="tag" href="#product">04 產品圖鑑</a><a class="tag" href="#intel">05 Furbo 現況</a><a class="tag" href="#problem">06 問題樹</a><a class="tag" href="#smart">07 SMART</a><a class="tag" href="#tactics">08 策略戰術</a><a class="tag" href="#plan">09 執行評估</a><a class="tag" href="#team">10 分工＋時程</a><a class="tag" href="#field">11 問卷＋飼主</a><a class="tag" href="#todo">12 待確認</a>
+  </div>
+  <div class="row"><span class="lbl">FIND ME</span>
+    <a class="p pA" href="#pA"><b>A</b>小魚・產品＋技術</a><a class="p pB" href="#pB"><b>B</b>顧客→問題→目標</a><a class="p pC" href="#pC"><b>C</b>戰術→執行→預算</a><a class="p pD" href="#pD"><b>D</b>書面報告</a>
+  </div>
+</div></nav>
+
+<div class="wrap">
+
+<!-- HERO -->
+<div class="hero"><div class="win">
+  <div class="bar"><span class="dot"></span>REC · FURBO_CAM_TW<span class="r">TMKT_FINAL.LIVE</span></div>
+  <div class="body">
+    <div class="course">TECH MARKETING · FINAL PROJECT · 3-MONTH MARKETING PLAN</div>
+    <div class="big">FURBO<span>?</span></div>
+    <h1>全世界賣最好的寵物相機是台灣做的，<br>為什麼台灣的飼主不認識它？</h1>
+    <div class="q">主問題（依老師回饋修正）：Brand awareness 不足 → 才導致沒人買、沒人訂閱</div>
+    <div class="metaline">
+      <span class="hot">📮 12/7 簡報繳件・🎤 12/10 上台・📝 12/17 書面</span><span>簡報 15 min ＋ Q&amp;A 5 min</span><span>報告 ≤ 12 頁（含封面、參考文獻）</span><span>市場：台灣（建議・待全組確認）</span><span>策略：只選 1 個 P → Promotion</span><span>A B C 上台・D 專責書面</span>
+    </div>
+  </div>
+</div></div>
+
+<!-- 01 FEEDBACK -->
+<section id="feedback">
+  <div class="sh"><span class="no">01</span><h2>老師說了什麼 → 我們怎麼改</h2></div>
+  <p class="sub">Proposal 的三個 RQ 不是丟掉，而是「降級」成情境分析的素材；真正的核心問題改成品牌認知。</p>
+  <div class="ba">
+    <div class="col">
+      <h4 style="color:var(--mute)">BEFORE · 11/5 PROPOSAL</h4>
+      <div class="rqrow"><span class="k">RQ1</span><span>產品差異化：Furbo 贏在哪？</span></div>
+      <div class="rqrow"><span class="k">RQ2</span><span>消費者認知：AI 服務值多少？</span></div>
+      <div class="rqrow"><span class="k">RQ3</span><span>購買與訂閱：買、訂、續訂？</span></div>
+      <div class="rqrow"><span class="k">市場</span><span>美國（訪談困難，只能靠次級資料）</span></div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="col" style="border-color:var(--am)">
+      <h4 style="color:var(--am-d)">AFTER · FINAL</h4>
+      <div class="rqrow"><span class="k">RQ1</span><span><s>主問題</s> → <b>2.3 競品分析</b>（情境分析的一部分）</span></div>
+      <div class="rqrow"><span class="k">RQ2</span><span><s>主問題</s> → <b>2.1 顧客分析</b>，用問卷＋飼主快聊去挖</span></div>
+      <div class="rqrow"><span class="k">RQ3</span><span><s>主問題</s> → <b>結果／症狀</b>：awareness 低的下游</span></div>
+      <div class="rqrow"><span class="k core">CORE</span><span><b>品牌認知不足：怎麼提升 brand awareness？</b></span></div>
+      <div class="rqrow"><span class="k">市場</span><span><b>台灣</b>：可以直接訪問身邊飼主（老師暗示的路線）</span></div>
+    </div>
+  </div>
+  <h3 style="font-size:16px;margin:22px 0 10px">老師的 7 個提醒 → 這頁每一段都對應到</h3>
+  <ul class="tips">
+    <li><span class="n">1</span><span><b>RQ1、RQ2 是情境分析、不是問題</b>：透過問卷＋飼主快聊了解「為什麼大家不知道這個品牌？是不需要、還是覺得別牌更好？為什麼更好？」 → <a href="#field">11 問卷＋飼主</a></span></li>
+    <li><span class="n">2</span><span><b>RQ3（買／訂閱少）是衍生問題</b>：知道的人少 → 自然沒人買 → <a href="#problem">06 問題樹</a></span></li>
+    <li><span class="n">3</span><span><b>SMART 要量化</b>：「三個月內從多少 → 多少」，例如 FB／IG follower 數 → <a href="#smart">07 SMART</a></span></li>
+    <li><span class="n">4</span><span><b>7P 只選一個</b>，底下可有多個 tactics，執行細節要講清楚 → <a href="#tactics">08</a></span></li>
+    <li><span class="n">5</span><span><b>15 分鐘只講 1–2 個核心 tactic</b>，重點是「說服別人投資你」 → <a href="#team">10 時間條</a></span></li>
+    <li><span class="n">6</span><span><b>成本要算</b>：找誰、多少錢（媒合平台有網紅行情）、人選合理嗎（有養寵物的人，例：蔡依林有養狗） → <a href="#plan">09 預算</a></span></li>
+    <li><span class="n">7</span><span><b>只選一個市場</b>：美國靠次級資料；台灣可以直接訪問消費者 → <a href="#todo">12 待確認</a></span></li>
+  </ul>
+</section>
+
+<!-- 02 REQ -->
+<section id="req">
+  <div class="sh"><span class="no">02</span><h2>規格書逐條 → 誰負責</h2></div>
+  <p class="sub">照老師 PDF 的報告結構排。<b>需要技術腦的（產品、AI 功能、競品功能比較、科技／資安環境）全給 A＝小魚</b>；B、C 負責顧客、問題、目標、戰術、預算這些不需要技術背景的部分；D 寫成 12 頁英文報告。</p>
+  <div class="scroll"><table class="req">
+    <tr><th>#</th><th>規格要求</th><th>我們要交出什麼</th><th>內容 owner</th><th>書面</th></tr>
+    <tr><td class="no">ES</td><td>Executive summary（一段、≤1 頁）</td><td>整份計畫的靈魂：問題＋目標＋推薦 tactic＋預期回報</td><td class="who"><span class="p pD mini"><b>D</b>D</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">1</td><td>Firm profile：背景、數位商業模式、產品組合</td><td>Tomofun 簡介；硬體＋Nanny 訂閱的雙收入模式；4 款相機＋AI 功能（見 <a href="#product">04 圖鑑</a>）</td><td class="who"><span class="p pA mini"><b>A</b>小魚</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr class="grp"><td colspan="5">2 · SITUATION ANALYSIS（挑重點深挖，不要每項都淺淺做）</td></tr>
+    <tr><td class="no">2.1</td><td>Customer analysis：區隔依據、選目標客群、顧客經驗</td><td>區隔：飼養種類（貓／狗）× 生活型態（白天獨留時數）× 年齡；<b>問卷＋飼主朋友快聊</b>找出「不知道 Furbo 的原因」</td><td class="who"><span class="p pB mini"><b>B</b>B</span> ＋全員轉發問卷</td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">2.2</td><td>SWOT</td><td>一張 SWOT 表，每格 ≤3 點，W 一定要寫「台灣聲量弱」；S／T 的技術項由小魚補</td><td class="who"><span class="p pB mini"><b>B</b>B</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">2.3</td><td>Competitive analysis：1–2 個競品＋網路對競爭力量的影響</td><td>原 RQ1 放這裡。台灣：TP-Link Tapo／小米（平價監視器替代）；可選 Ebo（陪玩機器人）→ 做<b>功能對照矩陣</b>（AI 偵測、零食、訂閱、價格）</td><td class="who"><span class="p pA mini"><b>A</b>小魚</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">2.4</td><td>Macro-environment（PESTEL）</td><td>只挑相關的：S 少子化／貓超車狗、T AI 偵測普及、L 個資＋資安（CVE）、E 物價</td><td class="who"><span class="p pA mini"><b>A</b>T・L</span> <span class="p pB mini"><b>B</b>S・E</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr class="grp"><td colspan="5">3 – 7 · PLAN</td></tr>
+    <tr><td class="no">3</td><td>Main problem＋主要原因＋SMART（每個字母都要有理由）</td><td>問題樹＋1 個主目標、1–2 個子目標＋S/M/A/R/T 各一句 justification</td><td class="who"><span class="p pB mini"><b>B</b>B</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">4</td><td>Customer persona＋1–2 個 marketing strategy（7P）</td><td>1 個 persona；策略只選 <b>Promotion</b>（老師說一個就好）</td><td class="who"><span class="p pB mini"><b>B</b>B</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">5</td><td>2–3 個 tactics：優缺點、可行性（時間／人力／技術／錢）、推薦</td><td>tactic 評估表 → 推薦 1–2 個</td><td class="who"><span class="p pC mini"><b>C</b>C</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">6</td><td>Implementation：做什麼／何時／誰／多少錢／要不要外包；通路適合度；關鍵活動</td><td>3 個月 Gantt＋預算表＋通路比較（IG／Threads／YouTube／Dcard）</td><td class="who"><span class="p pC mini"><b>C</b>C</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">7</td><td>Evaluation：回報估算＋損益兩平、里程碑、要收的資料</td><td>break-even 公式＋W4/W8/W12 checkpoint＋資料來源表</td><td class="who"><span class="p pC mini"><b>C</b>C</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr class="grp"><td colspan="5">FORMAT · 規則（D 把關，全員遵守）</td></tr>
+    <tr><td class="no">8</td><td>Reference list，APA in-text</td><td>每個人丟素材時<b>附來源 URL＋日期</b>，D 統一轉 APA</td><td class="who">全員</td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">FMT</td><td>標題 14pt、內文 12pt、Times New Roman、1.5 行距、≤12 頁</td><td>D 先做好 Word 模板，大家照模板寫</td><td class="who"><span class="p pD mini"><b>D</b>D</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">AI</td><td>AI 使用揭露＋learning report（工具、用途、批判評估、怎麼驗證）</td><td>每個人記下自己用了什麼 AI 做什麼 → D 彙整（建議放 appendix）</td><td class="who">全員</td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">LOG</td><td>Group dynamics：會議紀錄、貢獻、決議</td><td>每次開會一頁紀錄（日期／出席／決議／待辦）</td><td class="who"><span class="p pD mini"><b>D</b>D</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+  </table></div>
+  <div class="callout"><div class="x">!</div><p>小魚是飼主＋Tomofun 前實習生：規格書允許用第一手觀察當佐證（實際使用心得、app 操作畫面），但<b>只能放已公開上市的功能</b>——手上 dev 機的測試中功能、內部數據、轉換率都不能放。數字一律用公開資料或標示「assumption」。</p></div>
+</section>
+
+<!-- 03 STORY -->
+<section id="story">
+  <div class="sh"><span class="no">03</span><h2>故事線：老師的 7 步，接成一條線</h2></div>
+  <p class="sub">每一步都要接到下一步：分析指向問題 → 問題能量化 → 策略戰術回扣目標 → 用 KPI 驗收。顏色＝誰上台講。</p>
+  <div class="flow">
+    <div class="fs fA"><span class="sec pill src">§1</span><div class="st">STEP 1 · A</div><h4>Company selection</h4><p>台灣出生、全球百萬用戶；4 台相機＋Nanny AI 訂閱（用圖鑑講）。</p></div>
+    <div class="fs fB"><span class="sec pill src">§2</span><div class="st">STEP 2 · A 競品／B 顧客</div><h4>Situation analysis</h4><p>A：功能矩陣比 Tapo／小米；B：台灣犬貓 320 萬、貓超車狗，問卷看飼主認不認識 Furbo。</p></div>
+    <div class="fs fB"><span class="sec pill src">§3</span><div class="st">STEP 3 · B</div><h4>One main problem</h4><p>不是產品不好，是<b>台灣飼主根本不知道它</b> → 沒進入購買清單。</p></div>
+    <div class="fs fB rowend"><span class="sec pill src">§3</span><div class="st">STEP 4 · B</div><h4>SMART objective</h4><p>3 個月內：目標客群提示認知度 X% → Y%；IG 追蹤 N → 1.3N。</p></div>
+    <div class="fs fB"><span class="sec pill src">§4</span><div class="st">STEP 5 · B</div><h4>Marketing strategy</h4><p>7P 只選 Promotion；鎖定一個 persona：白天毛孩獨自在家的雙北上班族。</p></div>
+    <div class="fs fC"><span class="sec pill src">§5</span><div class="st">STEP 6 · C</div><h4>Tactics</h4><p>評估 4 個 → 推薦「寵物 KOL × 毛孩留守日記」＋ UGC 擴散。</p></div>
+    <div class="fs fC last"><span class="sec pill src">§6–7</span><div class="st">STEP 7 · C</div><h4>Implementation &amp; evaluation</h4><p>3 個月 Gantt、預算、W4/W8/W12 檢查點、損益兩平。</p></div>
+    <div class="fs" style="--c:var(--D);--cl:var(--D-l)"><span class="sec pill src">ALL</span><div class="st">BEHIND · D</div><h4>12-page report</h4><p>D 把上面 7 步寫成英文書面，不上台。</p></div>
+  </div>
+  <div class="thread"><span class="t">ONE LINE</span><p>「Furbo 不缺好產品，缺的是被台灣飼主看見；我們用 3 個月、約 NT$30 萬，讓目標客群先『知道』它。」</p></div>
+</section>
+
+<!-- PRODUCT ATLAS -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <symbol id="i-live" viewBox="0 0 24 24"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-audio" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></symbol>
+  <symbol id="i-treat" viewBox="0 0 24 24"><path d="M7 9.5a2.2 2.2 0 11-2.6-3 2.2 2.2 0 113-2.6L17 13.5a2.2 2.2 0 112.6 3 2.2 2.2 0 11-3 2.6z"/></symbol>
+  <symbol id="i-bark" viewBox="0 0 24 24"><path d="M4 5h16v10H9l-5 4z"/><path d="M9 10h.01M12 10h.01M15 10h.01"/></symbol>
+  <symbol id="i-track" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></symbol>
+  <symbol id="i-night" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 019.5 4 8 8 0 1020 14.5z"/></symbol>
+  <symbol id="i-wand" viewBox="0 0 24 24"><path d="M3 21L14 10"/><path d="M14 10c1-4 4-6 7-7-1 3-3 6-7 7z"/><path d="M16 8l2-2"/></symbol>
+  <symbol id="i-rotate" viewBox="0 0 24 24"><path d="M20 12a8 8 0 11-2.3-5.7"/><path d="M20 4v4h-4"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0112 0v5l2 2H4z"/><path d="M10 21h4"/></symbol>
+  <symbol id="i-vomit" viewBox="0 0 24 24"><path d="M12 3s6 7 6 11a6 6 0 01-12 0c0-4 6-11 6-11z"/><path d="M10 15h4"/></symbol>
+  <symbol id="i-cry" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8.5 10h.01M15.5 10h.01M9 16c1.8-1.5 4.2-1.5 6 0"/><path d="M8.5 12.5v2"/></symbol>
+  <symbol id="i-run" viewBox="0 0 24 24"><circle cx="15" cy="15" r="3"/><circle cx="10" cy="9" r="1.5"/><circle cx="14" cy="7" r="1.5"/><circle cx="18" cy="9" r="1.5"/><path d="M2 12h4M3 16h4M4 20h5"/></symbol>
+  <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></symbol>
+  <symbol id="i-smoke" viewBox="0 0 24 24"><path d="M12 3c2 3 5 5 5 9a5 5 0 01-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 1-8z"/></symbol>
+  <symbol id="i-history" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18M7 5v4M12 5v4M17 5v4"/><path d="M10 12l4 2.5-4 2.5z"/></symbol>
+  <symbol id="i-diary" viewBox="0 0 24 24"><path d="M5 4h11a3 3 0 013 3v13H8a3 3 0 01-3-3z"/><path d="M5 17a3 3 0 013-3h11M9 8h6"/></symbol>
+  <symbol id="i-calm" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></symbol>
+  <symbol id="i-id" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8" r="1.5"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H10l-5 4v-4H4z"/><path d="M8 10h8M8 13h5"/></symbol>
+  <symbol id="i-report" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+ </defs>
+</svg>
+
+<section id="product">
+  <div class="sh"><span class="no">04</span><h2>產品線圖鑑：Furbo 到底賣什麼？</h2></div>
+  <p class="sub">給不熟產品的夥伴：4 台相機（一次買斷）＋ 1 個 AI 訂閱 Furbo Nanny（每月收錢）。圖都是自繪示意線稿，不是官方照片。<span class="p pA mini"><b>A</b>小魚</span> 負責確認正確性＋補 app 實拍畫面（限已上市功能）</p>
+
+  <div class="grid g4 cams">
+    <div class="cam">
+      <svg viewBox="0 0 140 150" class="art">
+        <path d="M30 40 A44 44 0 0 1 110 40" class="acc" stroke-dasharray="4 5"/><path d="M110 40l-7-2M110 40l1-7" class="acc"/>
+        <rect x="40" y="30" width="60" height="44" rx="20"/>
+        <circle cx="70" cy="50" r="11"/><circle cx="70" cy="50" r="4" class="fillacc"/>
+        <path d="M36 74h68l6 56a8 8 0 01-8 8H38a8 8 0 01-8-8z"/>
+        <rect x="58" y="102" width="24" height="8" rx="4"/>
+        <path d="M86 104 Q104 88 118 98" class="acc" stroke-dasharray="3 4"/>
+        <path d="M117 100a2.5 2.5 0 11-1-4l6-2a2.5 2.5 0 114 2 2.5 2.5 0 11-2 4l-6 2a2.5 2.5 0 11-1-2z" class="fillacc"/>
+      </svg>
+      <div class="cn"><b>360° Dog Camera</b><span>起家主力・狗</span></div>
+      <ul><li>1080p、360° 旋轉、4x 變焦</li><li>完整丟零食・彩色夜視</li><li>免費：吠叫提醒</li></ul>
+    </div>
+    <div class="cam">
+      <svg viewBox="0 0 140 150" class="art">
+        <path d="M30 40 A44 44 0 0 1 110 40" class="acc" stroke-dasharray="4 5"/>
+        <rect x="40" y="30" width="60" height="44" rx="20"/>
+        <circle cx="70" cy="50" r="11"/><circle cx="70" cy="50" r="4" class="fillacc"/>
+        <path d="M36 74h68l6 56a8 8 0 01-8 8H38a8 8 0 01-8-8z"/>
+        <rect x="58" y="102" width="24" height="8" rx="4"/>
+        <path d="M104 90 L126 66"/>
+        <path d="M126 66 C122 52 128 42 136 36 C138 48 134 60 126 66z" class="fillacc"/>
+        <path d="M128 58l5-6M127 63l6-3"/>
+      </svg>
+      <div class="cn"><b>360° Cat Camera</b><span>貓專用・延伸</span></div>
+      <ul><li>1080p、360° 旋轉、4x 變焦</li><li>丟零食＋<b>電動逗貓羽毛棒</b></li><li>免費：喵叫提醒</li></ul>
+    </div>
+    <div class="cam">
+      <svg viewBox="0 0 140 150" class="art">
+        <path d="M38 64 A34 34 0 0 1 102 64" class="acc" stroke-dasharray="4 5"/>
+        <circle cx="70" cy="86" r="26"/>
+        <circle cx="70" cy="84" r="9"/><circle cx="70" cy="84" r="3.5" class="fillacc"/>
+        <path d="M50 108 L46 132h48l-4-24"/>
+        <path d="M44 132h52"/>
+        <rect x="98" y="40" width="30" height="16" rx="4" class="fillacc2"/><text x="113" y="52" text-anchor="middle" class="tg">2K</text>
+      </svg>
+      <div class="cn"><b>Mini 360°</b><span>2025/9 最新・貓狗通用</span></div>
+      <ul><li><b>2K</b>、360° 旋轉、8x 變焦</li><li>輕量丟零食（約 10 顆）</li><li>體積最小，適合套房</li></ul>
+    </div>
+    <div class="cam">
+      <svg viewBox="0 0 140 150" class="art">
+        <path d="M24 40v80M24 56h14M24 104h14"/><circle cx="24" cy="48" r="2" class="fillacc"/><circle cx="24" cy="112" r="2" class="fillacc"/>
+        <rect x="40" y="44" width="56" height="76" rx="16"/>
+        <circle cx="68" cy="72" r="12"/><circle cx="68" cy="72" r="4.5" class="fillacc"/>
+        <path d="M80 66 L128 44M80 78 L128 100" class="acc" stroke-dasharray="3 4"/>
+        <path d="M118 52 Q126 72 118 94" class="acc"/>
+        <text x="108" y="76" class="tg2">130°</text>
+      </svg>
+      <div class="cn"><b>Mini</b><span>入門・固定鏡頭</span></div>
+      <ul><li>1080p、130° 廣角、不旋轉</li><li><b>不能丟零食</b>・可壁掛</li><li>免費：叫聲提醒</li></ul>
+    </div>
+  </div>
+  <p class="m" style="font-size:12px;margin:6px 0 0">規格來源：<a class="pill src" href="https://furbo.com/llms-full.txt">furbo.com 官方產品摘要</a> 全系列都有即時影像＋雙向語音。</p>
+
+  <h3 style="font-size:16px;margin:24px 0 10px">價值階梯：為什麼 Furbo 不只是「監視器」</h3>
+  <div class="ladder">
+    <div class="step s1"><div class="lv">LV1 · 誰都有</div><svg class="ic"><use href="#i-live"/></svg><h4>看得到</h4><p>即時影像、夜視、雙向語音<br><span class="m">小米、Tapo 幾百塊也做得到</span></p></div>
+    <div class="step s2"><div class="lv">LV2 · Furbo 硬體</div><svg class="ic"><use href="#i-treat"/></svg><h4>能互動</h4><p>遠端丟零食、逗貓棒、自動追蹤<br><span class="m">寵物專用設計，平價監視器沒有</span></p></div>
+    <div class="step s3"><div class="lv">LV3 · Nanny 訂閱</div><svg class="ic"><use href="#i-bell"/></svg><h4>出事會知道</h4><p>AI 認出嘔吐、哭叫、陌生人、煙霧<br><span class="m">真正的護城河，也是最難講清楚的</span></p></div>
+  </div>
+  <p style="font-size:13.5px;margin:10px 0 0">→ 問題樹 <b>H2</b>（被當監視器比價）和 <b>H4</b>（AI 價值沒講清楚）都長在這張圖上；C 的 KOL 內容就是要把 LV3 拍出來給人看。</p>
+
+  <h3 style="font-size:16px;margin:24px 0 10px">Furbo Nanny：AI 怎麼運作（1 分鐘看懂）</h3>
+  <div class="pipe">
+    <div class="pp"><svg class="ic"><use href="#i-history"/></svg><b>相機錄影＋收音</b><span>24 小時看著毛孩</span></div>
+    <div class="pa">→</div>
+    <div class="pp"><svg class="ic"><use href="#i-track"/></svg><b>AI 影像＋聲音辨識</b><span>電腦視覺 × 音訊模型</span></div>
+    <div class="pa">→</div>
+    <div class="pp hot"><svg class="ic"><use href="#i-bell"/></svg><b>判斷「發生事了」</b><span>嘔吐、哭叫、陌生人、煙霧…</span></div>
+    <div class="pa">→</div>
+    <div class="pp"><svg class="ic"><use href="#i-chat"/></svg><b>手機推播＋短影片</b><span>人在外面也立刻知道</span></div>
+    <div class="pa">→</div>
+    <div class="pp"><svg class="ic"><use href="#i-diary"/></svg><b>每日摘要／日記</b><span>回顧一天的重點片段</span></div>
+  </div>
+
+  <h3 style="font-size:16px;margin:26px 0 4px">App 長什麼樣？（手機示意）</h3>
+  <p class="m" style="font-size:12.5px;margin:0 0 12px">自繪簡化畫面，用來解釋流程，不是官方 UI。投影片要放真畫面 → <span class="p pA mini"><b>A</b>小魚</span> 用自己手機截圖（只截已上市功能）。</p>
+  <div class="phones">
+    <div class="ph-wrap">
+      <div class="phone"><div class="notch"></div><div class="scr">
+        <div class="appbar"><span>‹</span><b>客廳 · Mini 360°</b><span class="live">● LIVE</span></div>
+        <div class="video">
+          <svg viewBox="0 0 200 130" class="petsvg"><path d="M0 104h200" stroke-dasharray="4 4"/><rect x="134" y="62" width="44" height="42" rx="4"/><path d="M134 74h44"/>
+          <path d="M58 104c-4-22 4-40 22-44l-4-16 12 10c6-2 12-2 18 0l12-10-4 16c18 6 22 24 18 44"/><circle cx="90" cy="76" r="2.5" class="f"/><circle cx="110" cy="76" r="2.5" class="f"/><path d="M96 84l4 3 4-3"/><path d="M132 98c14 0 18-12 26-10"/></svg>
+          <span class="rot">⟲ 360°</span><span class="trk">◎ 追蹤中</span>
+        </div>
+        <div class="ctrls">
+          <div class="cb hot"><svg class="ic"><use href="#i-treat"/></svg><span>丟零食</span></div>
+          <div class="cb"><svg class="ic"><use href="#i-audio"/></svg><span>按住說話</span></div>
+          <div class="cb"><svg class="ic"><use href="#i-wand"/></svg><span>逗貓棒</span></div>
+          <div class="cb"><svg class="ic"><use href="#i-calm"/></svg><span>安撫音</span></div>
+        </div>
+        <div class="tabbar"><span class="on">即時</span><span>事件</span><span>日記</span><span>我的</span></div>
+      </div></div>
+      <div class="cap"><span class="pill amb">① 免費</span><b>即時畫面</b><span>看得到＋能互動。LV1、LV2 在這裡。</span></div>
+    </div>
+
+    <div class="ph-wrap">
+      <div class="phone lock"><div class="notch"></div><div class="scr">
+        <div class="clock">14:32<small>星期四 12月10日</small></div>
+        <div class="nt red"><div class="nh"><span class="ai">AI</span>Furbo · 現在</div><b>嘔吐警報</b><p>偵測到貓咪可能嘔吐，點開看 15 秒影片</p><div class="thumb"><svg viewBox="0 0 120 50" class="petsvg sm"><path d="M20 44c-2-12 3-22 13-24l-2-9 7 6c4-1 7-1 10 0l7-6-2 9c10 3 12 13 10 24"/><path d="M80 44c6-4 14-4 20 0" class="acc2"/></svg><span>▶ 0:15</span></div></div>
+        <div class="nt"><div class="nh"><span class="ai">AI</span>Furbo · 11:05</div><b>陌生人出現</b><p>客廳偵測到人員活動</p></div>
+        <div class="nt"><div class="nh"><span class="ai">AI</span>Furbo · 09:40</div><b>煙霧／CO 警報聲</b><p>偵測到警報器聲響，請立即確認</p></div>
+        <div class="nt free"><div class="nh">Furbo · 免費版</div><b>喵叫提醒</b><p>沒訂 Nanny 只會收到這種</p></div>
+      </div></div>
+      <div class="cap"><span class="pill hyp">② Nanny 訂閱</span><b>推播警報</b><span>出事會知道＝LV3，真正值錢的地方。</span></div>
+    </div>
+
+    <div class="ph-wrap">
+      <div class="phone"><div class="notch"></div><div class="scr">
+        <div class="appbar"><span>‹</span><b>今日毛孩日記</b><span></span></div>
+        <div class="reel"><div class="rv">▶</div><div><b>今天的精彩 1 分鐘</b><small>AI 自動剪輯 6 段</small></div></div>
+        <div class="act"><div class="al2">活動量</div><div class="bars2"><i style="height:20%"></i><i style="height:35%"></i><i style="height:80%"></i><i style="height:60%"></i><i style="height:25%"></i><i style="height:15%"></i><i style="height:45%"></i><i style="height:90%"></i></div><div class="axis"><span>8</span><span>12</span><span>16</span><span>20</span></div></div>
+        <div class="ev"><span class="t">09:12</span><span class="d g"></span>玩耍 3 分鐘</div>
+        <div class="ev"><span class="t">11:05</span><span class="d"></span>陌生人出現</div>
+        <div class="ev"><span class="t">14:32</span><span class="d r"></span>嘔吐警報</div>
+        <div class="ev"><span class="t">17:48</span><span class="d g"></span>在窗邊等你回家</div>
+        <div class="tabbar"><span>即時</span><span>事件</span><span class="on">日記</span><span>我的</span></div>
+      </div></div>
+      <div class="cap"><span class="pill hyp">③ Nanny 訂閱</span><b>每日日記</b><span>天生就是 KOL 素材 → C 的「留守日記」從這裡來。</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-size:16px;margin:24px 0 10px">Nanny 全部的 AI 功能</h3>
+  <div class="alerts">
+    <div class="al"><svg class="ic"><use href="#i-vomit"/></svg><b>嘔吐警報</b></div>
+    <div class="al"><svg class="ic"><use href="#i-cry"/></svg><b>哭叫警報</b></div>
+    <div class="al"><svg class="ic"><use href="#i-run"/></svg><b>跑動／活動</b></div>
+    <div class="al"><svg class="ic"><use href="#i-bark"/></svg><b>異常行為</b></div>
+    <div class="al"><svg class="ic"><use href="#i-person"/></svg><b>陌生人</b></div>
+    <div class="al"><svg class="ic"><use href="#i-smoke"/></svg><b>CO／煙霧警報</b></div>
+    <div class="al"><svg class="ic"><use href="#i-history"/></svg><b>錄影回放</b><small>3 天／7 天</small></div>
+    <div class="al"><svg class="ic"><use href="#i-report"/></svg><b>每日摘要報告</b></div>
+    <div class="al"><svg class="ic"><use href="#i-calm"/></svg><b>Calm My Pet</b><small>遠端放安撫音</small></div>
+    <div class="al"><svg class="ic"><use href="#i-id"/></svg><b>Pet ID</b><small>多寵分辨</small></div>
+    <div class="al"><svg class="ic"><use href="#i-chat"/></svg><b>Nanny Chat</b><small>AI 問答</small></div>
+    <div class="al"><svg class="ic"><use href="#i-track"/></svg><b>自動追蹤</b></div>
+  </div>
+  <p class="m" style="font-size:12px;margin:6px 0 0">功能清單依美國官方摘要；台灣頁面列出嘔吐、叫聲、跑動、陌生人與緊急狀況。<b>小魚確認</b>：台灣版實際開放哪些、自動追蹤是否免費。</p>
+
+  <div class="grid g2" style="margin-top:18px">
+    <div class="card">
+      <h4>免費 vs Nanny 功能矩陣</h4>
+      <div class="scroll"><table class="mx">
+        <tr><th></th><th>360 Dog</th><th>360 Cat</th><th>Mini 360</th><th>Mini</th></tr>
+        <tr><td><svg class="ii"><use href="#i-live"/></svg>即時影像＋語音</td><td>●</td><td>●</td><td>●</td><td>●</td></tr>
+        <tr><td><svg class="ii"><use href="#i-rotate"/></svg>360° 旋轉</td><td>●</td><td>●</td><td>●</td><td>—</td></tr>
+        <tr><td><svg class="ii"><use href="#i-treat"/></svg>丟零食</td><td>●</td><td>●</td><td style="font-size:12px">輕量</td><td>—</td></tr>
+        <tr><td><svg class="ii"><use href="#i-wand"/></svg>逗貓棒</td><td>—</td><td>●</td><td>—</td><td>—</td></tr>
+        <tr><td><svg class="ii"><use href="#i-night"/></svg>彩色夜視</td><td>●</td><td>?</td><td>?</td><td>?</td></tr>
+        <tr><td><svg class="ii"><use href="#i-bark"/></svg>基本叫聲提醒</td><td>●</td><td>●</td><td>●</td><td>●</td></tr>
+        <tr class="nn"><td><svg class="ii"><use href="#i-bell"/></svg>AI 警報全套</td><td colspan="4">需訂 Nanny（四台都適用）</td></tr>
+      </table></div>
+      <p class="m" style="font-size:12px;margin-top:6px">● 有　輕量＝輕量版　— 沒有　? 官方摘要沒寫，小魚補</p>
+    </div>
+    <div class="card">
+      <h4>台灣 Nanny 方案（官網 2026/11）</h4>
+      <table class="bud">
+        <tr><th>方案</th><th>月付</th><th>年付首年（7 折）</th><th>回放</th></tr>
+        <tr><td>標準（最熱門）</td><td class="n">NT$219</td><td class="n">NT$1,840</td><td>3 天</td></tr>
+        <tr><td>高級</td><td class="n">NT$269</td><td class="n">NT$2,260</td><td>7 天</td></tr>
+      </table>
+      <p class="m" style="font-size:12.5px;margin-top:6px">續訂 8 折、兩年付 65 折、多一台相機 +NT$40／月。官網用「$」標示，數值為台幣。<a class="pill src" href="https://furbo.com/tw/pages/furbo-nanny">furbo.com/tw</a></p>
+      <h4 style="margin-top:12px">商業模式一句話</h4>
+      <p style="font-size:13.5px">硬體一次收錢（常打折當入口）→ Nanny 每月收錢（真正的利潤）。2022 年營運長就說訂閱營收占比有機會到 3 成。<a class="pill src" href="https://www.bnext.com.tw/article/72985/tomofun-ai-dec-22-mag">數位時代</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- 04 INTEL -->
+<section id="intel">
+  <div class="sh"><span class="no">05</span><h2>Furbo 最新狀況（2026/11 web search 整理）</h2></div>
+  <p class="sub">產品細節看上一段圖鑑；這裡是市場與新聞。每張卡都有來源；<span class="pill hyp">待驗證</span> 是推論、要靠問卷／飼主快聊證明。</p>
+  <div class="grid g4">
+    <div class="num"><div class="v">1M<small>+</small></div><div class="l">全球用戶、銷往 133 國；Amazon 檔期平均每 4 秒賣一台</div><div class="f"><span class="pill amb">A · §1</span><a class="pill src" href="https://www.bnext.com.tw/article/72985/tomofun-ai-dec-22-mag">數位時代</a></div></div>
+    <div class="num"><div class="v">4 <small>款相機</small></div><div class="l">360° 狗狗機、360° 貓貓機（逗貓羽毛棒）、Mini 360°（2K，最新）、Mini（不能丟零食）</div><div class="f"><span class="pill amb">A · §1</span><a class="pill src" href="https://furbo.com/llms.txt">furbo.com</a></div></div>
+    <div class="num"><div class="v">US$6.99<small>/月</small></div><div class="l">美國 Nanny 月繳；年繳折合 US$4.99／月（台灣價格待查）</div><div class="f"><span class="pill amb">A · §1</span><a class="pill src" href="https://subger.com/pl/service/furbo-nanny">Subger 2026/3</a></div></div>
+    <div class="num"><div class="v">2<small>折起</small></div><div class="l">台灣官網：相機 2 折起、Nanny 首年 7 折、30 天免費試用 → 價格不是門檻</div><div class="f"><span class="pill amb">B · 為何不選 Price</span><a class="pill src" href="https://furbo.com/tw">furbo.com/tw</a></div></div>
+  </div>
+
+  <div class="grid g2" style="margin-top:14px">
+    <div class="card">
+      <h4>台灣：毛孩比小孩多，而且貓超車狗</h4>
+      <p class="m" style="margin-bottom:8px">農業部 2025 全國犬貓飼養調查（萬隻）</p>
+      <div class="bars">
+        <div class="br" style="--c:var(--A)"><span>家貓 2025</span><div class="tr"><div class="fl" style="width:100%"></div></div><span class="v">174</span></div>
+        <div class="br" style="--c:var(--B)"><span>家犬 2025</span><div class="tr"><div class="fl" style="width:84%"></div></div><span class="v">146</span></div>
+        <div class="br" style="--c:#cdbfb3"><span>家貓 2023</span><div class="tr"><div class="fl" style="width:75%"></div></div><span class="v">131</span></div>
+      </div>
+      <p style="margin-top:10px">犬貓合計約 320.5 萬隻，已超過 0–14 歲幼年人口 268.2 萬。<b>品牌形象偏「狗」的 Furbo，正對上一個貓為主的市場。</b></p>
+      <div style="margin-top:8px"><span class="pill amb">A · §2.1 / §2.4</span><a class="pill src" href="https://news.pts.org.tw/article/804498">公視新聞</a><a class="pill src" href="https://www.ctee.com.tw/news/20260611701338-430601">工商時報</a></div>
+    </div>
+    <div class="card">
+      <h4>全球市場：互動型是主流，前五大吃一半</h4>
+      <p class="m" style="margin-bottom:8px">Pet monitoring camera market, 2025</p>
+      <div class="bars">
+        <div class="br" style="--c:var(--C)"><span>互動型相機</span><div class="tr"><div class="fl" style="width:52.7%"></div></div><span class="v">52.7%</span></div>
+        <div class="br" style="--c:var(--C)"><span>前五大合計</span><div class="tr"><div class="fl" style="width:55.7%"></div></div><span class="v">55.7%</span></div>
+        <div class="br" style="--c:var(--A)"><span>Eufy（第一）</span><div class="tr"><div class="fl" style="width:14.2%"></div></div><span class="v">14.2%</span></div>
+      </div>
+      <p style="margin-top:10px">市場 2025 年 US$246.1M，預估 2035 年 US$645M（CAGR 10.3%）；北美最大，<b>亞太成長最快</b>。</p>
+      <div style="margin-top:8px"><span class="pill amb">A · §2.3 / §2.4</span><a class="pill src" href="https://www.gminsights.com/industry-analysis/pet-monitoring-camera-market">GMI 2026/8</a></div>
+    </div>
+  </div>
+
+  <h3 style="font-size:16px;margin:22px 0 10px">近期動態 → 可以直接拿來用的證據</h3>
+  <div class="news">
+    <div class="nw"><span class="d">2026</span><div><b>Dcard 2026 寵物攝影機推薦：比較的是 TP-Link、小米、Ebo</b>台灣網友的熱門推薦文主打這三個品牌 → 初步支持「Furbo 不在台灣飼主的比較清單裡」。<div class="so">→ A 用在 §2.3；B 用來撐主問題 <span class="pill hyp">待問卷驗證</span></div><a class="pill src" href="https://www.dcard.tw/@u_u_blue/post/261096951">Dcard</a></div></div>
+    <div class="nw"><span class="d">2026/07</span><div><b>日本：Furbo × 星野集團 OMO 飯店「不讓愛犬孤單」夏季住宿</b>OMO 三間館免費借 Furbo 給帶狗入住的旅客，搭配 IG 寵物網紅體驗與年度大促。<div class="so">→ C 的 tactic 先例：「場域體驗＋網紅」Furbo 自己在日本做過</div><a class="pill src" href="https://prtimes.jp/main/html/rd/p/000000079.000018477.html">PR TIMES</a></div></div>
+    <div class="nw"><span class="d">2025/09</span><div><b>新品 Furbo Mini 360°：2K、業界最小級的旋轉 AI 相機，貓狗通用</b>產品線往「小、便宜、貓狗都能用」延伸。<div class="so">→ 推薦活動的主打機型（適合小坪數套房＋貓）</div><a class="pill src" href="https://www.cbinsights.com/company/furbo">CB Insights（日文新聞稿）</a></div></div>
+    <div class="nw"><span class="d">2025/10</span><div><b>資安：Furbo 360 / Mini 共 18 個 CVE 被揭露（含 SSRF、寫死憑證）</b>2025/10 公開，NVD 在 2026/4 更新；揭露者稱廠商未回應。<div class="so">→ A 放 §2.2 Threat／§2.4 Legal。⚠ 修正 Figma 便利貼：不是 2026/4 才爆出，是 2025/10 公開、2026/4 更新</div><a class="pill src" href="https://www.sentinelone.com/vulnerability-database/cve-2025-11636/">SentinelOne</a><a class="pill src" href="https://cve.yack.one/vendors/furbo">CVE list</a></div></div>
+    <div class="nw"><span class="d">2026</span><div><b>momo：上班族擔心毛孩獨自在家，帶動智慧寵物設備</b>電商觀察到遠端餵食、監看等智慧設備需求上升。<div class="so">→ B 的 persona 依據：白天不在家的上班族</div><a class="pill src" href="https://udn.com/news/story/7241/9397741">聯合新聞網</a></div></div>
+    <div class="nw"><span class="d">TW SNS</span><div><b>台灣官方帳號：FB「FurboTaiwan」、IG「furbo_taiwan_official」</b>追蹤數就是 SMART 的 baseline。<div class="so">→ B 這週去抓現值並截圖存證（日期要寫）</div><a class="pill src" href="https://furbo.com/tw">furbo.com/tw</a></div></div>
+  </div>
+</section>
+
+<!-- 05 PROBLEM -->
+<section id="problem">
+  <div class="sh"><span class="no">06</span><h2>問題樹：一個核心問題，往上是症狀、往下是原因</h2></div>
+  <p class="sub">規格書要「main problem＋main reasons」。下面 4 個原因都是假設，問卷驗證後留 2–3 個最站得住的。</p>
+  <div class="win tree"><div class="bar"><span class="dot"></span>PROBLEM_TREE.svg<span class="r">B · §3</span></div><div class="body">
+  <svg viewBox="0 0 1000 430" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans TC, sans-serif">
+    <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c9bcb0"/></marker></defs>
+    <!-- symptom -->
+    <rect x="280" y="10" width="440" height="66" rx="10" fill="#f4efea" stroke="#cdbfb3" stroke-width="2"/>
+    <text x="500" y="36" text-anchor="middle" font-size="12" fill="#8c8079" font-family="Silkscreen">SYMPTOM · 原 RQ3</text>
+    <text x="500" y="60" text-anchor="middle" font-size="16" font-weight="700" fill="#3a3330">台灣購買量、Nanny 訂閱少</text>
+    <line x1="500" y1="130" x2="500" y2="82" stroke="#c9bcb0" stroke-width="2.5" marker-end="url(#ar)"/>
+    <!-- core -->
+    <rect x="230" y="132" width="540" height="84" rx="12" fill="#e5604f"/>
+    <text x="500" y="160" text-anchor="middle" font-size="12" fill="#fde9e5" font-family="Silkscreen">CORE PROBLEM</text>
+    <text x="500" y="192" text-anchor="middle" font-size="21" font-weight="900" fill="#fff">台灣目標飼主對 Furbo 的品牌認知不足</text>
+    <!-- causes -->
+    <g stroke="#c9bcb0" stroke-width="2.5" marker-end="url(#ar)">
+      <line x1="125" y1="290" x2="330" y2="222"/><line x1="375" y1="290" x2="450" y2="222"/><line x1="625" y1="290" x2="550" y2="222"/><line x1="875" y1="290" x2="670" y2="222"/>
+    </g>
+    <g font-size="13.5">
+      <rect x="10" y="292" width="230" height="128" rx="10" fill="#fff" stroke="#e98973" stroke-width="2"/>
+      <text x="24" y="316" font-family="Silkscreen" font-size="12" fill="#e98973">H1 · 資源配置</text>
+      <text x="24" y="342" font-weight="700" fill="#3a3330">行銷重心在美、日</text>
+      <text x="24" y="364" fill="#8c8079">Amazon 起家，台灣是</text>
+      <text x="24" y="384" fill="#8c8079">「研發地」不是「主戰場」</text>
+      <rect x="260" y="292" width="230" height="128" rx="10" fill="#fff" stroke="#e98973" stroke-width="2"/>
+      <text x="274" y="316" font-family="Silkscreen" font-size="12" fill="#e98973">H2 · 品類定位</text>
+      <text x="274" y="342" font-weight="700" fill="#3a3330">被歸類成「監視器」</text>
+      <text x="274" y="364" fill="#8c8079">比價時被 Tapo、小米</text>
+      <text x="274" y="384" fill="#8c8079">這種平價品牌取代（RQ1）</text>
+      <rect x="510" y="292" width="230" height="128" rx="10" fill="#fff" stroke="#e98973" stroke-width="2"/>
+      <text x="524" y="316" font-family="Silkscreen" font-size="12" fill="#e98973">H3 · 品牌形象</text>
+      <text x="524" y="342" font-weight="700" fill="#3a3330">印象是「狗狗相機」</text>
+      <text x="524" y="364" fill="#8c8079">但台灣貓已超過狗，</text>
+      <text x="524" y="384" fill="#8c8079">貓奴不覺得是做給他的</text>
+      <rect x="760" y="292" width="230" height="128" rx="10" fill="#fff" stroke="#e98973" stroke-width="2"/>
+      <text x="774" y="316" font-family="Silkscreen" font-size="12" fill="#e98973">H4 · 價值溝通</text>
+      <text x="774" y="342" font-weight="700" fill="#3a3330">AI 價值沒被講清楚</text>
+      <text x="774" y="364" fill="#8c8079">「看得到」誰都有，</text>
+      <text x="774" y="384" fill="#8c8079">「出事會知道」沒人講（RQ2）</text>
+    </g>
+  </svg>
+  </div></div>
+  <div class="callout red"><div class="x">?</div><p>問卷和快聊要回答老師那串問題：<b>你知道 Furbo 嗎？</b> 不知道 → 是不需要，還是覺得別牌比較好？ → 為什麼比較好？ 答案會直接決定留 H1–H4 哪幾個。</p></div>
+</section>
+
+<!-- 06 SMART -->
+<section id="smart">
+  <div class="sh"><span class="no">07</span><h2>SMART objectives（草稿・數字等問卷）</h2></div>
+  <p class="sub">一個問題可以有多個目標。紅線空格 = 要用 baseline 填；規格書要求每個字母都附「為什麼這樣定」。</p>
+  <div class="grid" style="gap:10px">
+    <div class="obj"><div class="k">O1</div><div><h4>主目標・提示認知度：雙北 25–39 歲飼主「看過／聽過 Furbo」的比例，2027/1/1–3/31 三個月內從 <span class="blank">X%</span> 提升到 <span class="blank">X+15pp</span></h4><p>baseline 用我們自己的前測問卷；結束後同題後測。<span class="pill ok">直接對應核心問題</span></p></div></div>
+    <div class="obj"><div class="k">O2</div><div><h4>子目標・社群：IG @furbo_taiwan_official 追蹤數從 <span class="blank">N</span> 成長到 <span class="blank">1.3N</span>，Reels 平均互動率 ≥ <span class="blank">3%</span></h4><p>老師舉的例子；公開可查、每週可追。<span class="pill ok">好量測、好報告</span></p></div></div>
+    <div class="obj"><div class="k">O3</div><div><h4>子目標・漏斗下游（選配）：活動 UTM 帶來的官網造訪 ≥ <span class="blank">20,000</span>、新機購買 ≥ <span class="blank">U</span> 台</h4><p>U 由 <a href="#plan">09 損益兩平公式</a>反推。<span class="pill amb">用來算 ROI</span></p></div></div>
+  </div>
+  <div class="smart" style="margin-top:14px">
+    <div class="sm"><div class="L">S</div><h5>Specific</h5><p>指定市場（台灣）、客群（雙北 25–39 飼主）、指標（提示認知度）</p></div>
+    <div class="sm"><div class="L">M</div><h5>Measurable</h5><p>前後測問卷同題、IG 追蹤數可截圖；UTM 追蹤網站流量</p></div>
+    <div class="sm"><div class="L">A</div><h5>Achievable</h5><p>+15pp 的依據：KOL 觸及估算 × 記憶率（C 給數字，B 寫理由）</p></div>
+    <div class="sm"><div class="L">R</div><h5>Relevant</h5><p>認知是購買漏斗第一關；不知道就不會進入比價清單</p></div>
+    <div class="sm"><div class="L">T</div><h5>Time-bound</h5><p>規格書要求 3 個月；建議放 2027 Q1（含農曆年送禮檔期）</p></div>
+  </div>
+</section>
+
+<!-- 07 TACTICS -->
+<section id="tactics">
+  <div class="sh"><span class="no">08</span><h2>策略 × Persona × 戰術評估</h2></div>
+  <p class="sub">老師：7P 選一個就好，底下多個 tactics，挑 1–2 個最核心的講。</p>
+  <div class="p7"><span>Product</span><span>Price</span><span>Place</span><span class="on">★ Promotion</span><span>People</span><span>Process</span><span>Physical evidence</span></div>
+  <p style="font-size:13.5px;margin:0 0 16px">為什麼是 Promotion：問題在「不知道」，不是產品不夠好（Product）、也不是太貴（官網已 2 折起＋30 天試用，Price 已經在打）。<span class="pill amb">B 講 · C 接</span></p>
+
+  <div class="grid g2">
+    <div class="persona" id="persona">
+      <div class="av"><svg width="72" height="72" viewBox="0 0 72 72" fill="none" stroke="#4fa3a5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="36" cy="26" r="12"/><path d="M14 64c2-13 11-20 22-20s20 7 22 20"/><path d="M50 14l4-6 3 7M22 14l-4-6-3 7"/></svg></div>
+      <div>
+        <h4>Persona 草稿：「上班時一直滑手機看貓的 Vivian」</h4>
+        <ul>
+          <li>29 歲、台北套房、行銷上班族，白天出門 10 小時</li>
+          <li>養 2 隻貓（台灣養多隻的以貓家庭為主）</li>
+          <li>現在用 1 台幾百塊的小米／Tapo，只能「看」</li>
+          <li>痛點：吐了、打翻東西、亂叫，回家才發現</li>
+          <li>資訊來源：IG Reels、Threads、Dcard 寵物板</li>
+          <li class="m">↳ 年齡／居住地／貓狗比例等問卷後再修 <span class="pill hyp">待驗證</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <h4>價值主張要換一句話講</h4>
+      <p style="margin:8px 0">平價相機賣的是「<b>看得到</b>」；Furbo 要講的是「<b>出事你會知道</b>」＋「<b>可以互動</b>」（丟零食、逗貓棒）。</p>
+      <p class="m">內容素材天生存在：AI 自動剪的「毛孩日記」、異常警報影片，正好是老師說的「打破杯子時發警示影片」——這就是 KOL 內容的主軸。</p>
+      <div style="margin-top:8px"><span class="pill amb">B · §4</span><span class="pill amb">C · 內容主軸</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-size:16px;margin:22px 0 10px">Tactic 評估表（§5：pros／cons／可行性 → 推薦）</h3>
+  <div class="scroll"><table class="tac">
+    <tr><th style="width:24%">Tactic</th><th>Pros</th><th>Cons</th><th>成本</th><th>可行性</th><th>結論</th></tr>
+    <tr class="pick"><td class="t"><b>T1 寵物微網紅 ×「毛孩留守日記」</b>8–10 位有養貓狗的 IG／Threads 網紅，用 Furbo 實拍「我不在家時牠在幹嘛」</td><td>內容真實、受眾精準；Furbo 警報影片＝現成素材</td><td>需篩選人選、管理多個合作</td><td><div class="dots"><i></i><i></i><i class="o"></i></div></td><td><div class="dots"><i></i><i></i><i></i></div></td><td><span class="pill ok">★ 核心</span></td></tr>
+    <tr class="pick"><td class="t"><b>T2 UGC 挑戰 #毛孩留守日記</b>用戶上傳 Furbo 拍到的瞬間，每月抽 Mini 360°</td><td>放大 T1 聲量、便宜、產生社群內容</td><td>新品牌冷啟動參與度低 → 要靠 T1 帶</td><td><div class="dots"><i></i><i class="o"></i><i class="o"></i></div></td><td><div class="dots"><i></i><i></i><i></i></div></td><td><span class="pill ok">★ 擴散</span></td></tr>
+    <tr><td class="t"><b>T3 明星代言</b>例：有養狗的藝人（老師舉蔡依林）</td><td>知名度最快</td><td>報價可能數十萬到百萬以上、3 個月 ROI 難回本</td><td><div class="dots"><i></i><i></i><i></i></div></td><td><div class="dots"><i></i><i class="o"></i><i class="o"></i></div></td><td><span class="pill hyp">不推薦</span></td></tr>
+    <tr><td class="t"><b>T4 寵物友善場域體驗</b>寵物旅館／動物醫院／寵物展借機體驗（參考日本 OMO 案例）</td><td>能「摸到」產品、有日本先例</td><td>談合作慢、單點觸及小</td><td><div class="dots"><i></i><i></i><i class="o"></i></div></td><td><div class="dots"><i></i><i></i><i class="o"></i></div></td><td><span class="pill amb">備案</span></td></tr>
+  </table></div>
+  <p class="m" style="font-size:13px;margin-top:8px">網紅行情參考：IG 追蹤 &lt;5 萬每篇約 NT$3,000–9,000；10 萬–百萬約 NT$1–10 萬；百萬以上可能數十萬。<a class="pill src" href="https://www.pro360.com.tw/price/instagram_advertorial">PRO360</a> C 再用媒合平台（如 KOL Radar、Influenxio）查實際人選＋報價，選「有養寵物」的人。</p>
+</section>
+
+<!-- 08 PLAN -->
+<section id="plan">
+  <div class="sh"><span class="no">09</span><h2>3 個月執行 × 預算 × 評估</h2></div>
+  <p class="sub">§6 要回答：做什麼／何時／誰／多少錢／要不要外包。§7 要回答：何時回本、里程碑、收什麼資料。</p>
+  <div class="gantt">
+    <div class="gr"><div></div><div class="mo" style="background:var(--C-l);color:var(--C)">M1 · 1 月 暖身</div><div class="mo" style="background:var(--am-l);color:var(--am-d)">M2 · 2 月 引爆</div><div class="mo" style="background:var(--A-l);color:var(--A)">M3 · 3 月 擴散＋驗收</div></div>
+    <div class="gr hd"><div>活動</div><div>W1</div><div>W2</div><div>W3</div><div>W4</div><div>W5</div><div>W6</div><div>W7</div><div>W8</div><div>W9</div><div>W10</div><div>W11</div><div>W12</div></div>
+    <div class="gr"><div class="nm">前測問卷（baseline）</div><div class="bk" style="--c:var(--B);grid-column:2/4">前測</div></div>
+    <div class="gr"><div class="nm">篩選＋簽約 KOL（媒合平台）</div><div class="bk" style="--c:var(--C);grid-column:2/5">選人・寄機</div></div>
+    <div class="gr"><div class="nm">T1 KOL 留守日記內容上線</div><div class="bk" style="--c:var(--C);grid-column:5/12">每週 1–2 位 KOL 發文</div></div>
+    <div class="gr"><div class="nm">T2 UGC #毛孩留守日記</div><div class="bk" style="--c:var(--A);grid-column:6/13">每月抽獎</div></div>
+    <div class="gr"><div class="nm">Meta 廣告加熱表現最好的內容</div><div class="bk" style="--c:var(--am);grid-column:7/13">boost</div></div>
+    <div class="gr"><div class="nm">後測問卷＋成效報告</div><div class="bk" style="--c:var(--B);grid-column:12/14">後測</div></div>
+  </div>
+
+  <div class="ms">
+    <div class="card"><div class="wk">CHECKPOINT · W4</div><h4>暖身完成</h4><p class="m">baseline 定案、KOL 簽滿 8 位、第一批內容排程</p></div>
+    <div class="card"><div class="wk">CHECKPOINT · W8</div><h4>期中檢查</h4><p class="m">IG 追蹤達 1.15N？沒到 → 把預算轉給互動最高的 KOL 類型</p></div>
+    <div class="card"><div class="wk">CHECKPOINT · W12</div><h4>驗收</h4><p class="m">後測認知度、追蹤數、UTM 流量、售出台數 vs. O1–O3</p></div>
+  </div>
+
+  <div class="grid g2" style="margin-top:14px">
+    <div class="card">
+      <h4>預算試算（C 要用實際報價更新）</h4>
+      <table class="bud">
+        <tr><th>項目</th><th>假設</th><th style="text-align:right">NT$</th></tr>
+        <tr><td>微網紅（&lt;5 萬追蹤）</td><td>8 位 × 6,000</td><td class="n">48,000</td></tr>
+        <tr><td>中型網紅（10–50 萬）</td><td>2 位 × 60,000</td><td class="n">120,000</td></tr>
+        <tr><td>Meta 廣告加熱</td><td>6 週</td><td class="n">90,000</td></tr>
+        <tr><td>寄測機台＋UGC 獎品</td><td>以公司成本計</td><td class="n blank" style="border:0">待查</td></tr>
+        <tr><td>問卷＋素材剪輯</td><td>內部／外包</td><td class="n">30,000</td></tr>
+        <tr class="tot"><td>合計（不含機台）</td><td></td><td class="n">≈ 288,000</td></tr>
+      </table>
+      <p class="m" style="font-size:12.5px;margin-top:6px">人力：品牌社群 1 人兼任＋外包剪輯；KOL 媒合可外包給代理商（要寫進 §6）。</p>
+    </div>
+    <div class="card">
+      <h4>Break-even（§7）</h4>
+      <div class="be">回本台數 = <em>活動總成本</em> ÷ ( <em>每台硬體毛利</em> + <em>Nanny 首年訂閱收入 × 訂閱率</em> )</div>
+      <p class="m" style="font-size:13px;margin-top:10px">要填的數字：台灣售價（官網／momo）、合理毛利假設、Nanny 台灣價格、訂閱率假設。全部標「assumption」＋出處。</p>
+      <h4 style="margin-top:12px">要收的資料</h4>
+      <p style="font-size:13px">前後測問卷（認知度）・IG Insights（追蹤、觸及、互動）・UTM／GA（流量）・抽獎參與數・售出台數＆試用開通數</p>
+    </div>
+  </div>
+</section>
+
+<!-- 09 TEAM -->
+<section id="team">
+  <div class="sh"><span class="no">10</span><h2>分工 × 報告架構 × 時程</h2></div>
+  <p class="sub">15 分鐘＝A → B → C 三棒。<b>技術、產品、AI 相關全部集中給 A＝小魚</b>；B、C 是不需要技術背景的部分，也是 Q&amp;A 小魚可以隨時接手的技術題。D 不上台、專心寫報告。</p>
+  
+  <div class="dls">
+    <div class="dlc"><div class="e">📮</div><div class="dd">12/7 <small>MON 23:59</small></div><b>簡報繳件</b><span>A・B・C 投影片合併上傳</span></div>
+    <div class="dlc hot"><div class="e">🎤</div><div class="dd">12/10 <small>THU</small></div><b>上台報告</b><span>15 min ＋ Q&amp;A 5 min</span></div>
+    <div class="dlc"><div class="e">📝</div><div class="dd">12/17 <small>THU 23:59</small></div><b>期末書面繳交</b><span>D 主筆・12 頁</span></div>
+  </div>
+  <h3 style="font-size:16px;margin:22px 0 10px">上台順序（15:00）</h3>
+  <div class="stack">
+    <a href="#pA" style="--c:var(--A);flex:4.5">A 小魚 · 公司＋產品＋競品 4:30</a>
+    <a href="#pB" style="--c:var(--B);flex:5">B · 顧客→問題→SMART→策略 5:00</a>
+    <a href="#pC" style="--c:var(--C);flex:5">C · 戰術→執行→預算 5:00</a>
+    <a class="gap" style="flex:.5">buf</a>
+  </div>
+  <div class="ticks"><span>0:00</span><span>3:00</span><span>6:00</span><span>9:00</span><span>12:00</span><span>15:00</span></div>
+
+  <div class="grid g2">
+    <div class="person" id="pA" style="--c:var(--A);--cl:var(--A-l)">
+      <div class="ph"><span class="L">A</span><div><h3>開場＋產品＋技術＋競品</h3><div class="w">技術腦區 · 約 6 張投影片 · 書面 §1、§2.3、§2.4(T/L) 素材</div></div><span class="claim">小魚</span></div>
+      <div class="pb">
+        <div class="blk"><div class="h">SLIDES</div><ul>
+          <li>Hook：「全球第一的寵物相機是台灣做的，你聽過嗎？」（現場舉手）</li>
+          <li>產品線圖鑑 1 張＋價值階梯 1 張（<a href="#product">04</a> 直接改成投影片）</li>
+          <li>Nanny AI 流程：<b>用自己的機實拍一段警報影片／app 畫面</b>（限已上市功能）</li>
+          <li>功能矩陣：Furbo vs TP-Link Tapo vs 小米（AI 偵測、零食、訂閱、價格）</li>
+          <li>科技／資安環境：AI 偵測變免費標配、CVE 事件怎麼影響信任</li>
+        </ul></div>
+        <div class="blk"><div class="h">技術支援別人</div><ul>
+          <li>幫 B：H2／H4 的技術解釋、SWOT 的 S／T 技術項</li>
+          <li>幫 C：KOL 拍攝腳本裡哪些 AI 功能最好拍；UTM／IG Insights 追蹤設計</li>
+          <li>給 D：英文技術名詞對照表（Nanny、edge AI、push alert…）</li>
+        </ul></div>
+        <div class="hand">交棒句：「產品夠強、AI 也有差異——那為什麼台灣飼主還是不買？B 用問卷告訴大家。」</div>
+      </div>
+    </div>
+    <div class="person" id="pB" style="--c:var(--B);--cl:var(--B-l)">
+      <div class="ph"><span class="L">B</span><div><h3>顧客 → 問題 → 目標 → 策略</h3><div class="w">不需技術背景 · 約 6 張投影片 · 書面 §2.1、§2.2、§3、§4 素材</div></div><span class="claim">認領：＿＿</span></div>
+      <div class="pb">
+        <div class="blk"><div class="h">SLIDES</div><ul>
+          <li>台灣飼主輪廓：320 萬犬貓、貓超車狗（現成數據）</li>
+          <li><b>問卷結果</b>：幾 % 聽過 Furbo、大家想到哪些牌子（全場最有說服力）</li>
+          <li>SWOT 1 張 → 問題樹 1 張（核心：品牌認知不足）</li>
+          <li>SMART O1–O3＋每個字母一句理由</li>
+          <li>Persona 1 張＋為什麼 7P 只選 Promotion</li>
+        </ul></div>
+        <div class="blk"><div class="h">FOR D</div><ul><li>§2.1、2.2、3、4 素材＋問卷原始資料（Google Sheet）</li><li>PESTEL 的 S、E 兩項</li></ul></div>
+        <div class="hand">交棒句：「目標有了，接下來 C 告訴大家：用哪一招、花多少錢、怎麼知道有沒有成功。」</div>
+      </div>
+    </div>
+    <div class="person" id="pC" style="--c:var(--C);--cl:var(--C-l)">
+      <div class="ph"><span class="L">C</span><div><h3>戰術 → 執行 → 預算 → 收尾</h3><div class="w">不需技術背景 · 約 6 張投影片 · 書面 §5–7 素材</div></div><span class="claim">認領：＿＿</span></div>
+      <div class="pb">
+        <div class="blk"><div class="h">SLIDES</div><ul>
+          <li>Tactic 評估表 → 為什麼選 T1＋T2（只深講這兩個）</li>
+          <li>KOL 人選範例：上媒合平台查真實報價、選有養貓狗的人</li>
+          <li>3 個月 Gantt＋預算表</li>
+          <li>Break-even＋W4/W8/W12 檢查點</li>
+          <li>收尾：回到 ONE LINE，「請投資我們 NT$30 萬」</li>
+        </ul></div>
+        <div class="blk"><div class="h">FOR D</div><ul><li>§5–7 素材＋預算計算表（Google Sheet，公式看得到）</li><li>KOL 拍攝要用的 AI 功能 → 直接問小魚</li></ul></div>
+        <div class="hand">收尾句：「3 個月後，讓更多台灣飼主出門前會想：要不要裝一台 Furbo？」</div>
+      </div>
+    </div>
+    <div class="person" id="pD" style="--c:var(--D);--cl:var(--D-l)">
+      <div class="ph"><span class="L">D</span><div><h3>書面報告總編（不做簡報）</h3><div class="w">ES＋§1–9 · 12 頁英文 · 格式＋APA＋AI 揭露</div></div><span class="claim">認領：＿＿</span></div>
+      <div class="pb">
+        <div class="blk"><div class="h">REPORT</div><ul>
+          <li>先做 Word 模板：TNR、標題 14／內文 12、1.5 行距、頁碼</li>
+          <li>把 A／B／C 素材寫成連貫英文，<b>段落間要有 transition</b>（rubric 有考）</li>
+          <li>Executive summary 最後寫（≤1 頁、一段）</li>
+          <li>APA in-text＋reference list；表格／圖統一編號</li>
+          <li>AI learning report＋會議紀錄（建議放 appendix）</li>
+        </ul></div>
+        <div class="blk"><div class="h">ALSO</div><ul><li>每次開會的紀錄員（規格書要求保留紀錄以防爭議）</li><li>簡報前一天看一次 slides，確保簡報和報告數字一致</li></ul></div>
+        <div class="hand">D 的原則：簡報可以省略，報告不能缺；每個數字都要有出處或標 assumption。</div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-size:16px;margin:26px 0 10px">書面 12 頁分配（D 寫・括號＝素材來源）</h3>
+  <div class="rows">
+    <div class="r" style="--c:#cdbfb3"><span>Cover</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pD mini"><b>D</b>D</span></div>
+    <div class="r" style="--c:var(--D)"><span>Executive summary</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pD mini"><b>D</b>D</span></div>
+    <div class="r" style="--c:var(--A)"><span>§1 Firm profile＋產品</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pA mini"><b>A</b>小魚</span></div>
+    <div class="r" style="--c:var(--B)"><span>§2.1 Customer＋2.2 SWOT</span><div class="track"><div class="fill" style="width:12.5%"></div></div><span class="v">1.5</span><span class="p pB mini"><b>B</b>B</span></div>
+    <div class="r" style="--c:var(--A)"><span>§2.3 Competitor＋2.4 Macro</span><div class="track"><div class="fill" style="width:12.5%"></div></div><span class="v">1.5</span><span class="p pA mini"><b>A</b>小魚</span></div>
+    <div class="r" style="--c:var(--B)"><span>§3 Problem＋SMART</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pB mini"><b>B</b>B</span></div>
+    <div class="r" style="--c:var(--B)"><span>§4 Persona＋strategy</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pB mini"><b>B</b>B</span></div>
+    <div class="r" style="--c:var(--C)"><span>§5 Tactics evaluation</span><div class="track"><div class="fill" style="width:10.4%"></div></div><span class="v">1.25</span><span class="p pC mini"><b>C</b>C</span></div>
+    <div class="r" style="--c:var(--C)"><span>§6 Implementation</span><div class="track"><div class="fill" style="width:10.4%"></div></div><span class="v">1.25</span><span class="p pC mini"><b>C</b>C</span></div>
+    <div class="r" style="--c:var(--C)"><span>§7 Evaluation</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pC mini"><b>C</b>C</span></div>
+    <div class="r" style="--c:#cdbfb3"><span>§8 References</span><div class="track"><div class="fill" style="width:4.2%"></div></div><span class="v">0.5</span><span class="p pD mini"><b>D</b>D</span></div>
+  </div>
+  <p class="m" style="font-size:13px;margin-top:10px">合計 12 頁（A 2.5／B 3.5／C 3.5／D 2.5）。§2 給 3 頁，因為老師 rubric 第一項就是 research depth；小魚頁數較少，但多了圖鑑、實拍素材和全組技術支援。Appendix（AI 報告、問卷、訪談摘要）不計分，是否計入頁數請 <a href="#todo">確認</a>。</p>
+  <h3 style="font-size:16px;margin:26px 0 10px">組內時程：從今天到繳交</h3>
+  <p class="m" style="font-size:13px;margin:0 0 10px">紅色＝老師死線（簡報遲交每天 −1、報告遲交每天 −5）。</p>
+  <div class="card tl">
+    <div class="ti now"><span class="d">11/19</span><span class="mk"></span><span class="x">分工頁上線：A＝小魚，其他人認領 <b>B／C／D</b></span></div>
+    <div class="ti"><span class="d">11/23</span><span class="mk"></span><span class="x">問卷發出（B）；小魚開始寫使用日記</span></div>
+    <div class="ti"><span class="d">11/25</span><span class="mk"></span><span class="x">飼主快聊完成（每人 1–2 位）、問卷收 ≥ 60 份</span></div>
+    <div class="ti"><span class="d">11/26</span><span class="mk"></span><span class="x">開會：鎖定市場、主問題、留下哪幾個原因、SMART 數字</span></div>
+    <div class="ti"><span class="d">11/30</span><span class="mk"></span><span class="x">A／B／C 投影片初稿＋把素材與來源丟給 D</span></div>
+    <div class="ti"><span class="d">12/03</span><span class="mk"></span><span class="x">彩排 #1（計時 15:00）、D 交報告初稿 §1–4</span></div>
+    <div class="ti"><span class="d">12/06</span><span class="mk"></span><span class="x">彩排 #2、練 Q&amp;A（預想：為什麼選台灣？預算怎麼算？）</span></div>
+    <div class="ti dl"><span class="d">12/07</span><span class="mk"></span><span class="x"><b>📮 Slides 繳交 23:59（MON）</b></span></div>
+    <div class="ti dl"><span class="d">12/10</span><span class="mk"></span><span class="x"><b>🎤 上台報告（THU）</b></span></div>
+    <div class="ti"><span class="d">12/14</span><span class="mk"></span><span class="x">依 Q&amp;A 回饋修報告；全員各讀一次挑錯</span></div>
+    <div class="ti dl"><span class="d">12/17</span><span class="mk"></span><span class="x"><b>📝 期末書面繳交 23:59（THU）</b></span></div>
+  </div>
+</section>
+
+<!-- 10 FIELD -->
+<section id="field">
+  <div class="sh"><span class="no">11</span><h2>證據怎麼來：問卷為主、飼主快聊為輔</h2></div>
+  <p class="sub">時間不夠就不訪公司（本來也不需要）。老師要的是「消費者為什麼不知道」，所以重點是飼主。三種來源疊起來就夠撐 §2.1。</p>
+  <div class="grid g3">
+    <div class="card" style="border-top:4px solid var(--B)">
+      <div class="pill amb">主力 · B</div>
+      <h4 style="margin-top:6px">① 線上問卷（拿 baseline）</h4>
+      <p>Google Form 5 分鐘，丟寵物 FB 社團、Dcard 寵物板、LINE 群、IG 限動。目標 ≥ 60 份飼主。</p>
+      <p class="m" style="margin-top:6px;font-size:12.5px">產出：提示認知度 X%（＝O1 起點）、大家想到哪些牌子、資訊從哪來</p>
+    </div>
+    <div class="card" style="border-top:4px solid var(--C)">
+      <div class="pill amb">輕量 · 全員</div>
+      <h4 style="margin-top:6px">② 飼主朋友 10 分鐘快聊</h4>
+      <p>每人找 1–2 位有養貓狗的朋友，用下面 5 題聊、LINE 語音也行。共 4–6 位就夠。</p>
+      <p class="m" style="margin-top:6px;font-size:12.5px">產出：2–3 句可以直接放投影片的原話</p>
+    </div>
+    <div class="card" style="border-top:4px solid var(--A)">
+      <div class="pill amb">第一手 · 小魚</div>
+      <h4 style="margin-top:6px">③ 飼主＋前實習生使用觀察</h4>
+      <p>自己養貓、手上有產品：寫一份「一週使用日記」——哪些警報有用、哪些很煩、跟朋友推薦時大家第一個問題是什麼。</p>
+      <p class="m" style="margin-top:6px;font-size:12.5px">⚠ 只寫已上市功能與個人體驗，不寫內部資料</p>
+    </div>
+  </div>
+
+  <div class="grid g2" style="margin-top:16px">
+    <div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><b>飼主快聊 5 題（照老師的問題串）</b><button class="copy" data-copy="guide">COPY</button></div>
+      <div class="grid" style="gap:8px" id="guide">
+        <div class="iv"><span class="n">1</span><div><h4>你養什麼？白天牠通常自己在家幾小時？</h4><p>→ 區隔變數（貓／狗、獨留時數）</p></div></div>
+        <div class="iv"><span class="n">2</span><div><h4>想到寵物攝影機，你會想到哪些牌子？現在用哪台？</h4><p>→ 未提示認知＋替代品</p></div></div>
+        <div class="iv"><span class="n">3</span><div><h4>（給看 Furbo）你聽過嗎？在哪看過？</h4><p>→ 提示認知＋接觸管道</p></div></div>
+        <div class="iv"><span class="n">4</span><div><h4>沒買的原因？不需要，還是覺得別牌更好？為什麼更好？</h4><p>→ 驗證 H1–H4（老師原話）</p></div></div>
+        <div class="iv"><span class="n">5</span><div><h4>如果牠吐了、一直叫，手機會跳警報影片，你願意每月付多少？</h4><p>→ AI 服務價值認知（原 RQ2）</p></div></div>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="border-color:var(--B)">
+        <h4>問卷題目骨架（B 做表單）</h4>
+        <ul style="font-size:13.5px;padding-left:18px;margin:6px 0">
+          <li>篩選：有養貓／狗、居住縣市、年齡</li>
+          <li>未提示認知：「寵物攝影機你想到哪些牌子？」（開放題，<b>放在 logo 之前</b>）</li>
+          <li>提示認知：Furbo／小米／Tapo／Ebo／Petcube，勾「聽過」</li>
+          <li>現況：有沒有在用寵物攝影機？哪一牌？為什麼選它？</li>
+          <li>資訊管道：IG／Threads／YouTube／Dcard／朋友</li>
+          <li>願付價格：AI 警報服務每月願付 NT$0／100／200／300+</li>
+        </ul>
+        <p class="m" style="font-size:12.5px">報告要寫樣本數與限制（便利抽樣）。小魚幫看題目裡的產品描述正不正確。</p>
+      </div>
+      <div class="card" style="margin-top:12px">
+        <h4>紀錄格式</h4>
+        <p style="font-size:13.5px">受訪者代號（P1…）・貓／狗・年齡層・5 題重點・<b>一句可直接引用的原話</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 12 TODO -->
+<section id="todo">
+  <div class="sh"><span class="no">12</span><h2>待確認清單＆題目候選</h2></div>
+  <div class="grid g2">
+    <div class="card"><ul class="ck">
+      <li><span class="bx"></span><span><b>市場：台灣 or 美國？</b>本頁建議台灣（能直接問台灣飼主、老師暗示、貓超車狗是好故事）。若維持美國，§2.1 改成次級資料、O1 改用 Google Trends／社群聲量</span></li>
+            <li><span class="bx"></span><span>A＝小魚；B／C／D 誰認領？（建議：D 給英文寫作最穩的人）</span></li>
+      <li><span class="bx"></span><span>IG／FB 現在的追蹤數（截圖＋日期）<span class="p pB mini"><b>B</b>B</span></span></li>
+      <li><span class="bx"></span><span>台灣相機售價、通路（官網／momo／PChome）；台灣版 Nanny 實際開放的警報種類 <span class="p pA mini"><b>A</b>小魚</span></span></li>
+      <li><span class="bx"></span><span>3 位候選 KOL＋實際報價（有養寵物）<span class="p pC mini"><b>C</b>C</span></span></li>
+      <li><span class="bx"></span><span>Appendix 算不算在 12 頁內？報告／簡報用英文？→ 問老師 <span class="p pD mini"><b>D</b>D</span></span></li>
+    </ul></div>
+    <div>
+      <div class="titles">
+        <div class="tt"><span class="n">1</span><div><b>Born in Taiwan, Unknown at Home</b><small>台灣做的全球第一，台灣人卻不認識</small></div></div>
+        <div class="tt"><span class="n">2</span><div><b>While You're Away: Making Furbo Seen</b><small>呼應「留守日記」tactic</small></div></div>
+        <div class="tt"><span class="n">3</span><div><b>From "Dog Camera" to Every Pet Parent's Peace of Mind</b><small>呼應貓超車狗＋價值主張</small></div></div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-size:15px;margin:24px 0 8px">本頁資料來源</h3>
+  <div class="refs">
+    <a href="https://www.bnext.com.tw/article/72985/tomofun-ai-dec-22-mag">數位時代：Tomofun 訂閱制、133 國、百萬用戶</a>
+    <a href="https://furbo.com/llms.txt">Furbo 官方：產品線與 Nanny 說明</a>
+    <a href="https://furbo.com/tw">Furbo 台灣官網：促銷、社群帳號</a>
+    <a href="https://subger.com/pl/service/furbo-nanny">Subger：美國 Nanny 價格（2026/3 驗證）</a>
+    <a href="https://www.gminsights.com/industry-analysis/pet-monitoring-camera-market">GMI：寵物攝影機市場規模與市占（2026/8）</a>
+    <a href="https://www.researchandmarkets.com/reports/6262005/pet-monitoring-camera-market-opportunity-growth">Research and Markets：互動型 52.7%</a>
+    <a href="https://news.pts.org.tw/article/804498">公視：2025 全國犬貓飼養調查</a>
+    <a href="https://www.ctee.com.tw/news/20260611701338-430601">工商時報：犬貓 320.5 萬 vs 幼年人口</a>
+    <a href="https://udn.com/news/story/7241/9397741">聯合新聞網：momo 智慧養寵設備趨勢</a>
+    <a href="https://www.dcard.tw/@u_u_blue/post/261096951">Dcard：2026 寵物攝影機推薦</a>
+    <a href="https://prtimes.jp/main/html/rd/p/000000079.000018477.html">PR TIMES：Furbo × OMO by 星野集團</a>
+    <a href="https://www.sentinelone.com/vulnerability-database/cve-2025-11636/">SentinelOne：CVE-2025-11636</a>
+    <a href="https://cve.yack.one/vendors/furbo">CVE 彙整：Furbo 18 個 CVE</a>
+    <a href="https://www.pro360.com.tw/price/instagram_advertorial">PRO360：IG 業配行情</a>
+  </div>
+</section>
+
+</div>
+<footer><div class="px">● REC STOPPED · THANK YOU</div>TMKT Final Project · Tomofun / Furbo · 分工頁 v2（2026/11/19・加產品圖鑑＋技術分工）</footer>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.copy);
+    var t=Array.from(el.querySelectorAll('h4')).map(function(h,i){return (i+1)+'. '+h.textContent}).join('\n');
+    try{navigator.clipboard.writeText(t).then(function(){b.textContent='COPIED ✓';setTimeout(function(){b.textContent='COPY'},1500)},function(){b.textContent='請手動複製'})}catch(e){b.textContent='請手動複製'}
+  });
+});
+</script>
+</body>
+</html>
