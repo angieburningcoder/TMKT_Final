@@ -355,6 +355,15 @@ table.mx tr.nn td{background:var(--rec-l);color:var(--rec);font-weight:700}
 .dlc b{font-size:15px}.dlc span{font-size:12.5px;color:var(--mute)}
 .dlc.hot{border-color:var(--rec);box-shadow:4px 4px 0 var(--rec-l)}.dlc.hot .dd{color:var(--rec)}
 @media(max-width:620px){.dls{grid-template-columns:1fr}}
+
+.relay{display:flex;align-items:stretch;gap:6px;flex-wrap:wrap}
+.rg{flex:1;min-width:220px;background:#fff;border:2px solid var(--c);border-radius:10px;padding:8px 10px;box-shadow:3px 3px 0 var(--cl)}
+.rh{font-family:var(--px);font-size:11px;color:var(--c);margin-bottom:4px}
+.rc{display:flex;flex-wrap:wrap;gap:4px;align-items:center;font-size:12.5px}
+.rc span{background:var(--cl);border-radius:5px;padding:1px 7px;font-weight:700}
+.rc i{font-style:normal;color:var(--mute)}
+.ra{display:grid;place-items:center;color:var(--am);font-size:14px}
+@media(max-width:860px){.ra{display:none}}
 footer{padding:46px 0 70px;color:var(--mute);font-size:12.5px;text-align:center}
 footer .px{font-family:var(--px);color:var(--am-d)}
 </style>
@@ -366,7 +375,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
     <a class="tag" href="#feedback">01 老師回饋</a><a class="tag" href="#req">02 規格→誰</a><a class="tag" href="#story">03 故事線</a><a class="tag" href="#product">04 產品圖鑑</a><a class="tag" href="#intel">05 Furbo 現況</a><a class="tag" href="#problem">06 問題樹</a><a class="tag" href="#smart">07 SMART</a><a class="tag" href="#tactics">08 策略戰術</a><a class="tag" href="#plan">09 執行評估</a><a class="tag" href="#team">10 分工＋時程</a><a class="tag" href="#field">11 問卷＋飼主</a><a class="tag" href="#todo">12 待確認</a>
   </div>
   <div class="row"><span class="lbl">FIND ME</span>
-    <a class="p pA" href="#pA"><b>A</b>小魚・產品＋技術</a><a class="p pB" href="#pB"><b>B</b>顧客→問題→目標</a><a class="p pC" href="#pC"><b>C</b>戰術→執行→預算</a><a class="p pD" href="#pD"><b>D</b>書面報告</a>
+    <a class="p pA" href="#pA"><b>A</b>小魚・公司→顧客→競品</a><a class="p pB" href="#pB"><b>B</b>趨勢→SWOT→問題→目標</a><a class="p pC" href="#pC"><b>C</b>戰術→執行→預算</a><a class="p pD" href="#pD"><b>D</b>書面報告</a>
   </div>
 </div></nav>
 
@@ -423,16 +432,16 @@ footer .px{font-family:var(--px);color:var(--am-d)}
 <!-- 02 REQ -->
 <section id="req">
   <div class="sh"><span class="no">02</span><h2>規格書逐條 → 誰負責</h2></div>
-  <p class="sub">照老師 PDF 的報告結構排。<b>需要技術腦的（產品、AI 功能、競品功能比較、科技／資安環境）全給 A＝小魚</b>；B、C 負責顧客、問題、目標、戰術、預算這些不需要技術背景的部分；D 寫成 12 頁英文報告。</p>
+  <p class="sub">照老師 PDF 的報告結構排。<b>A＝小魚包 §1–2.3 的 3C（公司、顧客、競品）</b>：本身是貓飼主、用戶、也做過產品 PM；B 從外部趨勢收斂到問題與目標；C 負責戰術與預算；D 寫成 12 頁英文報告。<b>每人只上台一次，講完就下台，不輪替。</b></p>
   <div class="scroll"><table class="req">
     <tr><th>#</th><th>規格要求</th><th>我們要交出什麼</th><th>內容 owner</th><th>書面</th></tr>
     <tr><td class="no">ES</td><td>Executive summary（一段、≤1 頁）</td><td>整份計畫的靈魂：問題＋目標＋推薦 tactic＋預期回報</td><td class="who"><span class="p pD mini"><b>D</b>D</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
     <tr><td class="no">1</td><td>Firm profile：背景、數位商業模式、產品組合</td><td>Tomofun 簡介；硬體＋Nanny 訂閱的雙收入模式；4 款相機＋AI 功能（見 <a href="#product">04 圖鑑</a>）</td><td class="who"><span class="p pA mini"><b>A</b>小魚</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
     <tr class="grp"><td colspan="5">2 · SITUATION ANALYSIS（挑重點深挖，不要每項都淺淺做）</td></tr>
-    <tr><td class="no">2.1</td><td>Customer analysis：區隔依據、選目標客群、顧客經驗</td><td>區隔：飼養種類（貓／狗）× 生活型態（白天獨留時數）× 年齡；<b>問卷＋飼主朋友快聊</b>找出「不知道 Furbo 的原因」</td><td class="who"><span class="p pB mini"><b>B</b>B</span> ＋全員轉發問卷</td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
-    <tr><td class="no">2.2</td><td>SWOT</td><td>一張 SWOT 表，每格 ≤3 點，W 一定要寫「台灣聲量弱」；S／T 的技術項由小魚補</td><td class="who"><span class="p pB mini"><b>B</b>B</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">2.1</td><td>Customer analysis：區隔依據、選目標客群、顧客經驗</td><td>區隔：飼養種類（貓／狗）× 生活型態（白天獨留時數）× 年齡；小魚本身是貓飼主＋產品 PM（第一手用戶觀點）＋<b>問卷＋飼主快聊</b>找出「不知道 Furbo 的原因」</td><td class="who"><span class="p pA mini"><b>A</b>小魚</span> ＋全員轉發問卷</td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">2.2</td><td>SWOT</td><td>一張 SWOT 表，每格 ≤3 點，W 一定要寫「台灣聲量弱」；放在 PESTEL 之後當收斂；S／W 由小魚提供</td><td class="who"><span class="p pB mini"><b>B</b>B</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
     <tr><td class="no">2.3</td><td>Competitive analysis：1–2 個競品＋網路對競爭力量的影響</td><td>原 RQ1 放這裡。台灣：TP-Link Tapo／小米（平價監視器替代）；可選 Ebo（陪玩機器人）→ 做<b>功能對照矩陣</b>（AI 偵測、零食、訂閱、價格）</td><td class="who"><span class="p pA mini"><b>A</b>小魚</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
-    <tr><td class="no">2.4</td><td>Macro-environment（PESTEL）</td><td>只挑相關的：S 少子化／貓超車狗、T AI 偵測普及、L 個資＋資安（CVE）、E 物價</td><td class="who"><span class="p pA mini"><b>A</b>T・L</span> <span class="p pB mini"><b>B</b>S・E</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
+    <tr><td class="no">2.4</td><td>Macro-environment（PESTEL）</td><td>只挑相關的：S 少子化／貓超車狗、T AI 偵測普及、L 個資＋資安（CVE）、E 物價</td><td class="who"><span class="p pB mini"><b>B</b>B</span>（T／L 技術細節問小魚）</td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
     <tr class="grp"><td colspan="5">3 – 7 · PLAN</td></tr>
     <tr><td class="no">3</td><td>Main problem＋主要原因＋SMART（每個字母都要有理由）</td><td>問題樹＋1 個主目標、1–2 個子目標＋S/M/A/R/T 各一句 justification</td><td class="who"><span class="p pB mini"><b>B</b>B</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
     <tr><td class="no">4</td><td>Customer persona＋1–2 個 marketing strategy（7P）</td><td>1 個 persona；策略只選 <b>Promotion</b>（老師說一個就好）</td><td class="who"><span class="p pB mini"><b>B</b>B</span></td><td class="who"><span class="p pD mini"><b>D</b>D</span></td></tr>
@@ -454,7 +463,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
   <p class="sub">每一步都要接到下一步：分析指向問題 → 問題能量化 → 策略戰術回扣目標 → 用 KPI 驗收。顏色＝誰上台講。</p>
   <div class="flow">
     <div class="fs fA"><span class="sec pill src">§1</span><div class="st">STEP 1 · A</div><h4>Company selection</h4><p>台灣出生、全球百萬用戶；4 台相機＋Nanny AI 訂閱（用圖鑑講）。</p></div>
-    <div class="fs fB"><span class="sec pill src">§2</span><div class="st">STEP 2 · A 競品／B 顧客</div><h4>Situation analysis</h4><p>A：功能矩陣比 Tapo／小米；B：台灣犬貓 320 萬、貓超車狗，問卷看飼主認不認識 Furbo。</p></div>
+    <div class="fs fB"><span class="sec pill src">§2</span><div class="st">STEP 2 · A 3C → B 趨勢＋SWOT</div><h4>Situation analysis</h4><p>A：飼主視角＋問卷、功能矩陣比 Tapo／小米；B 接：貓超車狗、AI 變標配 → SWOT 收斂。</p></div>
     <div class="fs fB"><span class="sec pill src">§3</span><div class="st">STEP 3 · B</div><h4>One main problem</h4><p>不是產品不好，是<b>台灣飼主根本不知道它</b> → 沒進入購買清單。</p></div>
     <div class="fs fB rowend"><span class="sec pill src">§3</span><div class="st">STEP 4 · B</div><h4>SMART objective</h4><p>3 個月內：目標客群提示認知度 X% → Y%；IG 追蹤 N → 1.3N。</p></div>
     <div class="fs fB"><span class="sec pill src">§4</span><div class="st">STEP 5 · B</div><h4>Marketing strategy</h4><p>7P 只選 Promotion；鎖定一個 persona：白天毛孩獨自在家的雙北上班族。</p></div>
@@ -686,7 +695,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
         <div class="br" style="--c:#cdbfb3"><span>家貓 2023</span><div class="tr"><div class="fl" style="width:75%"></div></div><span class="v">131</span></div>
       </div>
       <p style="margin-top:10px">犬貓合計約 320.5 萬隻，已超過 0–14 歲幼年人口 268.2 萬。<b>品牌形象偏「狗」的 Furbo，正對上一個貓為主的市場。</b></p>
-      <div style="margin-top:8px"><span class="pill amb">A · §2.1 / §2.4</span><a class="pill src" href="https://news.pts.org.tw/article/804498">公視新聞</a><a class="pill src" href="https://www.ctee.com.tw/news/20260611701338-430601">工商時報</a></div>
+      <div style="margin-top:8px"><span class="pill amb">A §2.1</span><span class="pill amb">B §2.4</span><a class="pill src" href="https://news.pts.org.tw/article/804498">公視新聞</a><a class="pill src" href="https://www.ctee.com.tw/news/20260611701338-430601">工商時報</a></div>
     </div>
     <div class="card">
       <h4>全球市場：互動型是主流，前五大吃一半</h4>
@@ -697,7 +706,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
         <div class="br" style="--c:var(--A)"><span>Eufy（第一）</span><div class="tr"><div class="fl" style="width:14.2%"></div></div><span class="v">14.2%</span></div>
       </div>
       <p style="margin-top:10px">市場 2025 年 US$246.1M，預估 2035 年 US$645M（CAGR 10.3%）；北美最大，<b>亞太成長最快</b>。</p>
-      <div style="margin-top:8px"><span class="pill amb">A · §2.3 / §2.4</span><a class="pill src" href="https://www.gminsights.com/industry-analysis/pet-monitoring-camera-market">GMI 2026/8</a></div>
+      <div style="margin-top:8px"><span class="pill amb">A §2.3</span><span class="pill amb">B §2.4</span><a class="pill src" href="https://www.gminsights.com/industry-analysis/pet-monitoring-camera-market">GMI 2026/8</a></div>
     </div>
   </div>
 
@@ -706,7 +715,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
     <div class="nw"><span class="d">2026</span><div><b>Dcard 2026 寵物攝影機推薦：比較的是 TP-Link、小米、Ebo</b>台灣網友的熱門推薦文主打這三個品牌 → 初步支持「Furbo 不在台灣飼主的比較清單裡」。<div class="so">→ A 用在 §2.3；B 用來撐主問題 <span class="pill hyp">待問卷驗證</span></div><a class="pill src" href="https://www.dcard.tw/@u_u_blue/post/261096951">Dcard</a></div></div>
     <div class="nw"><span class="d">2026/07</span><div><b>日本：Furbo × 星野集團 OMO 飯店「不讓愛犬孤單」夏季住宿</b>OMO 三間館免費借 Furbo 給帶狗入住的旅客，搭配 IG 寵物網紅體驗與年度大促。<div class="so">→ C 的 tactic 先例：「場域體驗＋網紅」Furbo 自己在日本做過</div><a class="pill src" href="https://prtimes.jp/main/html/rd/p/000000079.000018477.html">PR TIMES</a></div></div>
     <div class="nw"><span class="d">2025/09</span><div><b>新品 Furbo Mini 360°：2K、業界最小級的旋轉 AI 相機，貓狗通用</b>產品線往「小、便宜、貓狗都能用」延伸。<div class="so">→ 推薦活動的主打機型（適合小坪數套房＋貓）</div><a class="pill src" href="https://www.cbinsights.com/company/furbo">CB Insights（日文新聞稿）</a></div></div>
-    <div class="nw"><span class="d">2025/10</span><div><b>資安：Furbo 360 / Mini 共 18 個 CVE 被揭露（含 SSRF、寫死憑證）</b>2025/10 公開，NVD 在 2026/4 更新；揭露者稱廠商未回應。<div class="so">→ A 放 §2.2 Threat／§2.4 Legal。⚠ 修正 Figma 便利貼：不是 2026/4 才爆出，是 2025/10 公開、2026/4 更新</div><a class="pill src" href="https://www.sentinelone.com/vulnerability-database/cve-2025-11636/">SentinelOne</a><a class="pill src" href="https://cve.yack.one/vendors/furbo">CVE list</a></div></div>
+    <div class="nw"><span class="d">2025/10</span><div><b>資安：Furbo 360 / Mini 共 18 個 CVE 被揭露（含 SSRF、寫死憑證）</b>2025/10 公開，NVD 在 2026/4 更新；揭露者稱廠商未回應。<div class="so">→ B 放 SWOT Threat／§2.4 Legal（小魚補技術說明）。⚠ 修正 Figma 便利貼：不是 2026/4 才爆出，是 2025/10 公開、2026/4 更新</div><a class="pill src" href="https://www.sentinelone.com/vulnerability-database/cve-2025-11636/">SentinelOne</a><a class="pill src" href="https://cve.yack.one/vendors/furbo">CVE list</a></div></div>
     <div class="nw"><span class="d">2026</span><div><b>momo：上班族擔心毛孩獨自在家，帶動智慧寵物設備</b>電商觀察到遠端餵食、監看等智慧設備需求上升。<div class="so">→ B 的 persona 依據：白天不在家的上班族</div><a class="pill src" href="https://udn.com/news/story/7241/9397741">聯合新聞網</a></div></div>
     <div class="nw"><span class="d">TW SNS</span><div><b>台灣官方帳號：FB「FurboTaiwan」、IG「furbo_taiwan_official」</b>追蹤數就是 SMART 的 baseline。<div class="so">→ B 這週去抓現值並截圖存證（日期要寫）</div><a class="pill src" href="https://furbo.com/tw">furbo.com/tw</a></div></div>
   </div>
@@ -866,7 +875,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
 <!-- 09 TEAM -->
 <section id="team">
   <div class="sh"><span class="no">10</span><h2>分工 × 報告架構 × 時程</h2></div>
-  <p class="sub">15 分鐘＝A → B → C 三棒。<b>技術、產品、AI 相關全部集中給 A＝小魚</b>；B、C 是不需要技術背景的部分，也是 Q&amp;A 小魚可以隨時接手的技術題。D 不上台、專心寫報告。</p>
+  <p class="sub">15 分鐘＝A → B → C 三棒，<b>每人一段連續講完就下台、不輪替</b>。A＝小魚包 3C（公司、顧客、競品）＋所有技術；B、C 不需要技術背景。Q&amp;A 的產品／技術題一律小魚接。D 不上台、專心寫報告。</p>
   
   <div class="dls">
     <div class="dlc"><div class="e">📮</div><div class="dd">12/7 <small>MON 23:59</small></div><b>簡報繳件</b><span>A・B・C 投影片合併上傳</span></div>
@@ -875,43 +884,50 @@ footer .px{font-family:var(--px);color:var(--am-d)}
   </div>
   <h3 style="font-size:16px;margin:22px 0 10px">上台順序（15:00）</h3>
   <div class="stack">
-    <a href="#pA" style="--c:var(--A);flex:4.5">A 小魚 · 公司＋產品＋競品 4:30</a>
-    <a href="#pB" style="--c:var(--B);flex:5">B · 顧客→問題→SMART→策略 5:00</a>
-    <a href="#pC" style="--c:var(--C);flex:5">C · 戰術→執行→預算 5:00</a>
+    <a href="#pA" style="--c:var(--A);flex:5">A 小魚 · §1 → §2.1 → §2.3　5:00</a>
+    <a href="#pB" style="--c:var(--B);flex:4.5">B · §2.4 → §2.2 → §3 → §4　4:30</a>
+    <a href="#pC" style="--c:var(--C);flex:5">C · §5 → §6 → §7　5:00</a>
     <a class="gap" style="flex:.5">buf</a>
   </div>
   <div class="ticks"><span>0:00</span><span>3:00</span><span>6:00</span><span>9:00</span><span>12:00</span><span>15:00</span></div>
+  <div class="relay">
+    <div class="rg" style="--c:var(--A);--cl:var(--A-l)"><div class="rh">A 小魚 · 微觀 3C</div><div class="rc"><span>§1 公司＋產品</span><i>→</i><span>§2.1 顧客</span><i>→</i><span>§2.3 競品</span></div></div>
+    <div class="ra">▶</div>
+    <div class="rg" style="--c:var(--B);--cl:var(--B-l)"><div class="rh">B · 宏觀 → 收斂</div><div class="rc"><span>§2.4 PESTEL</span><i>→</i><span>§2.2 SWOT</span><i>→</i><span>§3 問題＋SMART</span><i>→</i><span>§4 策略</span></div></div>
+    <div class="ra">▶</div>
+    <div class="rg" style="--c:var(--C);--cl:var(--C-l)"><div class="rh">C · 行動</div><div class="rc"><span>§5 戰術</span><i>→</i><span>§6 執行</span><i>→</i><span>§7 評估</span></div></div>
+  </div>
+  <p class="m" style="font-size:13px;margin:8px 0 18px">為什麼 SWOT 放 B：SWOT 的 O／T 來自 PESTEL，而且 SWOT 是「整理現況 → 找出問題」的橋，接在 B 手上最順。上台順序是 2.4 → 2.2；<b>書面報告 D 仍照老師規格 2.1→2.2→2.3→2.4 排</b>。</p>
+
 
   <div class="grid g2">
     <div class="person" id="pA" style="--c:var(--A);--cl:var(--A-l)">
-      <div class="ph"><span class="L">A</span><div><h3>開場＋產品＋技術＋競品</h3><div class="w">技術腦區 · 約 6 張投影片 · 書面 §1、§2.3、§2.4(T/L) 素材</div></div><span class="claim">小魚</span></div>
+      <div class="ph"><span class="L">A</span><div><h3>開場 → 公司＋產品 → 顧客 → 競品</h3><div class="w">§1、§2.1、§2.3 · 約 7 張投影片 · 5:00</div></div><span class="claim">小魚</span></div>
       <div class="pb">
         <div class="blk"><div class="h">SLIDES</div><ul>
           <li>Hook：「全球第一的寵物相機是台灣做的，你聽過嗎？」（現場舉手）</li>
-          <li>產品線圖鑑 1 張＋價值階梯 1 張（<a href="#product">04</a> 直接改成投影片）</li>
-          <li>Nanny AI 流程：<b>用自己的機實拍一段警報影片／app 畫面</b>（限已上市功能）</li>
-          <li>功能矩陣：Furbo vs TP-Link Tapo vs 小米（AI 偵測、零食、訂閱、價格）</li>
-          <li>科技／資安環境：AI 偵測變免費標配、CVE 事件怎麼影響信任</li>
+          <li>§1 產品線圖鑑＋價值階梯＋App 三畫面（<a href="#product">04</a> 直接轉投影片）</li>
+          <li>§2.1 顧客：區隔 → 目標客群；<b>「我自己就是養貓的 Furbo 用戶」</b>的旅程＋問卷結果（幾 % 聽過 Furbo）</li>
+          <li>§2.3 競品：Furbo vs TP-Link Tapo vs 小米 功能矩陣（AI 偵測、零食、訂閱、價格）</li>
         </ul></div>
-        <div class="blk"><div class="h">技術支援別人</div><ul>
-          <li>幫 B：H2／H4 的技術解釋、SWOT 的 S／T 技術項</li>
-          <li>幫 C：KOL 拍攝腳本裡哪些 AI 功能最好拍；UTM／IG Insights 追蹤設計</li>
-          <li>給 D：英文技術名詞對照表（Nanny、edge AI、push alert…）</li>
+        <div class="blk"><div class="h">BACKSTAGE</div><ul>
+          <li>問卷設計＋統計（題目產品描述只有你寫得準）；全員幫忙轉發</li>
+          <li>給 B：SWOT 的 S／W 條列、PESTEL 的 T／L 技術說明</li>
+          <li>給 C：KOL 拍攝最好拍的 AI 功能；給 D：英文技術名詞對照表</li>
         </ul></div>
-        <div class="hand">交棒句：「產品夠強、AI 也有差異——那為什麼台灣飼主還是不買？B 用問卷告訴大家。」</div>
+        <div class="hand">交棒句：「產品有差異、飼主也有需求，但問卷裡只有 X% 聽過它。把鏡頭拉遠，B 告訴大家外面發生什麼事。」</div>
       </div>
     </div>
     <div class="person" id="pB" style="--c:var(--B);--cl:var(--B-l)">
-      <div class="ph"><span class="L">B</span><div><h3>顧客 → 問題 → 目標 → 策略</h3><div class="w">不需技術背景 · 約 6 張投影片 · 書面 §2.1、§2.2、§3、§4 素材</div></div><span class="claim">認領：＿＿</span></div>
+      <div class="ph"><span class="L">B</span><div><h3>趨勢 → SWOT → 問題 → 目標 → 策略</h3><div class="w">§2.4、§2.2、§3、§4 · 約 5–6 張投影片 · 4:30 · 不需技術背景</div></div><span class="claim">認領：＿＿</span></div>
       <div class="pb">
         <div class="blk"><div class="h">SLIDES</div><ul>
-          <li>台灣飼主輪廓：320 萬犬貓、貓超車狗（現成數據）</li>
-          <li><b>問卷結果</b>：幾 % 聽過 Furbo、大家想到哪些牌子（全場最有說服力）</li>
-          <li>SWOT 1 張 → 問題樹 1 張（核心：品牌認知不足）</li>
-          <li>SMART O1–O3＋每個字母一句理由</li>
-          <li>Persona 1 張＋為什麼 7P 只選 Promotion</li>
+          <li>§2.4 PESTEL 挑 3 個：S 貓超車狗／毛孩比小孩多、T AI 偵測變免費標配、L 資安事件</li>
+          <li>§2.2 SWOT 1 張：把 A 講的 3C＋外部趨勢收斂</li>
+          <li>§3 問題樹（核心：品牌認知不足）＋SMART O1–O3，起點數字用 A 的問卷</li>
+          <li>§4 Persona 1 張＋為什麼 7P 只選 Promotion</li>
         </ul></div>
-        <div class="blk"><div class="h">FOR D</div><ul><li>§2.1、2.2、3、4 素材＋問卷原始資料（Google Sheet）</li><li>PESTEL 的 S、E 兩項</li></ul></div>
+        <div class="blk"><div class="h">FOR D</div><ul><li>§2.2、2.4、3、4 素材＋所有來源 URL</li><li>IG／FB 追蹤數現值（截圖＋日期）＝ O2 起點</li></ul></div>
         <div class="hand">交棒句：「目標有了，接下來 C 告訴大家：用哪一招、花多少錢、怎麼知道有沒有成功。」</div>
       </div>
     </div>
@@ -950,8 +966,10 @@ footer .px{font-family:var(--px);color:var(--am-d)}
     <div class="r" style="--c:#cdbfb3"><span>Cover</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pD mini"><b>D</b>D</span></div>
     <div class="r" style="--c:var(--D)"><span>Executive summary</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pD mini"><b>D</b>D</span></div>
     <div class="r" style="--c:var(--A)"><span>§1 Firm profile＋產品</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pA mini"><b>A</b>小魚</span></div>
-    <div class="r" style="--c:var(--B)"><span>§2.1 Customer＋2.2 SWOT</span><div class="track"><div class="fill" style="width:12.5%"></div></div><span class="v">1.5</span><span class="p pB mini"><b>B</b>B</span></div>
-    <div class="r" style="--c:var(--A)"><span>§2.3 Competitor＋2.4 Macro</span><div class="track"><div class="fill" style="width:12.5%"></div></div><span class="v">1.5</span><span class="p pA mini"><b>A</b>小魚</span></div>
+    <div class="r" style="--c:var(--A)"><span>§2.1 Customer analysis</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pA mini"><b>A</b>小魚</span></div>
+    <div class="r" style="--c:var(--B)"><span>§2.2 SWOT</span><div class="track"><div class="fill" style="width:4.2%"></div></div><span class="v">0.5</span><span class="p pB mini"><b>B</b>B</span></div>
+    <div class="r" style="--c:var(--A)"><span>§2.3 Competitor</span><div class="track"><div class="fill" style="width:6.2%"></div></div><span class="v">0.75</span><span class="p pA mini"><b>A</b>小魚</span></div>
+    <div class="r" style="--c:var(--B)"><span>§2.4 Macro (PESTEL)</span><div class="track"><div class="fill" style="width:6.2%"></div></div><span class="v">0.75</span><span class="p pB mini"><b>B</b>B</span></div>
     <div class="r" style="--c:var(--B)"><span>§3 Problem＋SMART</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pB mini"><b>B</b>B</span></div>
     <div class="r" style="--c:var(--B)"><span>§4 Persona＋strategy</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pB mini"><b>B</b>B</span></div>
     <div class="r" style="--c:var(--C)"><span>§5 Tactics evaluation</span><div class="track"><div class="fill" style="width:10.4%"></div></div><span class="v">1.25</span><span class="p pC mini"><b>C</b>C</span></div>
@@ -959,12 +977,12 @@ footer .px{font-family:var(--px);color:var(--am-d)}
     <div class="r" style="--c:var(--C)"><span>§7 Evaluation</span><div class="track"><div class="fill" style="width:8.3%"></div></div><span class="v">1</span><span class="p pC mini"><b>C</b>C</span></div>
     <div class="r" style="--c:#cdbfb3"><span>§8 References</span><div class="track"><div class="fill" style="width:4.2%"></div></div><span class="v">0.5</span><span class="p pD mini"><b>D</b>D</span></div>
   </div>
-  <p class="m" style="font-size:13px;margin-top:10px">合計 12 頁（A 2.5／B 3.5／C 3.5／D 2.5）。§2 給 3 頁，因為老師 rubric 第一項就是 research depth；小魚頁數較少，但多了圖鑑、實拍素材和全組技術支援。Appendix（AI 報告、問卷、訪談摘要）不計分，是否計入頁數請 <a href="#todo">確認</a>。</p>
+  <p class="m" style="font-size:13px;margin-top:10px">合計 12 頁（A 2.75／B 3.25／C 3.5／D 2.5）。§2 給 3 頁，因為老師 rubric 第一項就是 research depth；小魚頁數較少，但多了圖鑑、實拍素材和全組技術支援。Appendix（AI 報告、問卷、訪談摘要）不計分，是否計入頁數請 <a href="#todo">確認</a>。</p>
   <h3 style="font-size:16px;margin:26px 0 10px">組內時程：從今天到繳交</h3>
   <p class="m" style="font-size:13px;margin:0 0 10px">紅色＝老師死線（簡報遲交每天 −1、報告遲交每天 −5）。</p>
   <div class="card tl">
     <div class="ti now"><span class="d">11/19</span><span class="mk"></span><span class="x">分工頁上線：A＝小魚，其他人認領 <b>B／C／D</b></span></div>
-    <div class="ti"><span class="d">11/23</span><span class="mk"></span><span class="x">問卷發出（B）；小魚開始寫使用日記</span></div>
+    <div class="ti"><span class="d">11/23</span><span class="mk"></span><span class="x">小魚發出問卷（全員轉發）＋開始寫使用日記</span></div>
     <div class="ti"><span class="d">11/25</span><span class="mk"></span><span class="x">飼主快聊完成（每人 1–2 位）、問卷收 ≥ 60 份</span></div>
     <div class="ti"><span class="d">11/26</span><span class="mk"></span><span class="x">開會：鎖定市場、主問題、留下哪幾個原因、SMART 數字</span></div>
     <div class="ti"><span class="d">11/30</span><span class="mk"></span><span class="x">A／B／C 投影片初稿＋把素材與來源丟給 D</span></div>
@@ -983,7 +1001,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
   <p class="sub">時間不夠就不訪公司（本來也不需要）。老師要的是「消費者為什麼不知道」，所以重點是飼主。三種來源疊起來就夠撐 §2.1。</p>
   <div class="grid g3">
     <div class="card" style="border-top:4px solid var(--B)">
-      <div class="pill amb">主力 · B</div>
+      <div class="pill amb">主力 · 小魚設計・全員轉發</div>
       <h4 style="margin-top:6px">① 線上問卷（拿 baseline）</h4>
       <p>Google Form 5 分鐘，丟寵物 FB 社團、Dcard 寵物板、LINE 群、IG 限動。目標 ≥ 60 份飼主。</p>
       <p class="m" style="margin-top:6px;font-size:12.5px">產出：提示認知度 X%（＝O1 起點）、大家想到哪些牌子、資訊從哪來</p>
@@ -1015,7 +1033,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
     </div>
     <div>
       <div class="card" style="border-color:var(--B)">
-        <h4>問卷題目骨架（B 做表單）</h4>
+        <h4>問卷題目骨架（小魚做表單）</h4>
         <ul style="font-size:13.5px;padding-left:18px;margin:6px 0">
           <li>篩選：有養貓／狗、居住縣市、年齡</li>
           <li>未提示認知：「寵物攝影機你想到哪些牌子？」（開放題，<b>放在 logo 之前</b>）</li>
@@ -1024,7 +1042,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
           <li>資訊管道：IG／Threads／YouTube／Dcard／朋友</li>
           <li>願付價格：AI 警報服務每月願付 NT$0／100／200／300+</li>
         </ul>
-        <p class="m" style="font-size:12.5px">報告要寫樣本數與限制（便利抽樣）。小魚幫看題目裡的產品描述正不正確。</p>
+        <p class="m" style="font-size:12.5px">報告要寫樣本數與限制（便利抽樣）。結果給 B 當 SMART 起點。</p>
       </div>
       <div class="card" style="margin-top:12px">
         <h4>紀錄格式</h4>
@@ -1077,7 +1095,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
 </section>
 
 </div>
-<footer><div class="px">● REC STOPPED · THANK YOU</div>TMKT Final Project · Tomofun / Furbo · 分工頁 v2（2026/11/19・加產品圖鑑＋技術分工）</footer>
+<footer><div class="px">● REC STOPPED · THANK YOU</div>TMKT Final Project · Tomofun / Furbo · 分工頁 v4（2026/11/19・A 包 §1–2.3、不輪替）</footer>
 
 <script>
 document.querySelectorAll('.copy').forEach(function(b){
