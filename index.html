@@ -437,6 +437,20 @@ details.ts[open] summary:before{content:"▾ "}
 .tc.tq .qn{display:block;font-family:var(--px);font-size:10.5px;color:var(--mute);margin-bottom:2px}
 .tc.tq.pick{border:2px solid var(--rec);box-shadow:3px 3px 0 var(--rec-l)}
 .tc.tq.pick .qn{color:var(--rec)}
+
+.chosen{margin-top:18px;display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;background:var(--rec-l);border:2px solid var(--rec);border-radius:10px;padding:10px 14px}
+.chosen .ck2{font-family:var(--px);font-size:11px;color:#fff;background:var(--rec);border-radius:4px;padding:1px 7px}
+.chosen b{font-size:19px}.chosen small{color:var(--mute);font-size:12.5px}
+.rqmap{margin-top:12px;display:grid;gap:6px}
+.rqh{font-family:var(--px);font-size:11px;color:var(--am-d)}
+.rqi{display:grid;grid-template-columns:78px 1fr auto;gap:10px;align-items:center;text-decoration:none;background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:7px 12px;transition:.15s}
+.rqi:hover{border-color:var(--am);transform:translateX(2px)}
+.rqi .rqk{font-family:var(--px);font-size:11px;text-align:center;background:var(--ink);color:#fff;border-radius:4px;padding:2px 0}
+.rqi.main .rqk{background:var(--rec)}
+.rqi.main{border-color:var(--rec)}
+.rqi b{font-size:14px}.rqi .rqw{font-size:12px;color:var(--mute);white-space:nowrap}
+@media(max-width:760px){.rqi{grid-template-columns:70px 1fr}.rqi .rqw{grid-column:2;white-space:normal}}
+.rqb{display:inline-block;font-family:var(--px);font-size:10.5px;color:#fff;background:var(--ink);border-radius:4px;padding:1px 6px;margin-left:6px;vertical-align:middle;font-weight:400}
 footer{padding:46px 0 70px;color:var(--mute);font-size:12.5px;text-align:center}
 footer .px{font-family:var(--px);color:var(--am-d)}
 </style>
@@ -465,12 +479,16 @@ footer .px{font-family:var(--px);color:var(--am-d)}
     <div class="metaline">
       <span class="hot">📮 12/7 簡報繳件・🎤 12/10 上台・📝 12/17 書面</span><span>簡報 15 min ＋ Q&amp;A 5 min</span><span>報告 ≤ 12 頁（含封面、參考文獻）</span><span class="hot">市場：台灣（定案）</span><span>策略：只選 1 個 P → Promotion</span><span>A B C 上台・D 專責書面</span>
     </div>
-    <div class="tvote">
-      <div class="tl2">題目候選・投票</div>
-      <div class="tt3"><span>1</span><b>Born in Taiwan, Unknown at Home</b><small>台灣做的全球第一，台灣人卻不認識</small></div>
-      <div class="tt3"><span>2</span><b>While You're Away: Making Furbo Seen</b><small>呼應「留守日記」tactic</small></div>
-      <div class="tt3"><span>3</span><b>From "Dog Camera" to Every Pet Parent's Peace of Mind</b><small>呼應貓超車狗＋價值主張</small></div>
+    
+    <div class="chosen"><span class="ck2">✓ 票選題目</span><b>Born in Taiwan, Unknown at Home</b><small>台灣做的全球第一，台灣人卻不認識</small></div>
+    <div class="rqmap">
+      <div class="rqh">RQ 地圖：每個問題在哪一段、誰回答（點了直接跳）</div>
+      <a class="rqi main" href="#problem"><span class="rqk">Main RQ</span><b>如何在 3 個月內提升 Furbo 在台灣目標飼主的品牌認知？</b><span class="rqw"><span class="p pB mini"><b>B</b>美樂蒂</span> 問題樹＋SMART → <span class="p pC mini"><b>C</b>扣抵</span> 策略＋戰術</span></a>
+      <a class="rqi" href="#rq1"><span class="rqk">RQ1</span><b>產品差異化：Furbo 跟平價相機比，贏在哪？</b><span class="rqw"><span class="p pA mini"><b>A</b>小魚</span> §2.3 競品＋S／W、價值階梯</span></a>
+      <a class="rqi" href="#rq2"><span class="rqk">RQ2</span><b>消費者認知：大家覺得 AI 服務值多少？為什麼不知道 Furbo？</b><span class="rqw"><span class="p pB mini"><b>B</b>美樂蒂</span> §2.1 顧客＋飼主訪談</span></a>
+      <a class="rqi" href="#rq3"><span class="rqk">RQ3</span><b>購買與訂閱：為什麼買、訂的人少？</b><span class="rqw"><span class="p pB mini"><b>B</b>美樂蒂</span> 問題樹的「結果」層（認知低的下游）</span></a>
     </div>
+
   </div>
 </div></div>
 
@@ -681,10 +699,10 @@ footer .px{font-family:var(--px);color:var(--am-d)}
     <div class="arrow">→</div>
     <div class="col" style="border-color:var(--am)">
       <h4 style="color:var(--am-d)">AFTER · FINAL</h4>
-      <div class="rqrow"><span class="k">RQ1</span><span><s>主問題</s> → <b>2.3 競品分析</b>（情境分析的一部分）</span></div>
-      <div class="rqrow"><span class="k">RQ2</span><span><s>主問題</s> → <b>2.1 顧客分析</b>，用飼主訪談去挖</span></div>
-      <div class="rqrow"><span class="k">RQ3</span><span><s>主問題</s> → <b>結果／症狀</b>：awareness 低的下游</span></div>
-      <div class="rqrow"><span class="k core">CORE</span><span><b>品牌認知不足：怎麼提升 brand awareness？</b></span></div>
+      <div class="rqrow"><span class="k">RQ1</span><span><s>主問題</s> → <b>2.3 競品分析</b>（情境分析的一部分）→ <a href="#rq1">跳到 RQ1</a></span></div>
+      <div class="rqrow"><span class="k">RQ2</span><span><s>主問題</s> → <b>2.1 顧客分析</b>，用飼主訪談去挖 → <a href="#rq2">跳到 RQ2</a></span></div>
+      <div class="rqrow"><span class="k">RQ3</span><span><s>主問題</s> → <b>結果／症狀</b>：awareness 低的下游 → <a href="#rq3">跳到 RQ3</a></span></div>
+      <div class="rqrow"><span class="k core">CORE</span><span><b>品牌認知不足：怎麼提升 brand awareness？</b>（Main RQ）</span></div>
       <div class="rqrow"><span class="k">市場</span><span><b>台灣（定案）</b>：台灣目前賣得不好、認知弱，最需要行銷計畫；也能直接訪問身邊飼主</span></div>
     </div>
   </div>
@@ -766,7 +784,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
   </div>
   <p class="m" style="font-size:12px;margin:6px 0 0">規格來源：<a class="pill src" href="https://furbo.com/llms-full.txt">furbo.com 官方產品摘要</a> 全系列都有即時影像＋雙向語音。</p>
 
-  <h3 style="font-size:16px;margin:24px 0 10px">價值階梯：為什麼 Furbo 不只是「監視器」</h3>
+  <h3 style="font-size:16px;margin:24px 0 10px">價值階梯：為什麼 Furbo 不只是「監視器」<span class="rqb">RQ1</span><span class="rqb">RQ2</span></h3>
   <div class="ladder">
     <div class="step s1"><div class="lv">LV1 · 誰都有</div><svg class="ic"><use href="#i-live"/></svg><h4>看得到</h4><p>即時影像、夜視、雙向語音<br><span class="m">小米、Tapo 幾百塊也做得到</span></p></div>
     <div class="step s2"><div class="lv">LV2 · Furbo 硬體</div><svg class="ic"><use href="#i-treat"/></svg><h4>能互動</h4><p>遠端丟零食、逗貓棒、自動追蹤<br><span class="m">寵物專用設計，平價監視器沒有</span></p></div>
@@ -933,7 +951,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
   <div class="sh"><span class="no">06</span><h2>§2 情境分析草稿：四塊各自長什麼樣</h2></div>
   <p class="sub">規格書 §2.1–2.4 每一條的「要交出什麼」都先畫好骨架，負責人往裡面填。<span class="p pA mini"><b>A</b>小魚</span> §2.3　<span class="p pB mini"><b>B</b>美樂蒂</span> §2.1、§2.2、§2.4</p>
 
-  <h3 class="h3a"><span class="tagno" style="--c:var(--B)">§2.1</span>顧客分析：區隔 → 選目標 → 顧客經驗</h3>
+  <h3 class="h3a" id="rq2"><span class="tagno" style="--c:var(--B)">§2.1</span>顧客分析：區隔 → 選目標 → 顧客經驗<span class="rqb">RQ2</span></h3>
   <div class="scroll"><table class="seg">
     <tr><th>區隔變數（規格書四種）</th><th>S1 都會上班族貓奴 ★</th><th>S2 分離焦慮犬飼主</th><th>S3 已用平價相機的比價族</th><th>S4 家裡常有人在</th></tr>
     <tr><td><b>人口統計</b> demographic</td><td>25–39 歲、單身／雙薪</td><td>25–45 歲、上班族</td><td>20–35 歲、預算敏感</td><td>退休、家庭主婦／夫</td></tr>
@@ -970,7 +988,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
       <p class="m" style="font-size:12px;margin-top:6px">規格書要 SWOT：四格清單仍完整列出，只是排成 TOWS，多了四個交叉策略。<b>S／W 由小魚在競品段先帶出</b>，美樂蒂補上 O／T 並交叉，WO 格帶出問題樹。</p>
     </div>
     <div>
-      <h3 class="h3a"><span class="tagno" style="--c:var(--A)">§2.3</span>競品：只比 2 個（規格書 1–2 個）</h3>
+      <h3 class="h3a" id="rq1"><span class="tagno" style="--c:var(--A)">§2.3</span>競品：只比 2 個（規格書 1–2 個）<span class="rqb">RQ1</span></h3>
       <div class="scroll"><table class="mx2">
         <tr><th></th><th>Furbo Mini 360°</th><th>TP-Link Tapo</th><th>小米</th></tr>
         <tr><td>定位</td><td>寵物專用 AI 相機</td><td>平價居家監視器</td><td>平價智慧家庭</td></tr>
@@ -1006,7 +1024,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
 
 <!-- 07 PROBLEM -->
 <section id="problem">
-  <div class="sh"><span class="no">07</span><h2>問題樹：一個核心問題，往上是症狀、往下是原因</h2></div>
+  <div class="sh"><span class="no">07</span><h2>問題樹：一個核心問題，往上是症狀、往下是原因<span class="rqb">Main RQ</span><span class="rqb" id="rq3">RQ3</span></h2></div>
   <p class="sub">規格書要「main problem＋main reasons」。下面 4 個原因都是假設，訪談後留 2–3 個最站得住的。</p>
   <div class="win tree"><div class="bar"><span class="dot"></span>PROBLEM_TREE.svg<span class="r">B · §3</span></div><div class="body">
   <svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans TC, sans-serif">
@@ -1088,7 +1106,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
 
 <!-- 08 SMART -->
 <section id="smart">
-  <div class="sh"><span class="no">08</span><h2>SMART objectives（草稿）</h2></div>
+  <div class="sh"><span class="no">08</span><h2>SMART objectives（草稿）<span class="rqb">Main RQ</span></h2></div>
   <p class="sub">一個問題可以有多個目標。主目標用老師舉的社群追蹤數，現在就查得到起點；認知度調查是<b>行銷計畫裡公司要做的事</b>，不是我們現在要做的調研。紅線空格＝要填的數字。</p>
   <div class="grid" style="gap:10px">
     <div class="obj"><div class="k">O1</div><div><h4>主目標・社群認知：IG @furbo_taiwan_official 追蹤數 2027/1/1–3/31 三個月內從 <span class="blank">N</span> 成長到 <span class="blank">1.3N</span>，Reels 平均互動率 ≥ <span class="blank">3%</span></h4><p>老師舉的例子；N 現在就能查（截圖＋日期），每週可追。<span class="pill ok">直接對應「知道的人少」</span></p></div></div>
@@ -1106,7 +1124,7 @@ footer .px{font-family:var(--px);color:var(--am-d)}
 
 <!-- 09 TACTICS -->
 <section id="tactics">
-  <div class="sh"><span class="no">09</span><h2>策略 × Persona × 戰術評估</h2></div>
+  <div class="sh"><span class="no">09</span><h2>策略 × Persona × 戰術評估<span class="rqb">Main RQ</span></h2></div>
   <p class="sub">老師：7P 選一個就好，底下多個 tactics，挑 1–2 個最核心的講。</p>
   <div class="p7"><span>Product</span><span>Price</span><span>Place</span><span class="on">★ Promotion</span><span>People</span><span>Process</span><span>Physical evidence</span></div>
   <p style="font-size:13.5px;margin:0 0 16px">為什麼是 Promotion：問題在「不知道」，不是產品不夠好（Product）、也不是太貴（官網已 2 折起＋30 天試用，Price 已經在打）。<span class="pill amb">C 扣抵講</span></p>
@@ -1254,8 +1272,8 @@ footer .px{font-family:var(--px);color:var(--am-d)}
         <div class="iv"><span class="n">1</span><div><h4>你養什麼？白天牠通常自己在家幾小時？</h4><p>→ 區隔變數（貓／狗、獨留時數）</p></div></div>
         <div class="iv"><span class="n">2</span><div><h4>想到寵物攝影機，你會想到哪些牌子？現在用哪台？</h4><p>→ 品牌認知＋替代品</p></div></div>
         <div class="iv"><span class="n">3</span><div><h4>（給看 Furbo）你聽過嗎？在哪看過？</h4><p>→ 有沒有聽過＋接觸管道</p></div></div>
-        <div class="iv"><span class="n">4</span><div><h4>沒買的原因？不需要，還是覺得別牌更好？為什麼更好？</h4><p>→ 驗證 H1–H4（老師原話）</p></div></div>
-        <div class="iv"><span class="n">5</span><div><h4>如果牠吐了、一直叫，手機會跳警報影片，你願意每月付多少？</h4><p>→ AI 服務價值認知（原 RQ2）</p></div></div>
+        <div class="iv"><span class="n">4</span><div><h4>沒買的原因？不需要，還是覺得別牌更好？為什麼更好？</h4><p>→ <span class="rqb">RQ2</span><span class="rqb">RQ3</span> 驗證 H1–H4（老師原話）</p></div></div>
+        <div class="iv"><span class="n">5</span><div><h4>如果牠吐了、一直叫，手機會跳警報影片，你願意每月付多少？</h4><p>→ <span class="rqb">RQ2</span> AI 服務價值認知</p></div></div>
       </div>
     </div>
     <div class="card">
